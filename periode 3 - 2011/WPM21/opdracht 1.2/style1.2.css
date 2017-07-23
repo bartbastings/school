@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color:#000;
+}
+
+H1 {
+	color:#FFF;
+}
+
+H2 {
+	color:#FFF;
+}
+
+p {
+	color:#daefbf;
+}
+	
+a:link {
+	color:#0C6;
+}
+
+a:visited {
+	color:#F00;
+}
+
+strong {
+	color:#FFF;
+}
+
+td {
+	color:#daefbf;
+}
+
+
+#wrapper {
+	margin: 0 auto;
+	width: 750px;
+	background-color:#333;
+}
+
+#header {
+	clear:right;
+}
+
+#sap {
+	border-style:solid;
+	border-width:3px;
+	border-color:#daefbf;
+	float:right;
+}
+
+#content { 
+	clear:both;
+	background:#999;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color:#daefbf;
+}
+
+
+#blockquote {clear:both;padding:1em 0em 0em 3.5em;margin:1em 0em 1em 0em;background:url(/Users/bartbastings/Documents/school/P3/WPM21/opdrachten/opdracht1/quote_top_left.gif) top left no-repeat #daefbf;color:#4b7811;font-style:italic;}
+
+blockquote div{background:url(/Users/bartbastings/Documents/school/P3/WPM21/opdrachten/opdracht1/quote_bottom_right.gif) bottom right no-repeat #666;padding:0 3.5em 1em 0;}
+
+#link {
+	background:#999;
+}

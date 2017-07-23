@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family: Verdana, Arial;
+	font-size: 62.5%;
+	margin-left: 15%;
+	margin-right: 40%;
+}
+
+form {
+	background-color:#DBEDC5;
+	}
+
+fieldset {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../img/dotted_border_hor.gif");
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    padding-bottom: 1em;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0.5em;
+    width: 100%;
+	border:none;
+}
+
+fieldset legend {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../img/legend_arrow.gif");
+    background-position: left center;
+    background-repeat: no-repeat;
+    clear: left;
+    color: #556442;
+    float: left;
+    font-size: 1.5em;
+    margin-bottom: 0;
+    margin-left: 0.3em;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0.5em;
+    padding-left: 1.2em;
+    padding-right: 0;
+    padding-top: 0.5em;
+}
+
+form label {
+    color: #000000;
+	display:block;
+}
+
+form .form-item {
+    clear: left;
+    padding-bottom: 0;
+    padding-left: 1.5em;
+    padding-right: 1em;
+    padding-top: 0;
+}
+
+label.option, input.form-text-required, input.form-text{
+	display:block;
+	padding-bottom: 0;
+    padding-left: 1.5em;
+    padding-right: 1em;
+    padding-top: 0;
+	}
+	
+	.twitters {
+  border: 1px solid #e5e5e5;
+  padding: 5px;
+  overflow: auto;
+  margin: 20px;
+}
+
+.twitters ul {
+  list-style: none;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.twitters span.prefix {
+  font-weight: bold;
+}
+
+.twitters span.time {
+  font-style: italic;
+  color: #c5c5c5;
+}
+
+.twitters span.status {
+  font-style: italic;
+}
