@@ -1,0 +1,1032 @@
+#wrapper {
+	width:100%;
+	background-position:0 0;
+}
+
+#header {
+	width:auto;
+	padding-left:0;
+	padding-right:0;
+	border-color:#FFF;
+}
+
+#page {
+	width:auto;
+	padding-left:0;
+	padding-right:0;
+	border-color:#FFF;
+}
+
+#logo {
+	margin-bottom:6.2em;
+}
+
+#search_box {
+	padding-bottom:.6em;
+	background:url(bg_search.gif) no-repeat bottom left;
+	margin:-2em 0 2em;
+}
+
+#search_box form input.form-text {
+	height:1.4em;
+	background-color:#FFF;
+}
+
+#main_menu {
+	background-image:none;
+}
+
+
+#main_menu ul {
+	width:auto;
+	height:auto;
+	background-image:none;
+}
+
+#main_menu ul li {
+	height:auto;
+	margin-right:0;
+	font-size:1.6em;
+	padding:.3em .5em;
+}
+
+#main_menu ul li.active-item {
+	margin-right:0;
+	font-size:1.6em;
+	background-color:#80C31C;
+	background-image:none;
+	padding:.3em .5em;
+}
+
+#main_menu ul li.active-item a {
+	height:auto;
+	background-image:none;
+	padding:0;
+}
+
+#main_menu ul .active-item a span {
+	background-image:none;
+	padding:0;
+}
+
+#introduction .block_views_spotlight {
+	width:100%;
+	float:none;
+	margin-right:0;
+	margin-bottom:2em;
+	background-image:none;
+	overflow:hidden;
+}
+
+#introduction .block_views_spotlight .item {
+	margin-right:-1px;
+}
+
+#introduction .block_views_spotlight .item h3 {
+	display:block;
+	width:49%;
+}
+
+#introduction .block_views_spotlight .item h3 a {
+	width:98%;
+}
+
+#introduction .politici_block {
+	margin-right:5em;
+}
+
+#introduction .block_participate {
+	width:auto;
+}
+
+.breadcrumb {
+	clear:both;
+	font-size:1.3em;
+	padding:1em 2%;
+}
+
+#content_left,
+#sidebar_right {
+	width:90%;
+	float:none;
+	padding-left:2%;
+	padding-right:0;
+}
+
+#sidebar_right .block,
+#sidebar_right .agenda_block_item {
+	width:100%;
+}
+
+#sidebar_right .agenda_block_item_content {
+	width:auto;
+	float:none;
+}
+
+#linkmap .block_press_links {
+	width:60%;
+	margin-right:5%;
+}
+
+#linkmap .block_regional_links {
+	width:35%;
+	margin-right:0;
+}
+
+#main_menu .lid_worden,
+#wrapper .letter_size {
+	display:none;
+}
+
+#sidebar_right .block_social input.email {
+	width:50%;
+}
+
+#wrapper {
+	width:100%;
+	background-position:0 0;
+}
+
+#header,
+#page {
+	width:auto;
+	padding-left:0;
+	padding-right:0;
+	border-color:#FFF;
+}
+
+#search_box {
+	padding-bottom:.6em;
+	background:url(bg_search.gif) no-repeat bottom left;
+}
+
+#search_box form input.form-text {
+	height:1.4em;
+	background-color:#FFF;
+}
+
+#main_menu ul {
+	width:auto;
+}
+
+#main_menu ul li {
+	margin-right:.3em;
+	font-size:1.2em;
+	padding:.3em .3em 0 0;
+}
+
+#main_menu ul li.active-item {
+	height:auto;
+}
+
+#introduction .block_views_spotlight {
+	margin-bottom:2em;
+}
+
+#introduction .politici_block {
+	margin-right:3em;
+}
+
+#content_left {
+	width:60%;
+}
+
+#sidebar_right {
+	width:30%;
+}
+
+#sidebar_right .block_social input.email {
+	width:75%;
+}
+
+#sidebar_right .block,
+#sidebar_right .agenda_block_item {
+	width:100%;
+}
+
+#sidebar_right .agenda_block_item_content {
+	width:auto;
+	float:none;
+}
+
+#linkmap .block_press_links {
+	width:35%;
+	margin-right:5%;
+}
+
+#linkmap .block_regional_links {
+	width:20%;
+	margin-right:5%;
+}
+
+strong {
+	font-style:normal;
+	font-weight:400;
+}
+
+ul {
+	list-style:none;
+}
+
+h2,
+h3 {
+	font-size:100%;
+	font-weight:400;
+}
+
+.form-item {
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+}
+
+body {
+	background-image:url(bg.jpg);
+	background-repeat:repeat-x;
+	font-family:Verdana,Arial;
+	color:#000;
+	font-size:62.5%;
+	margin-top:0;
+}
+
+#wrapper {
+	width:98em;
+	padding-top:0.9em;
+	background:url(bg_header.jpg) no-repeat center top;
+	margin:0 auto;
+}
+
+#header {
+	width:95em;
+	border-left:0.5em solid #eee;
+	border-right:0.5em solid #eee;
+	height:12em;
+	margin:0 auto;
+	padding:1em;
+}
+
+#logo {
+	float:left;
+	margin-left:0;
+	margin-top:0;
+}
+
+#search_box {
+	background:url(bg_search.gif) no-repeat bottom left;
+	background-image:none;
+	float:right;
+	height:4.8em;
+	margin-top:-2em;
+	width:25em;
+}
+
+#search_box form {
+	background-color:#8cc641;
+	height:2.5em;
+	background:url(search_glass.gif) no-repeat left top;
+	text-align:left;
+	margin:1.8em 0 0 1em;
+	padding:0 0 0 3em;
+}
+
+#search_box input {
+	clear:none;
+	float:none;
+}
+
+#page {
+	width:95em;
+	border-left:0.5em solid #eee;
+	border-right:0.5em solid #eee;
+	margin:0 auto;
+	padding:1em;
+}
+
+#main_menu {
+	width:100%;
+	height:4em;
+	background:url(main_menu_bg.gif) repeat-x left bottom;
+}
+
+#main_menu ul {
+	float:left;
+	list-style:none;
+	width:83em;
+	margin-left:0.5em;
+}
+
+#main_menu ul li {
+	float:left;
+	margin-right:1em;
+	font-family:georgia;
+	font-size:1.3em;
+	border-right:1px solid #d2d2d2;
+	height:1.5em;
+	padding:0.3em 0.9em 0 0;
+}
+
+#main_menu ul li.last {
+	border-right:0;
+	padding-right:0.3em;
+}
+
+#main_menu ul .active-item {
+	background-image:url(main_menu_li_right_bg.gif);
+	background-position:right top;
+	background-repeat:no-repeat;
+	margin-right:0.8em;
+	height:1.2em;
+	border-right:none;
+	padding:0 0.3em 0.7em 0;
+}
+
+#main_menu ul .active-item a {
+	background-image:url(main_menu_li_left_bg.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+	display:block;
+	height:1em;
+	color:#fff;
+	padding:0.4em 0.9em 0.7em 1em;
+}
+
+#main_menu ul .active-item a span {
+	background-image:url(main_menu_arrow_bg.gif);
+	background-position:center bottom;
+	background-repeat:no-repeat;
+	padding-bottom:1.3em;
+	display:block;
+}
+
+#main_menu .lid_worden {
+	margin-top:-0.2em;
+	float:right;
+	background-image:url(lid_worden_bg.gif);
+	width:6.1em;
+	height:1.8em;
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-family:georgia;
+	font-size:1.3em;
+	padding:0.4em 1em 0;
+}
+
+#main_menu .lid_worden a {
+	text-decoration:none;
+	color:#fff;
+	background-image:url(lid_worden_arrow.gif);
+	background-position:left center;
+	padding-left:0.6em;
+	background-repeat:no-repeat;
+}
+
+.breadcrumb {
+	margin-bottom:1em;
+	background:url(dotted_border_hor.gif) repeat-x bottom;
+	padding:1em 0.7em 2.5em;
+}
+
+.letter_size a {
+	color:#7FC31B;
+	padding-left:2em;
+	background:url(letter_size.jpg) no-repeat;
+	font-size:1.3em;
+}
+
+#content {
+	background:url(content_bg.gif) repeat-y 63.6em top;
+	padding:0 0 5em;
+}
+
+#content_left {
+	float:left;
+	width:58.6em;
+	padding:0 4em 0.8em 0.8em;
+}
+
+#sidebar_right {
+	float:right;
+	width:29em;
+}
+
+h2 {
+	font-size:1.8em;
+	margin:0 0 0.3em;
+}
+
+h3 {
+	font-size:1.5em;
+}
+
+img.left {
+	clear:both;
+	float:left;
+	border:0.3em solid #b5d48c;
+	margin:0 1em 1em 0;
+}
+
+#content_left p {
+	margin:0.8em 0 1em;
+}
+
+#search_box form .form-text {
+	height:1.1em;
+}
+
+#search_box form .form-submit {
+	height:1.6em;
+	font-size:1.2em;
+}
+
+#search_advanced_link {
+	padding-left:3em;
+}
+
+.node {
+	padding:0 0 1em;
+}
+
+.node .meta {
+	width:100%;
+	margin:0 0 1em;
+}
+
+.node .submitted {
+	font-size:1em;
+	font-style:italic;
+	float:left;
+	margin:0;
+}
+
+.node .terms {
+	float:left;
+	margin-left:2em;
+}
+
+.node_teaser {
+	float:left;
+	width:100%;
+	padding:0 0 1em;
+}
+
+#sidebar_right .block {
+	width:29.9em;
+	margin:0 0 1em;
+	padding:0 0 1em;
+}
+
+.block_shortcuts ul {
+	background:url(red_boxed_arrow.gif) no-repeat center left;
+	padding-left:0;
+	background-image:none;
+	margin:.5em 0;
+}
+
+.block_shortcuts li {
+	border-right:0.1em solid #787878;
+	display:block;
+	float:none;
+	margin-bottom:.6em;
+	border:none;
+	background:url(arrow_link_9x9.png) no-repeat 0 .4em;
+	font-size:1em;
+	line-height:1.5em;
+	padding:0 0.8em 0 15px;
+}
+
+.block_shortcuts li a {
+	font-size:1.2em;
+	color:#FA0026;
+	text-decoration:underline;
+}
+
+.politicus_block_item {
+	clear:left;
+	float:left;
+	width:29.9em;
+	background:url(dotted_border_hor.gif) repeat-x bottom;
+	margin:0 0 1em;
+	padding:0.3em 0 1em;
+}
+
+.politicus_block_item_content {
+	float:left;
+	font-size:1.2em;
+	width:16.9em;
+}
+
+.agenda_block_item {
+	clear:left;
+	float:left;
+	width:29.9em;
+	background:url(dotted_border_hor.gif) repeat-x bottom;
+	background-color:#f7fbf3;
+	background-image:none;
+	margin:0;
+	padding:.4em 0;
+}
+
+.agenda_block_item_date {
+	float:left;
+	width:5.2em;
+	padding:0 .8em;
+}
+
+.date_star {
+	text-transform:uppercase;
+	color:#7b9d4f;
+	line-height:1em;
+	font-weight:700;
+	text-align:center;
+	float:left;
+	width:4.4em;
+	font-size:1.2em;
+	background:url(date_star_bg.jpg) no-repeat;
+	height:4em;
+	padding:1em 0 0;
+}
+
+.agenda_block_item_content {
+	float:left;
+	font-size:1.2em;
+	padding-top:.3em;
+	width:17em;
+	margin-left:.8em;
+	line-height:1.5em;
+}
+
+.frontpage_headlines {
+	clear:both;
+	float:left;
+	background:url(dotted_border_hor.gif) repeat-x bottom;
+	width:100%;
+	margin:1.2em 0;
+}
+
+.frontpage_headlines h3 {
+	font-family:Georgia,"Times New Roman",serif;
+	font-size:2em;
+	color:#000;
+	font:bold 1.2em/1.5em Verdana,Arial,sans-serif;
+}
+
+.frontpage_headlines ul {
+	margin-bottom:1.2em;
+	padding:.2em 0;
+}
+
+.frontpage_headlines li {
+	font-size:1.2em;
+	background:url(arrow_black.gif) no-repeat left center;
+	margin-bottom:.2em;
+	background-image:none;
+	line-height:1.5em;
+	padding:0 0 0 6.2em;
+}
+
+form {
+	background-color:#b5d48c;
+	padding:1em;
+}
+
+#content_left,
+#sidebar_right {
+	margin-top:1.5em;
+}
+
+#search_box form #search .form-item {
+	margin-right:1em;
+}
+
+#search_box form input.form-text {
+	min-width:10em;
+	border:none;
+	background-color:transparent;
+}
+
+#introduction {
+	position:relative;
+	top:-1.1em;
+	background-color:#EEE;
+	padding:2.2em 1.2em;
+}
+
+#introduction h2 {
+	position:absolute;
+	left:-10000em;
+	font:normal 2em/1em Georgia,"Times New Roman",serif;
+}
+
+#introduction .block_views_spotlight {
+	width:615px;
+	float:left;
+	position:relative;
+	margin-right:2em;
+	border:1px solid #B2B2B2;
+	padding-top:215px;
+	background:url(bg_carrousel.png) repeat-y;
+}
+
+#introduction .block_views_spotlight .item {
+	margin-right:-1px;
+}
+
+#introduction .block_views_spotlight .item img,
+#introduction .block_views_spotlight .item .content {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:100;
+}
+
+#introduction .block_views_spotlight .item .content {
+	top:2.4em;
+	left:2.4em;
+}
+
+#introduction .block_views_spotlight .item_focus img,
+#introduction .block_views_spotlight .item_focus .content {
+	z-index:110;
+}
+
+#introduction .block_views_spotlight .item .content span,
+#introduction .block_views_spotlight .item .content a {
+	display:block;
+	float:left;
+	clear:left;
+	background-color:#FFF;
+	padding:.2em .4em .3em;
+}
+
+#introduction .block_views_spotlight .item .content a {
+	padding-left:1.3em;
+	background:#FFF url(arrow_link_9x9.png) no-repeat .5em .55em;
+	font-size:.85em;
+}
+
+#introduction .block_views_spotlight .item h3 {
+	display:block;
+	width:153px;
+	float:left;
+	margin-left:-1px;
+	border-left:1px solid #B2B2B2;
+	border-right:1px solid #B2B2B2;
+	background-color:#FFF;
+	font-size:1.2em;
+	font-weight:400;
+}
+
+#introduction .block_views_spotlight .item h3 a {
+	display:block;
+	width:136px;
+	background-color:#FFF;
+	color:#000;
+	text-decoration:none;
+	padding:12px 8px 13px 9px;
+}
+
+#introduction .block_views_spotlight .item h3 a:hover,
+#introduction .block_views_spotlight .item h3 a:focus {
+	background-color:#EEE;
+}
+
+#introduction .block_views_spotlight .item_focus h3 a,
+#introduction .block_views_spotlight .item_focus h3 a:hover,
+#introduction .block_views_spotlight .item_focus h3 a:focus {
+	background-color:#FA0026;
+	color:#FFF;
+}
+
+#introduction .politicus_block_item {
+	margin-bottom:1.5em;
+	padding:0 0 1.5em;
+}
+
+#introduction .politicus_block_item .block_shortcuts {
+	width:auto;
+	clear:none;
+	margin:0 0 0 95px;
+	padding:0;
+}
+
+#introduction .politicus_block_item_content {
+	float:none;
+	width:auto;
+	margin-left:75px;
+	font-size:1em;
+}
+
+#introduction .politicus_block_item_content strong {
+	display:block;
+	font:normal 2em/1em Georgia,"Times New Roman",serif;
+	margin:.1em 0;
+}
+
+#introduction .block_participate {
+	width:24em;
+	border:1px dotted #B2B2B2;
+	background-color:#FFF;
+	margin:0;
+	padding:1.8em 1.5em 1.5em;
+}
+
+.node .node_teaser {
+	float:none;
+	clear:left;
+	padding-bottom:0;
+}
+
+.node .node_teaser p,
+#content_left .node_teaser p {
+	margin:.5em 0;
+}
+
+.teaser .meta {
+	color:#666;
+	font-size:1.2em;
+	line-height:1.5em;
+	margin:0;
+}
+
+#content_left .node_teaser p.terms {
+	margin-top:0;
+	color:#666;
+}
+
+#content_left .node_teaser p.terms a {
+	color:#666;
+}
+
+img.left {
+	margin-top:.5em;
+	border-width:1px;
+}
+
+.frontpage_headlines li span {
+	display:block;
+	width:5.8em;
+	float:left;
+	position:relative;
+	left:-6.2em;
+	margin-right:-6.2em;
+}
+
+.block_social {
+	border:1px solid #B2B2B2;
+}
+
+.block_social form {
+	background-color:#DAEFBF;
+	padding:1.8em 1em;
+}
+
+.block_social label {
+	display:block;
+	margin-bottom:.4em;
+}
+
+.block_social input.email {
+	display:block;
+	width:15em;
+	float:left;
+	margin-right:.8em;
+	border:1px solid #80C31C;
+	font-size:1em;
+	padding:1px;
+}
+
+.block_social .links_social ul {
+	margin:1.5em 0 .5em;
+}
+
+.block_social .links_social li {
+	font-size:1.2em;
+	line-height:1.5em;
+	padding:.2em 1em;
+}
+
+.block_social .links_social li img {
+	position:relative;
+	top:3px;
+	margin-right:.4em;
+}
+
+#sidebar_right .block_quote {
+	padding-bottom:2.2em;
+	margin:2.5em 0;
+}
+
+.block_quote .block_content {
+	margin-bottom:-1.6em;
+	padding-bottom:1.6em;
+	background:url(sprite_quote.png) no-repeat bottom right;
+}
+
+.block_quote blockquote {
+	background:url(sprite_quote.png) no-repeat top left;
+	padding:15px 10px 0 15px;
+}
+
+.agenda_block {
+	background-color:#F7FBF3;
+}
+
+.agenda_block h3 {
+	padding:.6em .8em .4em;
+}
+
+.agenda_block_footer {
+	padding:.4em 1.2em .6em;
+}
+
+.agenda_block_item_content a {
+	position:relative;
+	top:-0.3em;
+	font-weight:700;
+}
+
+#linkmap {
+	background-color:#EEE;
+	margin:1.5em 0 -2em;
+	padding:2.7em 1.2em;
+}
+
+#linkmap .block_press_links {
+	width:33em;
+	float:left;
+	margin-right:2.8em;
+}
+
+#linkmap .block_regional_links {
+	width:24em;
+	float:left;
+	margin-right:2.8em;
+}
+
+#linkmap h3 {
+	font:bold 1.2em/1.5em Verdana,Arial,sans-serif;
+	margin:.4em 0;
+}
+
+#linkmap .frontpage_headlines {
+	margin:.4em 0;
+}
+
+#linkmap .frontpage_headlines ul {
+	margin-bottom:0;
+}
+
+#linkmap .block_regional_links ul {
+	margin:1.8em 0 1.2em;
+}
+
+#linkmap .block_regional_links li {
+	margin-bottom:.35em;
+	font-size:1.2em;
+	line-height:1em;
+}
+
+#linkmap .block_regional_links li a {
+	display:block;
+	float:left;
+	background-color:#FFF;
+	color:#FA0026;
+	text-decoration:none;
+	padding:.45em .8em .55em;
+}
+
+#linkmap .block_regional_links li a:hover,
+#linkmap .block_regional_links li a:focus {
+	background-color:#DFDFDF;
+}
+
+strong {
+	font-weight:700;
+}
+
+.container-inline div {
+	display:inline;
+}
+
+.node .meta span {
+	float:left;
+}
+
+#introduction .politicus_block_item {
+	width:auto;
+}
+
+br.clear,
+.block_shortcuts,
+.teaser {
+	clear:both;
+}
+
+body,
+html,
+div,
+ul,
+li,
+h2,
+h3,
+form,
+fieldset,
+input,
+p,
+blockquote {
+	margin:0;
+	padding:0;
+}
+
+.agenda_item_time {
+	font-size:1em;
+}
+
+fieldset,img {
+	border:0;
+}
+
+.letter_size {
+	float:right;
+}
+
+#main_menu ul li a,
+h2 a,
+.standpunten h2 a:hover,
+.standpunten h2 a:focus {
+	color:#000;
+	text-decoration:none;
+}
+
+a {
+	color:#FA0026;
+}
+
+p {
+	font-size:1.2em;
+	line-height:1.5em;
+}
+
+.teaser .meta span {
+	float:none;
+}
+
+#introduction .politicus_block_item_image img {
+	border:none;
+}
+
+.politicus_block_item_image {
+	float:left;
+	font-size:1.2em;
+	width:8em;
+}
+
+.politicus_block_item_image img {
+	border:0.3em solid #B5D48C;
+}
+
+.teaser h2 a {
+	color:#FA0026;
+	text-decoration:underline;
+}
+
+.block {
+	clear:left;
+}
+
+#sidebar_right .block h3 {
+	font-family:Georgia,"Times New Roman",serif;
+	font-size:2em;
+	color:#000;
+}
+
+.pager a:hover,
+#aggregator .feed-url a:hover {
+	text-decoration:underline;
+}
+
+#introduction .politici_block,
+#introduction .block_participate {
+	clear:none;
+	float:right;
+}
+
+#linkmap .block_shortcuts {
+	margin-bottom:1.2em;
+}
+
+#introduction .politicus_block_item_content span {
+	font-size:1.1em;
+}
+
+#content,
+.frontpage_headlines,
+#introduction .politicus_block_item_last {
+	background-image:none;
+}
+
+#introduction .block_views_spotlight .item .content p,
+#introduction .block_participate h3,
+.block_social h2,
+#linkmap h2 {
+	font:normal 2em/1em Georgia,"Times New Roman",serif;
+}

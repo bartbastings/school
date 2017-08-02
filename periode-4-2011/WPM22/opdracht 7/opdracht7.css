@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* site */
+body {
+	background-color: #FFF;
+}
+
+#header {
+	float: left;
+	width: 100%;
+	margin:auto;
+}
+
+nav {
+	float: left;
+	width: 100%;
+}
+
+/* home */
+
+#navihome {
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+
+#home {
+	width:100%;
+	padding-top:25%;
+}
+
+#home a {
+	color: #666;
+	display: block;
+	width: 100%;
+	margin: auto;
+	font-size:14pt;
+	text-decoration: none;
+	font-family:Century Gothic;
+}
+
+/* nav01*/
+
+#navifirst {
+	width:100%;
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+
+#first {
+	background: #eee;
+	background: -moz-linear-gradient(top, #eee 0%, #eee 88%, #ddd 92%, #ccc 96%, #bbb 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eee), color-stop(88%,#eee), color-stop(92%,#ddd), color-stop(96%,#ccc), color-stop(100%,#bbb));
+	background: -webkit-linear-gradient(top, #eee 0%,#eee 88%,#ddd 92%,#ccc 96%,#bbb 100%);
+	background: -o-linear-gradient(top, #eee 0%,#eee 88%,#ddd 92%,#ccc 96%,#bbb 100%);
+	background: -ms-linear-gradient(top, #eee 0%,#eee 88%,#ddd 92%,#ccc 96%,#bbb 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EEE', endColorstr='#BBB',GradientType=0 );
+	background: linear-gradient(top, #eee 0%,#eee 88%,#ddd 92%,#ccc 96%,#bbb 100%);
+}
+
+#navifirst a {
+	color: #666;
+	display: block;
+	padding-top:100%;
+	padding-bottom:5%;
+	width: 100%;
+	font-size:16pt;
+	text-decoration: none;
+	font-family:Century Gothic;
+}
+
+#second {
+}
+
+#second a {
+	color: #000;
+	display: block;
+	padding-top:2%;
+	width: 100%;
+	font-size:14pt;
+	text-decoration: none;
+	font-family:Century Gothic;
+}
+

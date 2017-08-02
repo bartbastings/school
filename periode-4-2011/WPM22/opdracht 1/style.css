@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	background-color: #FFF;
+}
+
+#header {
+	float: left;
+	width: 100%;
+	margin: auto;
+}
+
+nav {
+	float: left;
+	width: 100%;
+}
+
+#navigatie {
+	width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#first {
+	background-color: #CCC;
+	border-bottom: 2px solid #BBB;
+}
+
+#second {
+	background-color: #DDD;
+	border-bottom: 2px solid #BBB;
+}
+
+#third {
+	background-color: #EEE;
+	border-bottom: 2px solid #BBB;
+}
+
+#navigatie a {
+	color: #666;
+	display: block;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 10%;
+	padding-right: 0%;
+	width: 100%;
+	margin: auto;
+	text-decoration: none;
+	font-family:Century Gothic;
+}
+
+#work a {
+	color: #000;
+}
+
+#object a {
+	color: #000;
+}
+
+#foto {
+	float:left;
+	width: 100%;
+	margin: auto;
+}
+
+#smal {
+	float:left;
+	padding:5px;
+}
+
+#smal a {
+	padding:5px;
+}
+
+#big {
+	float: left;
+	margin: auto;
+	padding-left: 10%;
+}

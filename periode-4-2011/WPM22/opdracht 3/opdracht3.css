@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	background-color: #FFF;
+}
+
+#header {
+	float: left;
+	width: 100%;
+	margin: auto;
+}
+
+nav {
+	float: left;
+	width: 100%;
+}
+
+#navigatie {
+	width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#first {
+	background-color: #CCC;
+	border-bottom: 2px solid #BBB;
+}
+
+#second {
+	background-color: #DDD;
+	border-bottom: 2px solid #BBB;
+}
+
+#navigatie a {
+	color: #666;
+	display: block;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 10%;
+	padding-right: 0%;
+	width: 100%;
+	margin: auto;
+	text-decoration: none;
+	font-family:Century Gothic;
+	text-shadow:2px 2px #EEE;
+}
+
+#about a {
+	color: #000;
+	text-shadow:2px 2px #DDD;
+}
+
+.context {
+	float:left;
+	margin:auto;
+	width:100%;
+}
+
+#koptext {
+	float:left;
+	margin:auto;
+	width: 100%;
+}
+
+#koptext p {
+	width: 43%;
+	font-size: 16pt;
+	font-family:Century Gothic;
+	padding-top: 2%;
+	color: #555;
+}
+
+#hoofdtext {
+	width:100%;
+	margin:auto;
+	float:left;
+}
+
+#foto {
+	float:left;
+	padding-right:2%;
+}
+
+#text
+{
+	float:left;
+	width:75%;
+	font-size: 12pt;
+	font-family:Century Gothic;
+-moz-column-count:3;
+-webkit-column-count:3;
+column-count:3;
+}

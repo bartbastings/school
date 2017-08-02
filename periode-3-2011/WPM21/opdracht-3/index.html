@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>opdracht 3</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="Description" content="Met dit formulier kunt u informatiepaketten aanvragen of contact opnemen met verschillende afdelingen van het Landelijk Bureau, onder andere voor het doorgeven van een adreswijziging. U ontvangt een kopie van uw bericht in uw mailbox. Velden met een *" />
+		<link rel="stylesheet" type="text/css" href="style.css" media="screen" charset="utf-8"  />
+		<script language="javascript" type="text/javascript" charset="utf-8" src="script.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			getTwitters('sapsTweets', {
+				id: 'sap',
+				prefix: '<img height="16" width="16" src="%profile_image_url%" /><a href="http://twitter.com/%screen_name%">%name%</a> said: ',
+				clearContents: false, // leave the original message in place
+				count: 10,
+				withFriends: true,
+				ignoreReplies: false,
+				newwindow: true
+			});
+		</script>
+	</head>
+	<body onload="runSlideShow()">
+		<div id="content">
+			<div id="slideshow">
+				<img src="groenlinks1.jpg" name='SlideShow' width=615 height=215>
+			</div>
+			<div id="player">
+				<iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/LhcyLQ9Y4Yg" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<h1>Service</h1>
+			<div class="node">
+				<div class="node_content" id="test"> <span class='print-link'></span>
+					<p>Met dit formulier kunt u informatiepaketten aanvragen of contact opnemen met verschillende afdelingen van het Landelijk Bureau, onder andere voor het doorgeven van een adreswijziging.</p>
+					<p>U ontvangt een kopie van uw bericht in uw mailbox.</p>
+					<p>Velden met een * zijn verplicht.</p>
+					<form action="" accept-charset="UTF-8" method="post" id="form1" class="webform" name="form1" onsubmit="validat(event)">
+						<fieldset class="wf-fieldset" id="ontvanger">
+							<legend>Ontvanger</legend>
+							<div class="form-item">
+								<label>Bericht versturen aan: <span class="form-required" title="Dit veld is verplicht.">*</span></label>
+								<label class="option">
+									<input type="radio" name="doel" value="ledenadmin@groenlinks.nl" class="form-radio" />
+									Ledenadministratie (onder andere voor een adreswijziging)
+								</label>
+								<label class="option">
+									<input type="radio" name="doel" value="bestuursondersteuning@groenlinks.nl" class="form-radio" />
+									Bestuur van GroenLinks
+								</label>
+								<label class="option">
+									<input type="radio" name="doel" value="webteam@groenlinks.nl"   class="form-radio" />
+									Webteam, verantwoordelijk voor deze site
+								</label>
+								<label class="option">
+									<input type="radio" name="doel" value="infopakket@groenlinks.nl"   class="form-radio" />
+									Postkamer voor het aanvragen van informatiepakketten
+								</label>
+								<label class="option">
+									<input type="radio" name="doel" value="info@groenlinks.nl"   class="form-radio" />
+									Receptie van het Landelijk Bureau voor alle overige opmerkingen en vragen
+								</label>
+							</div>
+						</fieldset>
+						<fieldset class="wf-fieldset" id="onderwerp">
+							<legend>Onderwerp</legend>
+							<div class="form-item">
+								<div class="description">
+									<p>Beschrijf zo nauwkeurig mogelijk het onderwerp van het bericht. 
+									Zo kan de ontvanger het beter afhandelen.</p>
+								</div>
+								<label>Onderwerp van uw bericht: <span class="form-required" title="Dit veld is verplicht.">*</span></label>
+								<label class="option">
+									<input type="radio" name="onderwerp_van_uw_bericht" value="Adreswijziging"   class="form-radio" />
+									Adreswijziging
+								</label>
+								<label class="option">
+									<input type="radio" name="onderwerp_van_uw_bericht" value="Aanvragen informatiepakket voor scholieren of studenten"   class="form-radio" />
+									Aanvragen informatiepakket voor scholieren of studenten
+								</label>
+								<label class="option">
+									<input type="radio" name="onderwerp_van_uw_bericht" value="Aanvragen algemeen informatiepakket"   class="form-radio" />
+									Aanvragen algemeen informatiepakket
+								</label>
+								<label class="option">
+									<input type="radio" name="overig_onderwerp_van_uw_bericht" value="Overig (hieronder invullen)"   class="form-radio" />
+									Overig (hieronder invullen)
+								</label>
+								<label for="aanvulling-op-onderwerp">Aanvulling op onderwerp: </label>
+								<input type="text" maxlength="128" name="aanvulling_op_onderwerp" id="aanvulling-op-onderwerp"  size="60" class="form-text" />
+							</div>
+						</fieldset>
+						<fieldset class="wf-fieldset" id="bericht">
+							<legend>Bericht</legend>
+							<div class="form-item">
+								<label for="bericht">De inhoud van uw bericht: <span class="form-required" title="Dit veld is verplicht.">*</span></label>
+								<textarea cols="60" rows="10" name="bericht" id="berichtText"  class="form-textarea resizable required"></textarea>
+							</div>
+						</fieldset>
+						<fieldset class="wf-fieldset" id="afzender">
+							<legend>Afzender</legend>
+							<div class="form-item">
+								<div class="description">
+									<p>Vul uw eigen gegevens zo volledig mogelijk in, des te beter kunnen we u van dienst zijn.</p>
+								</div>
+								<label for="naam">Naam: <span class="form-required" title="Dit veld is verplicht.">*</span></label>
+								<input type="text" maxlength="128" name="naam" id="naam"  size="60" class="form-text-required" value="" />
+								<label for="emailadres">E-mailadres: <span class="form-required" title="Dit veld is verplicht.">*</span></label>
+								<input type="text" maxlength="128" name="email" id="emailadres"  size="60" value="" class="form-text-required" />
+								<label for="telefoonnummer">Telefoonnummer: </label>
+								<input type="text" maxlength="11" name="telefoon" id="telefoonnummer"  size="11" value="" class="form-text" />
+								<label for="adres">Adres: </label>
+								<input type="text" maxlength="128" name="adres" id="adres"  size="60" value="" class="form-text" />
+								<label for="postcode">Postcode: </label>
+								<input type="text" maxlength="7" name="postcode" id="postcode"  size="7" value="" class="form-text" />
+								<label for="woonplaats">Woonplaats: </label>
+								<input type="text" maxlength="128" name="woonplaats" id="woonplaats"  size="60" value="" class="form-text" />
+							</div>
+						</fieldset>
+						<fieldset>
+							<input type="submit" class="form-submit" value="Versturen" id="edit-submit" name="op"/>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<div class="twitters" id="sapsTweets">
+				<p>
+					<a href="http://twitter.com/jolandesap">Saps Tweets!</a>
+				</p>
+			</div>
+			<div id="facebook">
+				<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fgroenlinks&amp;layout=standard&amp;show_faces=true&amp;width=450&amp;action=like&amp;font&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe>
+			</div>
+		</div>
+	</body>
+</html>
