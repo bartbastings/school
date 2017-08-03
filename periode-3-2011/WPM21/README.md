@@ -64,4 +64,4 @@ Link: [Opdracht 2](WPM21/opdracht-2/index.html)
 - Lever alle bestanden gezipt in per e-mail naar je docent.
 - Deadline: 25 maart om 18:00 uur. Subject: WPM21-Opdracht 3, body: naam & studentnummer.
 
-Link: [Opdracht 3](WPM21/opdracht-3/index.html)
+Link: [Opdracht 3](opdracht-3/index.html)
