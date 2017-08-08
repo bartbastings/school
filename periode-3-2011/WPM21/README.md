@@ -22,9 +22,8 @@ Maak een webpagina die aan de volgende voorwaarden voldoet:
 - Lever alle bestanden (1x html bestand, 2x css bestanden, meegeleverde files & folders) gezipt in per e-mail naar je docent.
 - Deadline: 18 februari om 18:00 uur. Subject: WPM21-Opdracht 1, body: naam & studentnummer. Onvolledig = onvoldoende (dus ook MS Word ipv PDF).
 
-Link: [Opdracht 1](WPM21/opdracht-1.1)
-
-Link: [Opdracht 1.2](WPM21/opdracht-1.2)
+Link: [Opdracht 1.1](opdracht-1.1)
+Link: [Opdracht 1.2](pdracht-1.2)
 
 ### Opdracht 2: website met navigatie
 Maak een complete website die aan de volgende voorwaarden voldoet:
@@ -47,7 +46,7 @@ Noot: pagina’s inclusief header, footer, marge links en rechts, maar exclusief
 - Lever alle bestanden gezipt in per e-mail naar je docent.
 - Deadline: 4 maart om 18:00 uur. Subject: WPM21-Opdracht 2, body: naam & studentnummer. Onvolledig = onvoldoende (dus ook MS Word ipv PDF).
 
-Link: [Opdracht 2](WPM21/opdracht-2)
+Link: [Opdracht 2](opdracht-2)
 
 ### Opdracht 3 – dynamische elementen met JavaScript
 - Gebruik de webpagina die je voor opdracht 2 hebt ingeleverd:
@@ -65,4 +64,4 @@ Link: [Opdracht 2](WPM21/opdracht-2)
 - Lever alle bestanden gezipt in per e-mail naar je docent.
 - Deadline: 25 maart om 18:00 uur. Subject: WPM21-Opdracht 3, body: naam & studentnummer.
 
-Link: [Opdracht 3](WPM21/opdracht-3)
+Link: [Opdracht 3](opdracht-3)
