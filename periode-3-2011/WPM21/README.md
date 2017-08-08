@@ -22,7 +22,7 @@ Maak een webpagina die aan de volgende voorwaarden voldoet:
 - Lever alle bestanden (1x html bestand, 2x css bestanden, meegeleverde files & folders) gezipt in per e-mail naar je docent.
 - Deadline: 18 februari om 18:00 uur. Subject: WPM21-Opdracht 1, body: naam & studentnummer. Onvolledig = onvoldoende (dus ook MS Word ipv PDF).
 
-Link: [Opdracht 1](WPM21/opdracht-1)
+Link: [Opdracht 1](WPM21/opdracht-1.1)
 
 Link: [Opdracht 1.2](WPM21/opdracht-1.2)
 

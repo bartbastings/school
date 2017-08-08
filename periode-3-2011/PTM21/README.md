@@ -21,5 +21,3 @@ Wat ik wel weet: in 2011 ga ik een beremooie plaat maken, de liedjes zijn geschr
 - [twitter.com/arthuradam](https://twitter.com/arthuradam)
 - arthuradam.hyves.nl
 - of zoek bij google op "[arthur adam](https://www.google.nl/search?site=&source=hp&q=arthur+adam)"
-
-Link: [PTM21](PTM21/opdracht)
