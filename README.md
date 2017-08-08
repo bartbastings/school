@@ -5,8 +5,8 @@ All my develop projects from school
 ### Proftaak 21
 [PTM21](https://github.com/bartbastings/school/tree/master/periode-3-2011/PTM21)
 ### Web Programming 21
-[WPM21](school/tree/master/periode-3-2011/WPM21)
+[WPM21](https://github.com/bartbastings/school/tree/master/periode-3-2011/WPM21)
 
 ## periode 4 2011
 ### Web Programming 22
-[WPM22](school/periode3-2011/WPM22/README.md)
+[WPM22](https://github.com/bartbastings/school/tree/master/periode-4-2011/WPM22/README.md)
