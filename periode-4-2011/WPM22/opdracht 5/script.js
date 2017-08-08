@@ -1,4 +1,5 @@
-window.onload = function(){
+window.onload = function() {
+	
 	var video = document.getElementById('video')[0];
 	var playpause = document.getElementById('playpause');
 	var mutebutton = document.getElementById('mutebutton');
@@ -10,20 +11,17 @@ window.onload = function(){
 		playpause.onclick = function(e) { video.play();
 		}
 	}
-	
 	video.onplay = function pause(e) {
 		playpause.value = 'Pause';
 		playpause.onclick = function(e) { video.pause();
 		}
 	}
-	
 	video.onvolumechange = function volume(e) {
 		mutebutton.value = video.muted ? 'Muted' : 'Unmuted';
 	}
 	function muteOrUnmute() {
 		video.muted = !video.muted;
 	}
-		
 	video.onvolumechange = function(e) {
 		mutebutton.value = video.muted ? 'Muted' : 'Unmuted';
 		volumecontrol.value = video.volume;
@@ -31,7 +29,6 @@ window.onload = function(){
 	function updateVolume() {
 		video.volume = volumecontrol.value;
 	}
-		
 	video.onratechange = function(e) {
 		ratecontrol.value = video.playbackRate;
 	}

@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Opdracht 8</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="opdracht8.css" />
+		<script type="text/javascript" src="jquery-1.6.min.js"></script>
+		<script type="text/javascript" src="opdracht8.js"></script>
+	</head>
+	<body>
+		<h1>Opdracht 8</h1>
+		<p>first exercise</p>
+		<p>second exercise</p>
+		<p>third exercise</p>
+		<script>
+			$("p").click(function () {
+				$(this).slideUp();
+			});
+			$("p").hover(function () {
+				$(this).addClass("hilite");
+			}, function () {
+				$(this).removeClass("hilite");
+			});
+		</script>
+		
+		<a href="http://docs.jquery.com/Main_Page">Jquery Main Page</a>
+		
+		<p>test 1</p>
+		<p>test 2</p>
+		<p>test 3</p>
+		
+		<script>
+			$("p").click(function () {
+				$(this).slideUp();
+			});
+			$("p").hover(function () {
+				$(this).addClass("test");
+			}, function () {
+				$(this).removeClass("test");
+			});
+		</script>
+	</body>
+</html>

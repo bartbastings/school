@@ -1,9 +1,0 @@
-@charset "UTF-8";
-/* CSS Document */
-
-  p { color:red; margin:5px; cursor:pointer; }
-  
-  p.hilite { background:yellow; }
-  
-  p.test { background:#9CF; }
-
