@@ -1,0 +1,491 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="beschrijving van de webpagina" />
+	<meta name="keywords" content="trefwoorden, gescheiden, door, komma's"/>
+	<title>Kids voor Liliane | Liliane Fonds</title>
+	<link rel="stylesheet" href="file.css">
+	<script type="text/javascript" src="java.js"></script>
+	<script src="jquery-1.6.1.js"></script>
+	<script type="text/javascript">
+		
+		var rndimg = new Array("images/Banner-1.gif", "images/Banner-2.gif", "images/Banner-3.gif", "images/Banner-4.gif"); 
+		
+	$(document).ready(function() 
+	{
+
+		$(".tab_content").hide();
+		$("ul.tabs li:first").addClass("active"); 
+		$(".tab_content:first").show(); 
+	
+		$("#Story").hide();
+		$("#Voice").hide();
+		$("#Figuur").hide();
+		$("#JA").hide();
+		$("#JAFACE").hide();
+
+
+		$("#banner").attr("src", rndimg[Math.floor(Math.random() * rndimg.length)]);
+		
+		$("ul.tabs li").click(function() 
+		{		
+			$("ul.tabs li").removeClass("active"); 
+			$(this).addClass("active"); 
+			$(".tab_content").hide(); 
+			var activeTab = $(this).find("a").attr("href");
+			$(activeTab).fadeIn(); 
+			return false;			
+		});
+		
+		$("#inschrijflinkje").click(function() 
+		{
+			$("ul.tabs li").removeClass("active"); 
+			$(this).addClass("active"); 
+			$(".tab_content").hide(); 
+			$("#tab3").fadeIn(); 
+			return false;
+		});
+		
+		$("#stemlinkje").click(function() 
+		{
+			$("ul.tabs li").removeClass("active"); 
+			$("#tab2").addClass("active"); 
+			$(".tab_content").hide(); 
+			$("#tab2").fadeIn(); 
+			return false;
+		});
+		
+		$("#story").click(function()
+		{
+			$("#Story").show();
+			$("#story").removeClass('zwartjes');
+			$("#story").addClass('onderdeeltjes');
+			
+			$("#Voice").hide();
+			$("#voice").removeClass('onderdeeltjes');
+			$("#voice").addClass('zwartjes');
+			
+			$("#Figuur").hide();
+			$("#figuur").removeClass('onderdeeltjes');
+			$("#figuur").addClass('zwartjes');
+			
+		});
+		
+		$("#voice").click(function()
+		{
+			$("#Story").hide();
+			$("#story").removeClass('onderdeeltjes');
+			$("#story").addClass('zwartjes');
+			
+			$("#Voice").show();
+			$("#voice").removeClass('zwartjes')
+			$("#voice").addClass('onderdeeltjes');
+			
+			$("#Figuur").hide();
+			$("#figuur").removeClass('onderdeeltjes');
+			$("#figuur").addClass('zwartjes');
+		});
+		
+		$("#figuur").click(function()
+		{
+			$("#Story").hide();
+			$("#story").removeClass('onderdeeltjes');
+			$("#story").addClass('zwartjes');
+			
+			$("#Voice").hide();
+			$("#voice").removeClass('onderdeeltjes');
+			$("#voice").addClass('zwartjes');
+			
+			$("#Figuur").show();
+			$("#figuur").removeClass('zwartjes')
+			$("#figuur").addClass('onderdeeltjes');
+		});
+		
+		$("#jahyves").click(function()
+		{
+			$("#JA").show();
+		});
+		
+		$("#neehyves").click(function()
+		{
+			$("#JA").hide();
+		});
+		
+		$("#jaface").click(function()
+		{
+			$("#JAFACE").show();
+		});
+		
+		$("#neeface").click(function()
+		{
+			$("#JAFACE").hide();
+		});
+	});
+  
+  
+</script> 
+</head>
+
+<body>
+<img id="inham" src="images/stuk.jpg" width="73" height="131" />
+<img id="extra" src="images/extra.png" width="110" height="400" alt="" />
+<div id="header" align="center">
+
+
+</div>
+
+<div class="container">
+<ul class="tabs">
+    <li>
+		<a href="#tab1">Home</a>
+	</li>
+    <li>
+    	<a href="#tab2">Stem</a>
+    </li>
+    <li>
+		<a href="#tab3">Inschrijven</a>
+	</li>
+	<li>
+		<a href="#tab4">Winnaars</a>
+	</li>
+	<li>
+		<a href="#tab5">Juryleden</a>
+	</li>
+</ul>
+
+<div class="tab_container">
+    <div id="tab1" class="tab_content">
+        <p class="stem" >
+			<strong>Help ons met het maken van reclame!</strong>
+			<br />
+			<br />
+			Heb jij altijd al eens op tv willen komen? Grijp dan nu je kans. 
+			<br />
+			Wij zijn op zoek naar jou!
+			<br />
+			<br />
+			Je kunt op 3 manieren meedoen:
+			<br />
+			- Schrijf het verhaal wat de basis is van de reclame. Dit kun je doen door een tekst te schrijven of door het verhaal uit te tekenen.
+			<br />
+			- Maak een opname van je stem waarin je een kort verhaaltje vertelt waarom je mee doet.
+			<br />
+			- Maak een opname van je acteerkunsten.
+			<br />
+			<br />
+			Schrijf je in onder het kopje <a href="#tab3" id="inschrijflinkje" class="oranje">Inschrijven</a> en ontvang direct informatie over hoe je je uitwerking kunt insturen.
+			<br />
+			<br />
+			Zodra je jouw uitwerking hebt ingestuurd zal het op deze website komen te staan onder het kopje <a href="#tab2" id="stemlinkje" class="oranje">Stem</a> en vanaf dan kunnen er mensen op jouw werk gaan stemmen. 
+			<br /> 
+			Dit gaat via een SMS-dienst en kost €1 per stem.
+			<br />
+			<br />
+			Aan het eind van de maand zal van elk van de 3 categorieën 1 winnaar worden gekozen en dat wordt dan gebruikt voor de reclame.
+			De winnaar die gekozen wordt is degene met de meeste stemmen. Dus laat iedereen weten dat jij mee doet en zorg dat ze voor je stemmen!
+			<br />
+			<br />
+			Het thema van deze maand: <strong>Malaria</strong>.
+			<br />
+			(Insturen kan tot 25 juni 2011)
+		</p>
+    </div>
+    <div id="tab2" class="tab_content">
+       <p class="stem"><strong>Kies uw categorie:</strong>
+	   <br /><br />
+		</p>
+       <div id="categorie"> 
+				<a id="story" class="onderdeeltjes" href="#">Storyboard</a>
+				<a id="voice" class="onderdeeltjes" href="#">Voice-over</a>
+				<a id="figuur" class="onderdeeltjes" href="#">Figureren</a>
+			<div id="Story" class="storyvorm">
+				<div id="storyUitwerking1" class="rand">
+				<a href="images/story1.jpg" width="932" height="424" target="_blank"><img src="images/thumb.jpg" alt="" width="400" height="182" border="0" /></a>
+				<p >
+					<em>"Barok en Gijs zitten allebei op voetbal en zijn erg goed. Maar dan breken ze beiden een been. Gijs wordt direct naar het ziekenhuis gebracht en in het gips gezet. Na een paar weken kan hij weer meespelen. Maar Barok niet, hij krijgt een spalk en zal nooit meer met zijn vriendjes kunnen voetballen."</em>
+					<br />
+					<br />
+						Ingestuurd door Joost de Jong uit Doetichem.
+						<strong>SMS "<em>STORY 1</em>" naar 5151.</strong>*
+					</p>
+					<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="http://nl-nl.facebook.com/" send="true" layout="button_count" width="100" show_faces="true" font="arial"></fb:like>
+					<iframe src="http://www.hyves.nl/respect/button?url=http%3A%2F%2Fhyves.nl%2Fprofielbeheer%2F" style="border: medium none; overflow:hidden; width:450px; height:21px;" scrolling="no" frameborder="0" allowTransparency="true" ></iframe>
+				</div>
+				<br />
+				<br />
+				<div id="storyUitwerking2" class="rand">
+					<p>
+					<em>"Aghni is een 11 jarig meisje uit Zuid-Afrika. Ze heeft bij een ongeluk door de slechte leefomstandigheden haar beide armen verloren. Ze gaat graag naar school, maar kan ontzettend moeilijk schrijven, hetgeen ze eigenlijk het liefste doet. Ze wil later zelf les gaan geven, maar dit kan nooit door haar handicap. Door uw hulp kan er een prothese worden gemaakt voor haar, waardoor ze wel alles kan. Help haar zodat ze haar droom kan vervullen."</em>
+					<br />
+					<br />
+						Ingestuurd door Paulien van Daal uit Barendrecht.
+						<strong>SMS "<em>STORY 2</em>" naar 5151.</strong>*
+					</p>
+					<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="http://nl-nl.facebook.com/" send="true" layout="button_count" width="100" show_faces="true" font="arial"></fb:like>
+					<iframe src="http://www.hyves.nl/respect/button?url=http%3A%2F%2Fhyves.nl%2Fprofielbeheer%2F" style="border: medium none; overflow:hidden; width:450px; height:21px;" scrolling="no" frameborder="0" allowTransparency="true" ></iframe>
+				</div>
+				<br />
+				<br />
+				<div id="storyUitwerking3" class="rand">
+				<a href="images/story3.jpg" width="932" height="424" target="_blank"><img src="images/thumb2.jpg" alt="" width="400" height="182" border="0" /></a>
+				<p>
+					<em>"Kenai en Ruud worden doof geboren. Al vroeg krijgt Ruud les in gebarentaal zodat hij toch leert communiceren. Kenai vind voetbal erg leuk en doet dit de hele dag. Als Ruud oud genoeg is wordt hij geopereerd voor een gehoorapparaat. Nu kan hij toch nog horen, terwijl er voor Kenai niets is veranderd en hij nog altijd aan het voetballen is."</em>
+					<br />
+					<br />
+						Ingestuurd door Nienke Krol uit Almere.
+						<strong>SMS "<em>STORY 3</em>" naar 5151.</strong>*
+					</p>
+					<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="http://nl-nl.facebook.com/" send="true" layout="button_count" width="100" show_faces="true" font="arial"></fb:like>
+					<iframe src="http://www.hyves.nl/respect/button?url=http%3A%2F%2Fhyves.nl%2Fprofielbeheer%2F" style="border: medium none; overflow:hidden; width:450px; height:21px;" scrolling="no" frameborder="0" allowTransparency="true" ></iframe>
+				</div>
+				<br />
+				<br />
+				<div id="storyUitwerking4" class="rand">
+					<div class="border">
+						<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="225" height="200" id="intro" align="middle">
+						<param name="allowScriptAccess" value="sameDomain" />
+						<param name="movie" value="intro.swf" />
+						<param name="quality" value="high" />
+						<param name="bgcolor" value="#ffffff" />
+						<embed src="images/Malaria.swf" quality="high" bgcolor="#ffffff" width="225" height="200" name="vbfilm" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+						</object>
+					</div>
+					<br />
+					<p> 
+					<em>"Kyno woont in Afrika en Sam woont in Vlissingen. Sam zit op school en Kyno is op zijn werk maar heeft nog pauze. Dan worden ze allebei gestoken door een mug. Ze krijgen een dikke bult op hun arm en dat begint te jeuken. Sam krabt en spuit er antiprik op zodat de jeuk weggaat maar bij Kyno had de mug een ziekte en daardoor wordt Kyno ook ziek. Zijn arm sterft af en hij kan niet meer goed werken."</em>
+					<br />
+					<br />
+						Ingestuurd door Sam Riensma uit Vlissingen.
+						<strong>SMS "<em>STORY 4</em>" naar 5151.</strong>*
+					</p>
+					<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="http://nl-nl.facebook.com/" send="true" layout="button_count" width="100" show_faces="true" font="arial"></fb:like>
+					<iframe src="http://www.hyves.nl/respect/button?url=http%3A%2F%2Fhyves.nl%2Fprofielbeheer%2F" style="border: medium none; overflow:hidden; width:450px; height:21px;" scrolling="no" frameborder="0" allowTransparency="true" ></iframe>
+				</div>
+				<br />
+				<br />
+				<div id="storyUitwerking5" class="rand">
+					<p>
+					<em>"Sulungu is een jonge jongen geboren in Kongo. Het is een normaal jongetje dat graag buitenspeelt. Door slechte voeding en sanitair word Sulungu heel ziek. Hij loopt malaria op. Zijn ouders hebben geen geld voor de juiste behandelingen in het ziekenhuis dus word Sulungu door de plaatstelijke medicijnman geholpen. Zonder de jusite medicijnen sterft Sulungu op 7 jarige leeftijd."</em>
+					<br />
+					<br />
+						Ingestuurd door Yfke van der Velde uit Heerlen.
+						<strong>SMS "<em>STORY 5</em>" naar 5151.</strong>*
+					</p>
+					<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="http://nl-nl.facebook.com/" send="true" layout="button_count" width="100" show_faces="true" font="arial"></fb:like>
+					<iframe src="http://www.hyves.nl/respect/button?url=http%3A%2F%2Fhyves.nl%2Fprofielbeheer%2F" style="border: medium none; overflow:hidden; width:450px; height:21px;" scrolling="no" frameborder="0" allowTransparency="true" ></iframe>
+				</div>
+				<br />
+				<br />
+			</div>
+			<div id="Voice" class="storyvorm">
+				<div id="voiceUitwerking1" class="rand">
+				<div>
+				<audio controls="controls"><source src="Sophie van Duin - Introductie Liliane Fonds.wav" type="audio/wav" />
+					Je browser ondersteunt dit audio element niet.
+				</audio> 
+				<br />
+				<br />
+				</div>
+					<p>
+						Ingestuurd door Sophie van Duin uit Tilburg.
+						<strong>SMS "<em>VOICE 1</em>" naar 5151.</strong>*
+					</p>
+					<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="http://nl-nl.facebook.com/" send="true" layout="button_count" width="100" show_faces="true" font="arial"></fb:like>
+					<iframe src="http://www.hyves.nl/respect/button?url=http%3A%2F%2Fhyves.nl%2Fprofielbeheer%2F" style="border: medium none; overflow:hidden; width:450px; height:21px;" scrolling="no" frameborder="0" allowTransparency="true" ></iframe>
+				</div>
+			</div>
+			<div id="Figuur" class="storyvorm">
+            <div id="figuurUitwerking1" class="rand">
+            	<div>
+                	<iframe width="560" height="349" src="http://www.youtube.com/embed/WraPbES_zCk?hd=1" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <p>
+                	Ingestuurd door Victor Hezemans uit Bladel.
+                    <strong>SMS "<em>FIGUUR 1</em>" naar 5151.</strong>*
+				</p>
+                <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="http://nl-nl.facebook.com/" send="true" layout="button_count" width="100" show_faces="true" font="arial"></fb:like>
+					<iframe src="http://www.hyves.nl/respect/button?url=http%3A%2F%2Fhyves.nl%2Fprofielbeheer%2F" style="border: medium none; overflow:hidden; width:450px; height:21px;" scrolling="no" frameborder="0" allowTransparency="true" ></iframe>
+                
+            </div>	
+			</div>
+				<p class="kleinelettertjes" align="center">
+				* €1,00 per stem + de kosten voor het gebruik van uw mobiele telefoon. Dit geld gaat voor 90% naar de kinderen en de overige 10% wordt gebruikt voor het realiseren van de reclamespots.
+				</p>
+		</div>
+	</div>
+	<div id="tab3" class="tab_content"> 
+    <table cellspacing="20">
+      <tr>
+      <td><form action="#" method="post"
+      	<fieldset id="persoon">
+      		<legend><strong>Inschrijfformulier</strong></legend>
+      			<br /> 
+
+      		<input id="heer" name="aanspreking" type="radio" value="mijnheer" required />
+      		<label for="heer">Jongen</label>
+			
+			<input id="mevrouw" name="aanspreking" type="radio" value="mevrouw" required />
+      		<label for="mevrouw">Meisje</label><br /><br />
+      		
+      		<label for="naam">Voornaam *</label><br />
+      		<input id="naam" maxlength="90" name="voornaam" size="30" type="text" required />
+      			<br /><br />
+      			<label for="naam">Achternaam *</label><br />
+      			<input id="naam"  maxlength="90" name="achternaam" size="30" type="text" required />
+      			<br /><br />
+				
+			<label for="leeftijd">Leeftijd *<label><br />
+			<input id="leeftijd" maxlength="2" name="leeftijd" size="5" type="text" required />
+			<br /><br />
+      			
+      			<label for="naam">Adres *</label><br />
+      		<input id="naam" maxlength="90"name="adres" size="30" type="text" required />
+      			<br /><br />
+				
+      			<label for="naam">Postcode *</label><br />
+      		<input id="naam" maxlength="6"name="postcode" size="6" type="text" required />
+      			<br /><br />
+				
+				<label for="naam">Woonplaats *</label><br />
+      		<input id="naam" maxlength="90"name="woonplaats" size="30" type="text" required />
+      			<br /><br />
+      			
+				<label for="naam">Telefoonnummer</label><br />
+      		<input id="naam" maxlength="10"name="telnr" size="10" type="text" />
+      			<br /><br />
+				
+      			<label for="mail">E-mailadres *</label><br />
+      			<input id="mail" maxlength="90" name="mail" size="30" type="text" required />
+				<br /><br /><br />
+				
+				<label for="hyves">Hyves-account: *</label><br />
+				<input id="jahyves" name="hyves" type="radio" value="mijnheer" required />
+				<label for="heer">Ja</label>
+				<input id="neehyves" name="hyves" type="radio" value="mevrouw" required />
+				<label for="neehyves">Nee</label><br /><br />
+				<input id="JA" maxlength="90" name="keus" size="30" type="text" />
+				<br />
+				<br />
+				
+				<label for="fb">Facebook-account: *</label><br />
+				<input id="jaface" name="fb" type="radio" value="mijnheer" required />
+				<label for="heer">Ja</label>
+				<input id="neeface" name="fb" type="radio" value="mevrouw" required />
+				<label for="neeface">Nee</label><br /><br />
+				<input id="JAFACE" maxlength="90" name="keus" size="30" type="text" />
+				
+      			</fieldset>
+      				<br /><br />
+      			<fieldset id="reactiesoort">
+
+      			<legend>Meedoen met *</legend>
+      			<select id="soort" name="soort" required />
+      			<option disabled="disabled">Kies uit</option>
+      			<option>Storyboard</option>
+      			<option>Voice-over</option>
+      			<option>Figureren</option>
+      			</select>
+      			</fieldset>
+
+      			<fieldset id="klaar">
+      			<input id="zend" type="submit" value="Verstuur" />
+      			</fieldset>
+      			</form>
+			</td>
+			<td width="60">
+			</td>
+			<td width="350" valign="top" >
+				<div>
+				<p>
+					Stuur je uitwerking op naar:
+				<br />
+				<br />
+					<span>storyboard</span>@kidsvoorliliane.nl - Enkel voor storyboards <br />
+					<span>voiceover</span>@kidsvoorliliane.nl - Enkel voor voice-overs <br />
+					<span>figureren</span>@kidsvoorliliane.nl - Enkel voor figureren <br />
+				</p>
+				</div>
+			</td>
+		</tr>
+	</table>
+				<p class="kleinelettertjes" align="center">
+				* Verplicht. <br /> 
+				Gegevens zullen uitsluitend binnen de actie blijven en niet aan derden verstrekt worden.
+				</p>
+    </div>
+	<div id="tab4" class="tab_content">
+		<p> <em>Mei 2011:</em> </p>
+		<div id="2011Mei" class="rand">
+			<iframe width="560" height="349" src="http://www.youtube.com/embed/6NbwUopab9Y" frameborder="0" allowfullscreen></iframe>
+			<p> 
+				Met dank aan:
+			<br />
+			<br />
+				Siem Jacobs (11 jaar) - Storyboard
+			<br />
+			</p>
+		</div>
+	</div>
+	<div id="tab5" class="tab_content"> 
+		<div id="jury" align="center">
+			<table>
+			<tr>
+				<td width="60">
+					<img src="Foto's leden/bart.png" alt="Bart Bastings" width="140" height="180" />
+				</td>
+				<td width="20">
+				</td>
+				<td width="60">
+					<img src="Foto's leden/amer.png" alt="Amer Kurtic" width="140" height="180" />
+				</td>
+				<td width="20">
+				</td>
+				<td width="60">
+					<img src="Foto's leden/nick.png" alt="Nick van der Sangen" width="140" height="180" />
+				</td>
+				<td width="20">
+				</td>
+				<td width="60">
+					<img src="Foto's leden/rene.png" alt="René Schreurs" width="140" height="180" />
+				</td>
+			</tr>
+			<tr>
+				<td width="60">
+					<p align="center">Bart Bastings -<br />Communicatie Expert bij <strong>SONY</strong></p>
+				</td>
+				<td width="20">
+				</td>
+				<td width="60">
+					<p align="center">Amer Kurtic -<br />Art Director bij <strong>DIESEL</strong></p>
+				</td>
+				<td width="20">
+				</td>
+				<td width="60">
+					<p align="center">Nick van der Sangen -<br />Hoofd Creatief Team bij <strong>HTC</strong></p>
+				</td>
+				<td width="20">
+				</td>
+				<td width="60">
+					<p align="center">René Schreurs -<br />Media Expert bij <strong>HTC</strong></p>
+				</td> 
+			</tr>
+			</table>
+		</div>
+	</div>
+</div>
+	<div id="footer">
+	<br />
+	<img id="banner" src="" alt="" width="468" height="60" />
+	<br />
+	<p id="foot" >Ga naar: <a id="afoot" href="http://www.lilianefonds.nl">Liliane Fonds.nl</a></p>
+</div>
+    
+</div>
+</div>
+</div>
+
+</div>
+
+</body>
+</html>

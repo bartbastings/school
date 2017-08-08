@@ -1,0 +1,371 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Kinderopvang Banholt</title>
+<link rel="stylesheet" href="file.css" />
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery-1.6.1.js"></script>
+	<script type="text/javascript">
+		
+	$(document).ready(function() 
+	{
+
+		$(".tab_content").hide();
+		$("ul.tabs li:first").addClass("active"); 
+		$(".tab_content:first").show(); 
+		
+		$("ul.tabs li").click(function() 
+		{		
+			$("ul.tabs li").removeClass("active"); 
+			$(this).addClass("active"); 
+			$(".tab_content").hide(); 
+			var activeTab = $(this).find("a").attr("href");
+			$(activeTab).fadeIn(); 
+			return false;			
+		});
+		
+		$("div.1").css({display: ''});
+		$("div.2").css({display: 'none'});
+		$("div.3").css({display: 'none'});
+		$("div.4").css({display: 'none'});
+		$("div.5").css({display: 'none'}); 
+		$("div.6").css({display: 'none'});
+		$("div.7").css({display: 'none'});
+		
+	$("a.1").click(function(){   
+		$("div.1").fadeIn("slow");
+		$("div.2").css({display: 'none'});
+		$("div.3").css({display: 'none'});
+		$("div.4").css({display: 'none'});
+		$("div.5").css({display: 'none'});
+		$("div.6").css({display: 'none'});
+		$("div.7").css({display: 'none'});
+		return false;
+	});
+	$("a.2").click(function(){   
+		$("div.1").css({display: 'none'});
+		$("div.2").fadeIn("slow");
+		$("div.3").css({display: 'none'});
+		$("div.4").css({display: 'none'});
+		$("div.5").css({display: 'none'});
+		$("div.6").css({display: 'none'});
+		$("div.7").css({display: 'none'});
+		return false;
+	});
+	$("a.3").click(function(){   
+		$("div.1").css({display: 'none'});
+		$("div.2").css({display: 'none'});
+		$("div.3").fadeIn("slow");
+		$("div.4").css({display: 'none'});
+		$("div.5").css({display: 'none'});
+		$("div.6").css({display: 'none'});
+		$("div.7").css({display: 'none'});
+		return false;
+	});
+	$("a.4").click(function(){   
+		$("div.1").css({display: 'none'});
+		$("div.2").css({display: 'none'});
+		$("div.3").css({display: 'none'});
+		$("div.4").fadeIn("slow");
+		$("div.5").css({display: 'none'});
+		$("div.6").css({display: 'none'});
+		$("div.7").css({display: 'none'});
+		return false;
+	});
+	$("a.5").click(function(){   
+		$("div.1").css({display: 'none'});
+		$("div.2").css({display: 'none'});
+		$("div.3").css({display: 'none'});
+		$("div.4").css({display: 'none'});
+		$("div.5").fadeIn("slow");
+		$("div.6").css({display: 'none'});
+		$("div.7").css({display: 'none'});
+		return false;
+	});
+	$("a.6").click(function(){   
+		$("div.1").css({display: 'none'});
+		$("div.2").css({display: 'none'});
+		$("div.3").css({display: 'none'});
+		$("div.4").css({display: 'none'});
+		$("div.5").css({display: 'none'});
+		$("div.6").fadeIn("slow");
+		$("div.7").css({display: 'none'});
+		return false;
+	});
+	$("a.7").click(function(){   
+		$("div.1").css({display: 'none'});
+		$("div.2").css({display: 'none'});
+		$("div.3").css({display: 'none'});
+		$("div.4").css({display: 'none'});
+		$("div.5").css({display: 'none'});
+		$("div.6").css({display: 'none'});
+		$("div.7").fadeIn("slow");
+		return false;
+	});
+		
+	});
+
+		
+</script>
+
+</head>
+
+<body>
+
+<div class="all">
+
+	<div class="header">
+    
+    	<img src="bannerncreche.png" width="900" height="150" alt="banner" />
+        
+	</div>
+
+<div class="context">
+
+	<div class="menu">
+    
+    	<ul class="tabs">
+    		
+            <li>
+    			<a href="#tab1">Welkom</a>
+            </li>
+            
+            <li>
+            	<a href="#tab2">Opvang</a>
+            </li>
+            
+            <li>
+            	<a href="#tab3">Wie ben ik</a>
+            </li>
+            
+            <li>
+            	<a href="#tab4">Foto&acute;s</a>
+            </li>
+            
+            <li>
+            	<a href="#tab5">Gastouderbureaus</a>
+            </li>  
+            
+		</ul>
+        
+        </div>
+        
+        <div class="container">
+        
+        <div id="tab1" class="tab_content">
+        <div id="welkom">
+        <h2>Welkom</h2>
+        <p></p>
+        </div>
+        </div>
+        
+        <div id="tab2" class="tab_content">
+        <div id="opvang">
+        <p>In onze carréboerderij hebben we een aparte vleugel met keuken, slaapkamer en speelkamer voor de opvang van kinderen. Ik vind het geweldig en uitdagend om kinderen te verzorgen en helpen op te groeien tot zelfstandige mensjes met een eigen persoonlijkheid. Met mooi weer gaan we naar buiten op ons binnenhof waar de kinderen van harte kunnen klimmen, spelen en rondfietsen. Het is dan supergezellig en iedereen heeft het naar zijn zin.</p>
+        <p>Kinderopvang &quot;ut Loetsjke&quot; is geopend van maandag tot en met donderdag.<br />Van 8uur s&acute;morgens tot 18:00 s&acute;avonds.<br />Leeftijd is van 0 tot 4 jaar.</p>
+        
+        <table>
+    	<tr>
+        <td rowspan="9"><img src="utloetsjke.jpg" width="370" height="196" alt="utloetsjke" id="utloetsjke"/></td>
+        <td><strong>Naam</strong></td>
+        <td>Kinderopvang &quot;ut Loetsjke&quot;</td>
+        </tr>
+        <tr>
+        <td><strong>Adres</strong></td>
+        <td>Mheerderweg 15</td>
+        </tr>
+        <tr>
+        <td><strong>Postcode + woonplaats</strong></td>
+        <td>6262ND Banholt</td>
+        </tr>
+        <tr>
+        <td><strong>Telefoonnummer</strong></td>
+        <td>043-457 2280</td>
+        </tr>
+        <tr>
+        <td><strong>E-mail</strong></td>
+        <td><a href="mailto:fonsbastings@home.nl">fonsbastings&#64;home.nl</a></td>
+        </tr>
+        <tr>
+        <td><strong>Internet</strong></td>
+        <td><a href="http://www.kinderopvangbanholt/">www.kinderopvangbanholt.nl</a></td>
+        </tr>
+        <tr>
+        <td><strong>KvK</strong></td>
+        <td>&#63;&#63;&#63;</td>
+        </tr>
+        <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        </tr>
+        <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        </tr>
+        </table>
+        
+        </div>
+        </div>
+        
+        <div id="tab3" class="tab_content">
+        <div id="wiebenik">
+        <p>Mijn is Wilma Bastings Sens,</p>
+        </div>
+        </div>
+        
+        <div id="tab4" class="tab_content">
+        <div id="viewer">
+    <div id="pic">
+<ul class="klein">
+  <li>
+    <a href="#een" class="1"><img src="buiten1.JPG" width="99" height="66" alt="foto"/></a>
+    </li>
+    <li>
+	<a href="#twee" class="2"><img src="buiten2.JPG" width="99" height="66" alt="foto"/></a>
+    </li>
+    <li>
+	<a href="#drie" class="3"><img src="buiten3.JPG" width="99" height="66" alt="foto"/></a>
+    </li>
+    <li>
+    <a href="#vier" class="4"><img src="binnen1.JPG" width="99" height="66" alt="foto"/></a>
+    </li>
+    <li>
+    <a href="#vijf" class="5"><img src="binnen2.JPG" width="99" height="66" alt="foto"/></a>
+    </li>
+     <li>
+    <a href="#zes" class="6"><img src="binnen3.JPG" width="99" height="66" alt="foto"/></a>
+    </li>
+     <li>
+    <a href="#zeven" class="7"><img src="binnen4.JPG" width="99" height="66" alt="foto"/></a>
+    </li>
+  </ul>
+  </div>
+  
+  <div id="picgroot">
+	<div class="1">
+	<img src="buiten1.JPG" width="594" height="396" alt="mens1"/>
+	</div>
+
+	<div class="2">
+	<img src="buiten2.JPG" width="594" height="396" alt="mens2"/>
+	</div>
+
+	<div class="3">
+	<img src="binnen1.JPG" width="594" height="396" alt="mens3"/>
+	</div>
+    
+    <div class="4">
+	<img src="binnen2.JPG" width="594" height="396" alt="mens4"/>
+	</div>
+    
+    <div class="5">
+	<img src="binnen3.JPG" width="594" height="396" alt="mens5"/>
+	</div>
+    
+    <div class="6">
+	<img src="binnen3.JPG" width="594" height="396" alt="mens5"/>
+	</div>
+    
+    <div class="7">
+	<img src="binnen3.JPG" width="594" height="396" alt="mens5"/>
+	</div>
+    
+    </div>
+    
+    </div>
+    
+        </div>
+        
+        <div id="tab5" class="tab_content">
+        
+        <div id="gastouder">
+        
+        <table>
+    	<tr>
+        <td rowspan="9"><img src="MIK.jpg" width="370" height="196" alt="mik" id="mik" /></td>
+        <td><strong>Naam</strong></td>
+        <td>MIK Kinderopvang</td>
+        </tr>
+        <tr>
+        <td><strong>Adres</strong></td>
+        <td>Wilhelminasingel 91-93</td>
+        </tr>
+        <tr>
+        <td><strong>Postcode + woonplaats</strong></td>
+        <td>6221BH Maastricht</td>
+        </tr>
+        <tr>
+        <td><strong>Telefoonnummer</strong></td>
+        <td>043-351 7171</td>
+        </tr>
+        <tr>
+        <td><strong>faxnummer</strong></td>
+        <td>043-351 7170</td>
+        </tr>
+        <tr>
+        <td><strong>E-mail</strong></td>
+        <td><a href="mailto:info@mik-online.nl">info@mik-online.nl</a></td>
+        </tr>
+        <tr>
+        <td><strong>Internet</strong></td>
+        <td><a href="http://www.mik-online.nl/">www.mik-kinderopvang.nl</a></td>
+        </tr>
+        <tr>
+        <td><strong>KvK</strong></td>
+        <td>140.66.304 </td>
+        </tr>
+        <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        </tr>
+        </table>
+        
+        <table>
+        <tr>
+        <td rowspan="8"><img src="opgepast.jpg" width="370" height="186" alt="opgepast" id="opgepast" /></td>
+        <td><strong>Naam</strong></td>
+        <td>Gastouderbureau Maasland</td>
+        </tr>
+        <tr>
+        <td><strong>Adres</strong></td>
+        <td>Dross. Van Zuenestraat 16</td>
+        </tr>
+        <tr>
+        <td><strong>Postcode + woonplaats</strong></td>
+        <td>6181EG Elsloo</td>
+        </tr>
+        <tr>
+        <td><strong>Telefoonnummer</strong></td>
+        <td>046-436 0603</td>
+        </tr>
+        <tr>
+        <td><strong>E-mail</strong></td>
+        <td><a href="mailto:info@opgepast.com">info@opgepast.com</a></td>
+        </tr>
+        <tr>
+        <td><strong>Internet</strong></td>
+        <td><a href="http://www.opgepast.com/">www.opgepast.com</a></td>
+        </tr>
+        <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        </tr>
+        <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        </tr>
+      </table>
+        </div>
+        
+        </div>
+        
+        </div>
+        
+	</div>
+
+</div>
+
+</body>
+</html>

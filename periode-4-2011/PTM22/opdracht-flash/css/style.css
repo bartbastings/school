@@ -1,0 +1,140 @@
+body
+{
+	font-family: arial;
+	font-size: 11px;
+}
+
+a:hover, a:visited, a:active, a:link
+{
+	color: black;
+}
+
+
+h2
+{
+	color: #ee7f00;
+	font-size:16px;
+}
+
+h3
+{
+	font-size: 18px;
+}
+
+span.small
+{	
+	font-size:9px;
+	font-style: italic;
+}
+
+ul
+{
+	list-style:none;
+	padding: 0 0 0 0;
+	margin: -10	0 0 0;
+}
+
+li
+{
+	padding-left: 10px;
+	background-image: url(../arrow.png);
+	background-repeat: no-repeat;
+	background-position: 1px;
+	width: 150px;
+}
+
+#info
+{
+	position: absolute;
+	top: 405px;
+	background-color: #ee7f00;
+	width:796px;
+	height: 75px;
+	left: 50%;
+	margin-left: -400px;
+	padding-left: 4px;
+	color: white;
+	overflow: hidden;
+	border: 3px black solid;
+	border-top: 1px black solid;
+}
+
+#info-title
+{
+	position: absolute;
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	left:10px;
+	
+}
+#info-content
+{
+	position: absolute;
+	left: 150px;
+	top: 10px;
+	width:575px;
+}
+#info-pic
+{
+	position: absolute;
+	left: 725px;
+}
+
+#flash-vid
+{
+	position:absolute;
+	left:50%;
+	top: 0px;
+	margin-left: -400px;
+	height:400px;
+	width:800px;
+	overflow: hidden;
+	border: 3px black solid;
+}
+
+#ul-wrapper
+{
+	position: absolute;
+	top: 500px;
+	left: 50%;
+	margin-left: -400px;
+}
+
+#Eu
+{
+	position: absolute;
+	top: 550px;
+	width: 150px;
+	left: 50%;
+	margin-left: -400px;
+	padding-left: 4px;
+
+}
+
+#Eu a:link, #Eu a:visited, #Eu a:active, #Eu a:link
+{
+	color: #ee7f00;
+}
+#afrika-ul
+{
+	position: absolute;
+	left: 320px;
+}
+
+#afrika2-ul
+{
+	position: absolute;
+	left: 480px;
+}
+
+#zam-ul
+{
+	position: absolute;
+	left: 160px
+}
+
+#azie-ul
+{
+	position: absolute;
+	left: 640px;
+}

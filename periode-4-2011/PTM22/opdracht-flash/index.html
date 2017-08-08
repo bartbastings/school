@@ -1,0 +1,152 @@
+<html>
+	<head>
+		<title>Liliane Sense</title>
+		<link rel="stylesheet" href= "css/style.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script language="Javascript">
+			
+			var CUR = "Eu";
+			var TAR = "fill";
+			var Zoomedin = false;
+			var Zoomed = "fill";
+			var Land = "fill";
+			var going = "fill"
+			
+			$(function() {
+				$("a").mouseover(function() {
+					var aid = $(this).attr("id");
+					$("#info-content").empty();
+					$("#info-content").load(aid +".txt");
+					$("#info-title").html("<h3>"+ aid + "</h3>");
+					$("#info-pic").html("<img src='"+ aid + ".png'/>");
+				});
+				
+				$("a").click(function() {
+					TAR = $(this).parent().attr("class");
+					if (Zoomedin == false) {
+						if (!(TAR == CUR)) {
+							going = CUR + "-" + TAR;
+							Land = $(this).attr("id");
+							zoomed = Land +" Zoomed";
+							document.lilianesense.TGotoLabel("_level0", going);
+							setTimeout(function(){
+								document.lilianesense.TGotoLabel("_level0", zoomed);
+							}, 3000);
+							CUR = TAR;
+							Zoomedin = true;
+						} else {
+							Land = $(this).attr("id");
+							zoomed = Land +" Zoomed";
+							document.lilianesense.TGotoLabel("_level0", zoomed);
+							Zoomedin = true;
+						}
+					} else if (Zoomedin == true) {
+						
+						var goland = $(this).attr("id")
+						var zoomout = zoomed +" Out";
+						if (!(Land == goland)) {
+							
+							going = CUR + "-" + TAR;
+							zoomed = $(this).attr("id") +" Zoomed";
+							
+							if (!(TAR == CUR)) {
+								document.lilianesense.TGotoLabel("_level0", zoomout);
+								setTimeout(function() {
+									document.lilianesense.TGotoLabel("_level0", going);
+								}, 1666);
+								setTimeout(function() {
+									document.lilianesense.TGotoLabel("_level0", zoomed);
+								}, 4666);
+								CUR = TAR;
+							} else {
+								document.lilianesense.TGotoLabel("_level0", zoomout);
+								setTimeout(function(){
+									document.lilianesense.TGotoLabel("_level0", zoomed);
+								}, 1666);
+							}
+							
+							Zoomedin = true;
+							Land = goland;
+							
+						} else {
+							document.lilianesense.TGotoLabel("_level0", zoomout);
+							Zoomedin = false;
+						}
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="flash-vid">
+			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="800" height="400" id="lilianesense">
+				<param name="allowScriptAccess" value="sameDomain" />
+				<param name="movie" value="lilianesense.swf" />
+				<param name="quality" value="high" />
+				<param name="lilianesense" value="lilianesense" />
+				<param name="swLiveConnect" value="true" />
+				<param name="bgcolor" value="#ffffff" />
+				<embed src="lilianesense.swf" quality="high" swLiveConnect="true" bgcolor="#ffffff" width="800" height="400" name="lilianesense" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+			</object>
+		</div>
+		<div id="menu">
+			<div id="Eu" class="Eu">
+				<h3 class="Eu">
+					<a href="#" id="Nederland">Nederland</a>
+				</h3>
+			</div>
+			<div id="ul-wrapper">
+				<div id="afrika-ul">
+					<h2>Afrika</h2>
+					<ul>
+						<li class="Af"><a href="#" id="Benin">Benin</a></li>
+						<li>Burkin Faso /<span class="small"> Mali</span> /<span class="small"> Niger</span></li>
+						<li>Congo</li>
+						<li>EthiopiÎ</li>
+						<li>Ghana</li>
+						<li>Ivoorkust</li>
+						<li>Kameroen</li>
+						<li>Kenia</li>
+					</ul>
+				</div>
+				<div id="afrika2-ul">
+					<h2>&nbsp;</h2>
+					<ul>
+						<li class="Af"><a href="#" id="Nigeria">Nigeria</a></li>
+						<li>Oeganda</li>
+						<li>Rwanda</li>
+						<li>Sierra Leone</li>
+						<li>Togo</li>
+						<li>Zambia</li>
+						<li>Zimbabwe</li>
+					</ul>
+				</div>
+				<div id="azie-ul">
+					<h2>Azie</h2>
+					<ul>
+						<li class="Az"><a href="#" id="Bangladesh">Bangladesh /<span class="small"> Pakistan</span></a></li>
+						<li>India /<span class="small"> Nepal</span> /<span class="small"> Sri lanka</span></li>
+						<li>Filipijnen /<span class="small"> Vietnam</span></li>
+						<li>IndonesiÎ</li>
+					</ul>
+				</div>
+				<div id="zam-ul">
+					<h2>Zuid-Amerika</h2>
+					<ul>
+						<li class="ZA"><a href="#" id="Argentinie">ArgentiniÎ</a></li>
+						<li>Bolivia</li>
+						<li>BraziliÎ</li>
+						<li>Colombia</li>
+						<li>Nicaragua</li>
+						<li>Peru</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="info">
+			<div id="info-title"></div>
+			<div id="info-content">Plaats je muis over een land om meer informatie te krijgen.</div>
+			<div id="info-pic"></div>
+		</div>
+	</body>
+</html>
