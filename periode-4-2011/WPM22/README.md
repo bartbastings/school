@@ -30,7 +30,7 @@ Link: [Opdracht 3](WPM22/opdracht-3/index.html)
 - Gebruik een for loop om de lijnen te tekenen.
 - De lijnen zijn blauw.
 
-Link: [Opdracht 4](WPM22/opdracht-4/index.html)
+Link: [Opdracht 4](WPM22/opdracht-4)
 
 ### Opdracht 5. Video API
 - Bestudeer artikel Everything you need to know about HTML5 audio and video.
@@ -43,7 +43,7 @@ Link: [Opdracht 4](WPM22/opdracht-4/index.html)
 - Niveau 8: maak knoppen voor vooruit / achteruit spelen.
 - Niveau 10: maak een slider input voor je volume control. Toon m.b.v. het canvas op een grafische manier het percentage van het volume.
 
-Link: [Opdracht 5](WPM22/opdracht-5/index.html)
+Link: [Opdracht 5](WPM22/opdracht-5)
 
 ### Opdracht 6. Feature detection
 - Gebruik de modernizer library om te detecteren of een browser om kan gaan met:
