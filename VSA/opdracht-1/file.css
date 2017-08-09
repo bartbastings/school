@@ -1,0 +1,131 @@
+body {
+	margin: 0;
+	padding: 0;
+	font: 12px Arial, Helvetica, sans-serif;
+	background-color:#EEE ;
+	width: 100%;
+	height: 100%;
+	background-image:url(achtergrond.png);
+	background-position:top center;
+	background-size:cover;
+}
+
+.container {
+	width: 900px;
+	margin: 10px auto;
+}
+
+ul.tabs {
+	margin: 0;
+	margin-top:10px;
+	padding: 0;
+	float: left;
+	list-style: none;
+	height: 32px;
+	border-bottom: 1px solid #999;
+	border-left: 1px solid #999;
+	width: 100%;
+}
+ul.tabs li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 31px;
+	line-height: 31px;
+	border: 1px solid #999;
+	border-left: none;
+	margin-bottom: -1px;
+	background: #e0e0e0;
+	overflow: hidden;
+	position: relative;
+}
+ul.tabs li a {
+	text-decoration: none;
+	color: #000;
+	display: block;
+	font-size: 1.2em;
+	padding: 0 20px;
+	border: 1px solid #fff;
+	outline: none;
+}
+
+ul.tabs li a:hover {
+	background: #CCC;
+}
+	
+ul.tabs li.active, ul.tabs li.active a:hover  {
+	background: #fff;
+	border-bottom: 1px solid #fff;
+	color:#F90;
+}
+
+.tab_container {
+	border: 1px solid #999;
+	border-top: none;
+	clear: both;
+	float: left; 
+	width: 100%;
+	background: #fff;
+	-moz-border-radius-bottomright: 5px;
+	-khtml-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-khtml-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+.tab_content {
+	background-image:url(achtergrond.png);
+	background-attachment:scroll;
+	background-repeat:no-repeat;
+	background-size: 100%;
+	padding: 20px;
+	font-size: 1.2em;
+}
+
+.header{
+	border: 1px solid #999;
+	width:900px; 
+	height:150px;
+	background-image:url(bannenr%20vincent.png);
+	background-color:#FFFFFF;
+	background-size:cover;
+	background-position:center top;
+}
+
+.fotoviewer{
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-top:30px;
+}
+
+.fotoviewer img{
+	border: 1px solid #000;
+}
+
+
+#home {
+	margin: 25px;
+	padding: 25px;
+	background-color:#FFF;
+	border: 1px solid #999;
+	-moz-border-radius-bottomright: 5px;
+	-khtml-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-khtml-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+
+#contact {
+	margin: 25px;
+	padding: 25px;
+	background-color:#FFF;
+	border: 1px solid #999;
+	-moz-border-radius-bottomright: 5px;
+	-khtml-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-khtml-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}

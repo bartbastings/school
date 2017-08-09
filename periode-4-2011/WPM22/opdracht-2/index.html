@@ -3,24 +3,20 @@
 	<head>
 		<title>Opdracht 2</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" href="style.css" />
+		<script language="javascript" src="script.js"></script>
 	</head>
 	<body>
-		<div>
-			<video id="movie" controls width="480" height="480" poster="wind.jpg" class="video">
-				<source src="YouTube-wind-akeboshi.mp4" type="video/mp4">
-				<source src="YouTube-wind-akeboshi.webm" type="video/webm">
-			</video>
-		</div>
-		<div id="button">
-			<button onClick="document.getElementById('video').pause()">Pause</button>
-			<button onClick="document.getElementById('video').play()">Play</button>
-			<button onclick="document.getElementById('video').currentTime =0">Restart</button>
-			<button onclick="document.getElementById('video').currentTime +=10">Forward</button>
-			<button onclick="document.getElementById('video').currentTime -=10">Backward</button>
-			<button onclick="document.getElementById('video').volume+=0.1">Up</button>
-			<button onclick="document.getElementById('video').volume-=0.1">Down</button>
-			<button onclick="document.getElementById('video').muted=true">Mute on</button>
-			<button onclick="document.getElementById('video').muted=false">Mute off</button>
+		<div class="wrapper">
+			<h1>Opdracht 2</h1>
+			<audio controls="controls">
+				<source src="YouTube-wind-akeboshi.mp3" type="audio/mpeg"/>
+				<source src="YouTube-wind-akeboshi.ogg" type="audio/ogg"/>
+				<source src="YouTube-wind-akeboshi.wav" type="audio/wav"/>
+				<p>Your browser does not support the audio element.</p>
+			</audio>
+			<div class="clear"></div>
 		</div>
 	</body>
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Opdracht 15</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" href="style.css" />
+		<script language="javascript" src="jquery-1.6.min.js"></script>
+		<script language="javascript" src="script.js"></script>
+		<script type="text/javascript">
+			$(document).click(function(event) {
+				$("#count").text(function(i, current) {
+					return +current + 1;
+				});
+			});
+			$(function() {
+				$("#reset").click(function() {
+					$("#count").text(function(current) {
+						return current = 0;
+					});
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1>Opdracht 15</h1>
+			<p id="count">0</p>
+			<button id="reset">reset</button>
+			<div class="clear"></div>
+		</div>
+	</body>
+</html>

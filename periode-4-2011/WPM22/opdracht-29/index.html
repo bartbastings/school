@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Opdracht 29</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" href="style.css" />
+		<script language="javascript" src="jquery-1.6.min.js"></script>
+		<script language="javascript" src="script.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$.ajax({
+					url: "booklist.xml",
+					dataType: "xml",
+					success: function(data) {
+						$(data).find('book').each(function(index) {
+							$("#content").append("<p>Title: " + $(this).find('title').text() + "</p>");
+							$("#content").append("<p>Subtitle: " + $(this).find('subtitle').text() + "</p>");
+							$("#content").append("<p>Author: " + $(this).find('author').text() + "</p>");
+							$("#content").append("<p>Date: " + $(this).find('date').text() + "</p>");
+							$("#content").append("<p>Desription: " + $(this).find('desription').text() + "</p>");
+							/*
+							$(data).find('cover').each(function(index){
+								$("#content").append("<p>Big: "+$(this).find('big').text() + "</p>");
+							});
+							*/
+							$("#content").append("<p>Link: " + $(this).find('link').text() + "</p>");
+						});
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1>Opdracht 29</h1>
+			<div id="content"></div>
+			<div class="clear"></div>
+		</div>
+	</body>
+</html>

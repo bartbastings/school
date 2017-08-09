@@ -1,21 +1,55 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Opdracht 5</title>
+		<title>Opdracht 4</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<script language="javascript" type="text/javascript" charset="utf-8" src="script.js"></script>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" href="style.css" />
+		<script language="javascript" src="script.js"></script>
 	</head>
 	<body>
-		<video controls width="480" height="480" poster="wind.jpg" id="video">
-			<source src="wind.mp4" type="video/mp4">
-			<source src="wind.webm" type="video/webm">
-			video not supported
-		</video>
-		<div id="button">
-			<input type="button" value="Play" id="playpause" onclick="playOrPause()">
-			<input type="button" value="Unmuted" id="mutebutton" onclick="muteOrUnmute()">
-			<input type="range" max="1" step="any" id="volumecontrol" onchange="updateVolume()">
-			<input type="range" min="-3" max="3" value="1" id="ratecontrol" onchange="changePlaybackRate()">
+		<div class="wrapper">
+			<h1>Opdracht 5</h1>
+			<div style="text-align:center">
+				<p>
+					<button onclick="playPause()">Play/Pause</button>
+					<button onclick="volumeUp()" onClick="changevalue()">Volume Up</button>
+					<button onclick="volumeDown()" onClick="changevalue()">Volume Down</button>
+				</p>
+				<video id="video1">
+					<source src="wind.mp4" type="video/mp4" />
+					<source src="wind.webm" type="video/webm" />
+					Your browser does not support HTML5 video.
+				</video>
+				<p>
+					<input type="number" id="volume" value="0" size="3">
+				</p>
+			</div>
+			
+			<script type="text/javascript">
+				
+				var myVideo = document.getElementById("video1");
+				myVideo.volume = 0.5;
+				volume.value = myVideo.volume * 100;
+				
+				function playPause() {
+					if (myVideo.paused) {
+						myVideo.play();
+					} else {
+						myVideo.pause();
+					}
+				}
+				function volumeUp() {
+					myVideo.volume = myVideo.volume + 0.1;
+				}
+				function volumeDown() {
+					myVideo.volume = myVideo.volume - 0.1;
+				}
+				function changevalue() {
+					volume.value = myVideo.volume * 100;
+				}
+			</script>
+			<div class="clear"></div>
 		</div>
 	</body>
 </html>

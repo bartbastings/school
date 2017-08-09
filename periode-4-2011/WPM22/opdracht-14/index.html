@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Opdracht 14</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" href="style.css" />
+		<script language="javascript" src="jquery-1.6.min.js"></script>
+		<script language="javascript" src="script.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("td:odd").mouseover(function() {
+					$(this).addClass("selected1");
+				});
+				$("td:odd").mouseout(function() {
+					$(this).removeClass("selected1");
+				});
+			});
+			$(function() {
+				$("td!:even").mouseover(function() {
+					$(this).addClass("selected1");
+				});
+				$("td!:even").mouseout(function() {
+					$(this).removeClass("selected1");
+				});
+			});
+			$(function() {
+				$("td:odd").toggle(function() {
+					$(this).addClass("selected2");
+				}, function() {
+					$(this).removeClass("selected2");
+				});
+			});
+			$(function() {
+				$("td!:even").toggle(function() {
+					$(this).addClass("selected2");
+				}, function() {
+					$(this).removeClass("selected2");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1>Opdracht 14</h1>
+			<table id="table">
+				<tr id="row1">
+					<td>row 1, cell 1</td>
+					<td>row 1, cell 2</td>
+					<td>row 1, cell 3</td>
+					<td>row 1, cell 4</td>
+					<td>row 1, cell 5</td>
+					<td>row 1, cell 6</td>
+					<td>row 1, cell 7</td>
+					<td>row 1, cell 8</td>
+					<td>row 1, cell 9</td>
+					<td>row 1, cell 10</td>
+				</tr>
+				<tr id="row2">
+					<td>row 2, cell 1</td>
+					<td>row 2, cell 2</td>
+					<td>row 2, cell 3</td>
+					<td>row 2, cell 4</td>
+					<td>row 2, cell 5</td>
+					<td>row 2, cell 6</td>
+					<td>row 2, cell 7</td>
+					<td>row 2, cell 8</td>
+					<td>row 2, cell 9</td>
+					<td>row 2, cell 10</td>
+				</tr>
+				<tr id="row3">
+					<td>row 3, cell 1</td>
+					<td>row 3, cell 2</td>
+					<td>row 3, cell 3</td>
+					<td>row 3, cell 4</td>
+					<td>row 3, cell 5</td>
+					<td>row 3, cell 6</td>
+					<td>row 3, cell 7</td>
+					<td>row 3, cell 8</td>
+					<td>row 3, cell 9</td>
+					<td>row 3, cell 10</td>
+				</tr>
+				<tr id="row4">
+					<td>row 4, cell 1</td>
+					<td>row 4, cell 2</td>
+					<td>row 4, cell 3</td>
+					<td>row 4, cell 4</td>
+					<td>row 4, cell 5</td>
+					<td>row 4, cell 6</td>
+					<td>row 4, cell 7</td>
+					<td>row 4, cell 8</td>
+					<td>row 4, cell 9</td>
+					<td>row 4, cell 10</td>
+				</tr>
+				<tr id="row5">
+					<td>row 5, cell 1</td>
+					<td>row 5, cell 2</td>
+					<td>row 5, cell 3</td>
+					<td>row 5, cell 4</td>
+					<td>row 5, cell 5</td>
+					<td>row 5, cell 6</td>
+					<td>row 5, cell 7</td>
+					<td>row 5, cell 8</td>
+					<td>row 5, cell 9</td>
+					<td>row 5, cell 10</td>
+				</tr>
+				<tr id="row6">
+					<td>row 6, cell 1</td>
+					<td>row 6, cell 2</td>
+					<td>row 6, cell 3</td>
+					<td>row 6, cell 4</td>
+					<td>row 6, cell 5</td>
+					<td>row 6, cell 6</td>
+					<td>row 6, cell 7</td>
+					<td>row 6, cell 8</td>
+					<td>row 6, cell 9</td>
+					<td>row 6, cell 10</td>
+				</tr>
+				<tr id="row7">
+					<td>row 8, cell 1</td>
+					<td>row 8, cell 2</td>
+					<td>row 8, cell 3</td>
+					<td>row 8, cell 4</td>
+					<td>row 8, cell 5</td>
+					<td>row 8, cell 6</td>
+					<td>row 8, cell 7</td>
+					<td>row 8, cell 8</td>
+					<td>row 8, cell 9</td>
+					<td>row 8, cell 10</td>
+				</tr>
+				<tr id="row8">
+					<td>row 8, cell 1</td>
+					<td>row 8, cell 2</td>
+					<td>row 8, cell 3</td>
+					<td>row 8, cell 4</td>
+					<td>row 8, cell 5</td>
+					<td>row 8, cell 6</td>
+					<td>row 8, cell 7</td>
+					<td>row 8, cell 8</td>
+					<td>row 8, cell 9</td>
+					<td>row 8, cell 10</td>
+				</tr>
+				<tr id="row9">
+					<td>row 9, cell 1</td>
+					<td>row 9, cell 2</td>
+					<td>row 9, cell 3</td>
+					<td>row 9, cell 4</td>
+					<td>row 9, cell 5</td>
+					<td>row 9, cell 6</td>
+					<td>row 9, cell 7</td>
+					<td>row 9, cell 8</td>
+					<td>row 9, cell 9</td>
+					<td>row 9, cell 10</td>
+				</tr>
+				<tr id="row10">
+					<td>row 10, cell 1</td>
+					<td>row 10, cell 2</td>
+					<td>row 10, cell 3</td>
+					<td>row 10, cell 4</td>
+					<td>row 10, cell 5</td>
+					<td>row 10, cell 6</td>
+					<td>row 10, cell 7</td>
+					<td>row 10, cell 8</td>
+					<td>row 10, cell 9</td>
+					<td>row 10, cell 10</td>
+				</tr>
+			</table>
+			<div class="clear"></div>
+		</div>
+	</body>
+</html>

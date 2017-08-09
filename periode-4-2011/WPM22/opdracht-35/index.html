@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Opdracht 35</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" href="style.css" />
+		<script language="javascript" src="jquery-1.6.min.js"></script>
+		<script language="javascript" src="script.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var lat;
+				var long;
+				gl = navigator.geolocation;
+				gl.getCurrentPosition(function(position) {
+					lat = position.coords.latitude
+					long = position.coords.longitude
+					createMap(lat, long);
+				});
+			});
+			function createMap(lat, long) {
+				var latlng = new google.maps.LatLng(lat, long);
+				var myOptions = {
+					zoom: 12,
+					center: latlng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				var mapId = $("#content").get(0);
+				var eigenMap = new google.maps.Map(mapId, myOptions);
+				var marker = new google.maps.Marker({
+					position: latlng,
+					map: eigenMap,
+					title: "Hello World!"
+				});
+			}
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1>Opdracht 35</h1>
+			<div id="content" style="height:600px; width:600px;"></div>
+			<div class="clear"></div>
+		</div>
+	</body>
+</html>

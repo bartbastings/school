@@ -1,0 +1,40 @@
+{
+	"books": [
+		{
+			"title": "HTML5 Media, Integrating audio and video with the Web",
+			"author": "Shelley Powers",
+			"desc": "A detailed introduction to presenting audio and video in HTML5, from markup through scripting. It will explain not just placing content in pages but interaction through Javascript APIs, to build media players that could be used cross-browser.",
+			"publishDate": "July 2011",
+			"url": "http://oreilly.com/catalog/0636920019824/",
+			"cover": [
+				{
+					"type": "bigCover",
+					"source": "img/cat_005.gif",
+					"alternative": "HTML5 Media"
+				},
+				{
+					"type": "cover",
+					"source": "img/bkt_005.gif"
+				}
+			]
+		},
+		{
+			"title": "HTML5: Up and Running",
+			"author": "Mark Pilgrim",
+			"desc": "If you don't know about the new features available in HTML5, now's the time to find out. This book provides practical information about how and why the latest version of this markup language will significantly change the way you develop for the Web. HTML5: Up & Running carefully guides you though the important changes in this version with lots of hands-on examples, including markup, graphics, and screenshots. You'll learn how to use HTML5 markup to add video, offline capabilities, and more -- and you’ll be able to put that functionality to work right away.",
+			"publishDate": "August 2010",
+			"url": "http://oreilly.com/catalog/9780596806033/",
+			"cover": [
+				{
+					"type": "bigCover",
+					"source": "img/cat_noCover.gif",
+					"alternative": "HTML5 Up and Running"
+				},
+				{
+					"type": "cover",
+					"source": "img/bkt_noCover.gif"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Frame by Frame</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="utils/style.css" />
+		<link rel="shortcut icon" href="utils/design.png" />
+		<script type="text/javascript" src="utils/jquery-1.6.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+		<script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#frame').fadeTo(2500, 1);
+				$('#hello').flash({
+					src: 'hello.swf',
+					width: 320,
+					height: 240
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<div class="logo">
+					<h1>Design Interfase</h1>
+					<p>Bart Bastings</p>
+				</div>
+				<nav class="menu">
+					<ul class="navi">
+						<li class="none"><a href="index.html">Home</a></li>
+						<li class="none"><a href="foto.html">Foto</a></li>
+						<li class="none"><a href="move.html">Move</a></li>
+						<li class="none"><a href="shape.html">Shape</a></li>
+						<li class="current"><a href="framebyframe.html">Frame</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div id="frame">
+				<h2>Frame by frame movie</h2>
+				<object type="application/x-shockwave-flash" data="movie/framebyframemovie.swf" width="550" height="400">
+					<param name="movie" value="movie/framebyframemovie.swf" />
+					<param name="quality" value="high"/>
+					<p>Frame by frame movie is not working</p>
+				</object>
+			</div>
+		</div>
+	</body>
+</html>

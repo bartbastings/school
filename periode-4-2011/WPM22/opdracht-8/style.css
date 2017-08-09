@@ -1,15 +1,42 @@
 @charset "UTF-8";
 /* CSS Document */
-p {
-	color:red;
-	margin:5px;
-	cursor:pointer;
+
+body{
+	background-image:url(bgmm.gif);
+	font-family:"Courier New", Courier, monospace;
+	font-size:10pt;
+	text-decoration:none;
 }
 
-p.hilite {
-	background:yellow;
+.wrapper{
+	display:block;
+	background:white;
+	width:620px;
+	margin-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:10px;
+	font-size:1em;
 }
 
-p.test {
-	background:#9CF;
+.clear{
+	clear:both;
+}
+
+h1{
+	font-size:1.5em;
+	font-weight:bold;
+	color:navy;
+}
+
+.link1 {
+	text-decoration:none;
+	color:#390;
+	font-size:36px;
+}
+
+.link2{
+	text-decoration:none;
+	color:#FF0000;
+	font-size:24px;
 }

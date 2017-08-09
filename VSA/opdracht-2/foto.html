@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kinderopvang Banholt</title>
+<link rel="stylesheet" href="algemeen/style.css"/>
+<link rel="shortcut icon" href="algemeen/icon.ico"/>
+<script type="text/javascript" src="algemeen/jquery-1.6.1.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$("h4").append('<em></em>');
+	$(".fotoviewer, h4, h2").hide();
+	$("h2").slideDown("slow", function(){
+		$(".fotoviewer").slideDown("slow");
+	});
+	
+
+	$(".foto a").click(function(){
+	
+		var largePath = $(this).attr("href");
+		var largeAlt = $(this).attr("title");
+		
+		$("#largeImg").attr({ src: largePath, alt: largeAlt });
+		
+		$("h4 em").html(largeAlt);
+		$("h4").slideDown("slow"); 
+		return false;
+	});
+	
+	$(".accordionfoto h3").eq(0).addClass("active");
+	$(".accordionfoto p").eq(0).show();
+
+	$(".accordionfoto h3").click(function(){
+		$(this).next("p").slideToggle("slow")
+		.siblings("p:visible").slideUp("slow");
+		$(this).toggleClass("active");
+		$(this).siblings("h3").removeClass("active");
+	});
+	
+	
+});
+
+</script>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<header>
+    	<div class="banner">
+        </div>
+        
+		<nav>
+        	<ul class="menu">
+    		
+            <li>
+    			<a href="home.html" class="none">Welkom</a>
+            </li>
+            
+            <li>
+            	<a href="opvang.html" class="none">Opvang</a>
+            </li>
+            
+            <li>
+            	<a href="wiebenik.html" class="none">Wie ben ik</a>
+            </li>
+            
+            <li>
+            	<a href="#" class="current">Foto&acute;s</a>
+            </li>
+            
+            <li>
+            	<a href="gastouder.html" class="none">Gastouderbureaus</a>
+            </li>  
+            
+			</ul>
+    	</nav>
+        
+    </header>
+       
+	<div class="context">
+    <h2>Foto's</h2>
+    
+    	<div class="fotoviewer">
+            <h4></h4>
+        	<p><img id="largeImg" src="foto's/binnen1.jpg" alt="Large image" /></p>
+            <div class="accordionfoto">
+            
+            <h3>Binnen</h3>
+            <p class="foto">
+            	<a href="foto's/binnen1.jpg" title="Speelkamer ingang"><img src="foto's/smal_binnen1.jpg" alt="Speelkamer ingang" /></a>
+                <a href="foto's/binnen2.jpg" title="Speelkamer raam naar buiten"><img src="foto's/smal_binnen2.jpg" alt="Speelkamer raam naar buiten" /></a>
+                <a href="foto's/binnen3.jpg" title="Speelkamer hoekje"><img src="foto's/smal_binnen3.jpg" alt="Speelkamer hoekje" /></a>
+                <a href="foto's/binnen4.jpg" title="Keuken"><img src="foto's/smal_binnen4.jpg" alt="Keuken" /></a>
+             </p>
+             
+             <h3>Buiten</h3>
+             <p class="foto">
+            	<a href="foto's/buiten1.jpg" title="Buiten speelplaats"><img src="foto's/smal_buiten1.jpg" alt="Buiten speelplaats" /></a>
+                <a href="foto's/buiten2.jpg" title="Kinderopvang van buiten af"><img src="foto's/smal_buiten2.jpg" alt="Kinderopvang van buiten af" /></a>
+                <a href="foto's/buiten3.jpg" title="Ingang kinderopvang"><img src="foto's/smal_buiten3.jpg" alt="Ingang kinderopvang" /></a>
+             </p>
+             </div>
+             
+        </div>
+    
+    </div>
+    
+</div>
+
+</body>
+</html>

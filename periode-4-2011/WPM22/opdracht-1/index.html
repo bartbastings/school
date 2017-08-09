@@ -3,109 +3,67 @@
 	<head>
 		<title>Opdracht 1</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" href="style.css" />
+		<script language="javascript" src="script.js"></script>
 	</head>
 	<body>
-		<div id="header">
-			<nav>
-				<ul id="navigatie">
-					<li id="first">
-						<table>
-							<tr>
-								<td>
-									<a href="#">John Grayman Photography</a>
-								</td>
-							</tr>
-						</table>
-					</li>
-					<li id="second">
-						<table>
-							<tr>
-								<td id="work">
-									<a href="#">Work</a>
-								</td>
-								<td>
-									<a href="#">About</a>
-								</td>
-								<td>
-									<a href="#">News</a>
-								</td>
-								<td>
-									<a href="#">Contact</a>
-								</td>
-							</tr>
-						</table>
-					</li>
-					<li id="third">
-						<table>
-							<tr>
-								<td>
-									<a href="#">People</a>
-								</td>
-								<td id="object">
-									<a href="#">Objects</a>
-								</td>
-								<td>
-									<a href="#">Series</a>
-								</td>
-							</tr>
-						</table>
-					</li>
-				</ul>
-			</nav>
-		</div>
-		<div id="foto">
-			<div id="smal">
-				<table>
-					<tr>
-						<td>
-							<a href="#">
-								<img src="_DSC4735.jpg" width="112" height="169" alt="pic1">
-							</a>
-						</td>
-						<td>
-							<a href="#">
-								<img src="_DSC4721.jpg" width="112" height="169" alt="pic2">
-							</a>
-						</td>
-						<td>
-							<a href="#">
-								<img src="_DSC4685.jpg" width="112" height="169" alt="pic3">
-							</a>
-						</td>
-						<td>
-							<a href="#">
-								<img src="_DSC4684.jpg" width="254" height="169" alt="pic4">
-							</a>
-						</td>
-						<td>
-							<a href="#">
-								<img src="_DSC4683.jpg" width="112" height="169" alt="pic5">
-							</a>
-						</td>
-						<td>
-							<a href="#">
-								<img src="_DSC4682.jpg" width="254" height="169" alt="pic6">
-							</a>
-						</td>
-						<td>
-							<a href="#">
-								<img src="_DSC4675.jpg" width="112" height="169" alt="pic7">
-							</a>
-						</td>
-						<td>
-							<a href="#">
-								<img src="_DSC4716.jpg" width="254" height="169" alt="pic8">
-							</a>
-						</td>
-					</tr>
-				</table>
-			</div>
-			<div id="big">
-				<a href="#">
-					<img src="_DSC4682.jpg" width="1144" height="760" alt="picbig">
-				</a>
-			</div>
+		<div class="wrapper">
+			<h1>Opdracht 1</h1>
+			<form>
+				<fieldset>
+					<legend>
+						<h3>Ontvanger</h3>
+					</legend>
+					<p>Bericht versturen aan:</p>
+					<p><label><input type="radio" name="ontvanger"> Ledenadministratie (onder andere voor een adreswijziging) </label></p>
+					<p><label><input type="radio" name="ontvanger"> Bestuur van GroenLinks </label></p>
+					<p><label><input type="radio" name="ontvanger"> Webteam, verantwoordelijk voor deze site </label></p>
+					<p><label><input type="radio" name="ontvanger"> Postkamer voor het aanvragen van informatiepakketten </label></p>
+					<p><label><input type="radio" name="ontvanger"> Receptie van het Landelijk Bureau voor alle overige opmerkingen en vragen </label></p>
+				</fieldset>
+				<fieldset>
+					<legend>
+						<h3>Onderwerp</h3>
+					</legend>
+					<p>Beschrijf zo nauwkeurig mogelijk het onderwerp van het bericht. Zo kan de ontvanger het beter afhandelen.</p>
+					<p><label>Onderwerp van uw bericht:</label></p>
+					<p><label><input type="radio" name="onderwerp"> Adreswijziging </label></p>
+					<p><label><input type="radio" name="onderwerp"> Aanvragen informatiepakket voor scholieren of studenten </label></p>
+					<p><label><input type="radio" name="onderwerp"> Aanvragen algemeen informatiepakket </label></p>
+					<p><label><input type="radio" name="onderwerp"> Overig (hieronder invullen) </label></p>
+					<p><label><input type="text" name="onderwerp" maxlength="75" size="75"></label></p>
+				</fieldset>
+				<fieldset>
+					<legend>
+						<h3>Bericht</h3>
+					</legend>
+					<p><label>De inhoud van uw bericht:</label></p>
+					<p><label><textarea name="bericht" maxlength=1000 cols="65" rows="10"></textarea></label></p>
+				</fieldset>
+				
+				<fieldset>
+					<legend>
+						<h3>Afzender</h3>
+					</legend>
+					<p>Vul uw eigen gegevens zo volledig mogelijk in, des te beter kunnen we u van dienst zijn.</p>
+					<p><label>Naam:</label></p>
+					<p><label><input type="text" name="afzender" maxlength="75" size="75"></label></p>
+					<p><label>E-mailadres:</label></p>
+					<p><label><input type="email" name="afzender" maxlength="75" size="75"></label></p>
+					<p><label>Telefoonummer:</label></p>
+					<p><label><input type="tel" name="afzender" maxlength="11" size="11"></label></p>
+					<p><label>Adres:</label></p>
+					<p><label><input type="text" name="afzender" maxlength="75" size="75"></label></p>
+					<p><label>Postcode:</label></p>
+					<p><label><input type="number" name="afzender" maxlength="4" size="4"> <input type="text" maxlength="2" size="2"</label></p>
+					<p><label>Woonplaats:</label></p>
+					<p><label><input type="text" name="afzender" maxlength="75" size="75"></label></p>
+				</fieldset>
+				<p><label><input type="submit" name="submit" value="verstuur"></label></p>
+			</form>
+			
+			<div class="clear"></div>
 		</div>
 	</body>
 </html>

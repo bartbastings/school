@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Opdracht 27</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" href="style.css" />
+		<script language="javascript" src="jquery-1.6.min.js"></script>
+		<script language="javascript" src="script.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$.ajax({
+					url: "Booklist2.html",
+					dataType: "html",
+					success: function(data) {
+						$("#content").html(data);
+					}
+				});
+				var newdata = $(".result").children();
+				$.ajax({
+					url: "Booklist3.html",
+					dataType: "html",
+					data: newdata,
+					success: function(data) {
+						$("#content1").html(data);
+					}
+				});
+				$('#content1').load('Booklist3.html .result');
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1>Opdracht 27</h1>
+			<h2>booklist 2</h2>
+			<div id="content"></div>
+			<h2>booklist 3</h2>
+			<div id="content1"></div>
+			<div class="clear"></div>
+		</div>
+	</body>
+</html>

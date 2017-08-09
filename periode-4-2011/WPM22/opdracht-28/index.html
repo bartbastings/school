@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Opdracht 28</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" href="style.css" />
+		<script language="javascript" src="jquery-1.6.min.js"></script>
+		<script language="javascript" src="script.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#content1 ").load('Booklist.json');
+				$.ajax({
+					url: "booklist.json",
+					dataType: "json",
+					success: function(data) {
+						$(".title a").html(data.books[0].title);
+						$(".author").html(data.books[0].author);
+						$(".desc").html(data.books[0].desc);
+						$(".publishDate").html(data.books[0].publishDate);
+						$(".cover").html(data.books[0].cover.type);
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1>Opdracht 28</h1>
+			<div class="result">
+				<div class="bigCover"></div>
+				<div class="cover"></div>
+				<div class="title">
+					<a></a>
+				</div>
+				<div class="author"></div>
+				<div class="desc"></div>
+				<div class="publishDate"></div>
+			</div>
+			<p>
+				<h3>load</h3>
+			</p>
+			<div id="content1"></div>
+			<div class="clear"></div>
+		</div>
+	</body>
+</html>

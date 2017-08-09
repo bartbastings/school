@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Home</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="utils/style.css" />
+		<link rel="shortcut icon" href="utils/design.png" />
+		<script type="text/javascript" src="utils/jquery-1.6.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+		<script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#foto').fadeTo(2500, 1);
+				$('#move').fadeTo(2500, 1);
+				$('#shape').fadeTo(2500, 1);
+				$('#framebyframe').fadeTo(2500, 1);
+				$('.slideshow').cycle({
+					fx: 'scrollDown',
+					speed: 3000,
+					timeout: 5000,
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<div class="logo">
+					<h1>Design Interfase</h1>
+					<p>Bart Bastings</p>
+				</div>
+				<nav class="menu">
+					<ul class="navi">
+						<li class="current"><a href="index.html">Home</a></li>
+						<li class="none"><a href="foto.html">Foto</a></li>
+						<li class="none"><a href="move.html">Move</a></li>
+						<li class="none"><a href="shape.html">Shape</a></li>
+						<li class="none"><a href="framebyframe.html">Frame</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div class="tablemenu">
+				<div class="table" id="foto">
+					<a title="Foto Slider" id="homefoto" href="foto.html">
+						<span class="post">
+							<span class="title">Foto Viewer</span>
+							<span class="slideshow">
+								<img src="img/home_foto1.jpg" width="300" alt="fotoafb1">
+								<img src="img/home_foto2.jpg" width="300" alt="fotoafb2">
+								<img src="img/home_foto3.jpg" width="300" alt="fotoafb3">
+								<img src="img/home_foto4.jpg" width="300" alt="fotoafb4">
+							</span>
+						</span>
+					</a>
+				</div>
+				<div class="table" id="move">
+					<a title="Movetween Movie" id="homemove" href="move.html">
+						<span class="post">
+							<span class="title">Move Tween Movie</span>
+							<img src="img/home_move.jpg" width="300" alt="moveafb" class="postimg">
+						</span>
+					</a>
+				</div>
+				<div class="table" id="shape">
+					<a title="Shapetween Movie" id="homeshape" href="shape.html">
+						<span class="post">
+							<span class="title">Shape Tween Movie</span>
+							<img src="img/home_shape.jpg" width="300" alt="shapeafb" class="postimg">
+						</span>
+					</a>
+				</div>
+				<div class="table" id="framebyframe">
+					<a title="Frame by Frame Movie" id="homeframe" href="framebyframe.html">
+						<span class="post">
+							<span class="title">Frame By Frame Movie</span>
+							<img src="img/home_frame.jpg" width="300" alt="frameafb" class="postimg">
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

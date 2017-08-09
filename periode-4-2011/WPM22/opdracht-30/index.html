@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Opdracht 30</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" href="style.css" />
+		<script language="javascript" src="jquery-1.6.min.js"></script>
+		<script language="javascript" src="script.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#list1 a").click(function(event) {
+					$("#content").load("booklist.html");
+					event.preventDefault();
+				});
+				$("#list2 a").click(function(event) {
+					$("#content").load("booklist.html");
+					event.preventDefault();
+				});
+				$("#list3 a").click(function(event) {
+					$("#content").load("booklist.html");
+					event.preventDefault();
+				});
+				$("#list4 a").click(function(event) {
+					$("#content").load("booklist.html");
+					event.preventDefault();
+				});
+				$("#list5 a").click(function(event) {
+					$("#content").load("booklist.html");
+					event.preventDefault();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1>Opdracht 30</h1>
+			<ul>
+				<li id="list1"><a href="#">HTML5: The Missing Manual, First Edition</a></li>
+				<li id="list2"><a href="#">Head First HTML5, First Edition</a></li>
+				<li id="list3"><a href="#">HTML5 Canvas, First Edition</a></li>
+				<li id="list4"><a href="#">HTML5 Graphics with SVG &amp; CSS3, First Edition</a></li>
+				<li id="list5"><a href="#">HTML5 Forms, First Edition</a></li>
+			</ul>
+			<div id="content"></div>
+			<div class="clear"></div>
+		</div>
+	</body>
+</html>

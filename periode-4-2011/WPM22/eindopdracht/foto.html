@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Foto's</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="utils/style.css" />
+		<link rel="shortcut icon" href="utils/design.png" />
+		<script type="text/javascript" src="utils/jquery-1.6.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+		<script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#viewer').fadeTo(2500, 1);
+				$("h2").append('<em></em>')
+				$(".foto a").click(function() {
+					var largePath = $(this).attr("href");
+					var largeAlt = $(this).attr("title");
+					$("#largeImg").attr({
+						src: largePath,
+						alt: largeAlt
+					});
+					$("h2 em").html(": " + largeAlt);
+					return false;
+				});
+				$(".accordionfoto h3").eq(0).addClass("active");
+				$(".accordionfoto p").eq(0).show();
+				$(".accordionfoto h3").click(function() {
+					$(this).next("p").slideToggle("slow").siblings("p:visible").slideUp("slow");
+					//$(this).toggleClass("active");
+					//$(this).siblings("h3").removeClass("active");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<div class="logo">
+					<h1>Design Interfase</h1>
+					<p>Bart Bastings</p>
+				</div>
+				<nav class="menu">
+					<ul class="navi">
+						<li class="none"><a href="index.html">Home</a></li>
+						<li class="current"><a href="foto.html">Foto</a></li>
+						<li class="none"><a href="move.html">Move</a></li>
+						<li class="none"><a href="shape.html">Shape</a></li>
+						<li class="none"><a href="framebyframe.html">Frame</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div class="fotoviewer" id="viewer">
+				<h2>Foto viewer</h2>
+				<p>
+					<img id="largeImg" src="img/mens_1.jpg" alt="Large image" width="550" />
+				</p>
+				<div class="accordionfoto">
+					<h3>Mens</h3>
+					<p class="foto">
+						<a href="img/mens_1.jpg" title="Mens 1"><img src="img/smal_mens_1.jpg" alt="smal_mens_1" /></a>
+						<a href="img/mens_2.jpg" title="Mens 2"><img src="img/smal_mens_2.jpg" alt="smal_mens_2" /></a>
+						<a href="img/mens_3.jpg" title="Mens 3"><img src="img/smal_mens_3.jpg" alt="smal_mens_3" /></a>
+						<a href="img/mens_4.jpg" title="Mens 4"><img src="img/smal_mens_4.jpg" alt="smal_mens_4" /></a>
+						<a href="img/mens_5.jpg" title="Mens 5"><img src="img/smal_mens_5.jpg" alt="smal_mens_5" /></a>
+					</p>
+					<h3>Omgeving</h3>
+					<p class="foto">
+						<a href="img/omgeving_1.jpg" title="Omgeving 1"><img src="img/smal_omgeving_1.jpg" alt="smal_omgeving_1" /></a>
+						<a href="img/omgeving_2.jpg" title="Omgeving 2"><img src="img/smal_omgeving_2.jpg" alt="smal_omgeving_2" /></a>
+						<a href="img/omgeving_3.jpg" title="Omgeving 3"><img src="img/smal_omgeving_3.jpg" alt="smal_omgeving_3" /></a>
+						<a href="img/omgeving_4.jpg" title="Omgeving 4"><img src="img/smal_omgeving_4.jpg" alt="smal_omgeving_4" /></a>
+						<a href="img/omgeving_5.jpg" title="Omgeving 5"><img src="img/smal_omgeving_5.jpg" alt="smal_omgeving_5" /></a>
+					</p>
+					<h3>Procesie</h3>
+					<p class="foto">
+						<a href="img/procesie_1.jpg" title="Procesie 1"><img src="img/smal_procesie_1.jpg" alt="smal_procesie_1" /></a>
+						<a href="img/procesie_2.jpg" title="Procesie 2"><img src="img/smal_procesie_2.jpg" alt="smal_procesie_2" /></a>
+						<a href="img/procesie_3.jpg" title="Procesie 3"><img src="img/smal_procesie_3.jpg" alt="smal_procesie_3" /></a>
+						<a href="img/procesie_4.jpg" title="Procesie 4"><img src="img/smal_procesie_4.jpg" alt="smal_procesie_4" /></a>
+						<a href="img/procesie_5.jpg" title="Procesie 5"><img src="img/smal_procesie_5.jpg" alt="smal_procesie_5" /></a>
+					</p>
+					<h3>Sport</h3>
+					<p class="foto">
+						<a href="img/sport_1.jpg" title="Sport 1"><img src="img/smal_sport_1.jpg" alt="smal_sport_1" /></a>
+						<a href="img/sport_2.jpg" title="Sport 2"><img src="img/smal_sport_2.jpg" alt="smal_sport_2" /></a>
+						<a href="img/sport_3.jpg" title="Sport 3"><img src="img/smal_sport_3.jpg" alt="smal_sport_3" /></a>
+						<a href="img/sport_4.jpg" title="Sport 4"><img src="img/smal_sport_4.jpg" alt="smal_sport_4" /></a>
+						<a href="img/sport_5.jpg" title="Sport 5"><img src="img/smal_sport_5.jpg" alt="smal_sport_5" /></a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

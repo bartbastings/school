@@ -1,0 +1,27 @@
+<books>
+	<book>
+		<title>
+			HTML5 Media
+		</title>
+		<subtitle>
+			Integrating audio and video with the Web
+		</subtitle>
+		<author>
+			Shelly Powers
+		</author>
+		<date>
+			July 2011
+		</date>
+		<description>
+			A detailed introduction to presenting audio and video in HTML5, from markup through scripting. It will explain not just placing content in pages but interaction through Javascript APIs, to build media players that could be used cross-browser.
+		</description>
+		<cover>
+			<big src="img/cat_005.gif" alt="HTML5 media">
+			</big>
+			<normal src="img/bkt_005.gif">
+			</normal>
+		</cover>
+		<link url="http://oreilly.com/catalog/0636920019824/"> O' Reilly
+		</link>
+	</book>
+</books>

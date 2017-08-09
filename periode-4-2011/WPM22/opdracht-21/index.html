@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Opdracht 21</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" href="style.css" />
+		<script language="javascript" src="jquery-1.6.min.js"></script>
+		<script language="javascript" src="script.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("a").mouseover(function() {
+					var title = $(this).attr("title");
+					var none = "";
+					$(".beschrijving").text(title);
+				});
+				$("a").mouseout(function() {
+					$(".beschrijving").text(none);
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1>Opdracht 21</h1>
+			<ul>
+				<li><a href="#" title="Dit is link 1">Link 1</a></li>
+				<li><a href="#" title="Dit is link 2">Link 2</a></li>
+				<li><a href="#" title="Dit is link 3">Link 3</a></li>
+				<li><a href="#" title="Dit is link 4">Link 4</a></li>
+				<li><a href="#" title="Dit is link 5">Link 5</a></li>
+			</ul>
+			<div class="beschrijving"></div>
+			<div class="clear"></div>
+		</div>
+	</body>
+</html>
