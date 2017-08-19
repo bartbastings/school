@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+body {
+	background-image: url(bgmm.gif);
+	font-family: "Courier New", Courier, monospace;
+	font-size: 10pt;
+}
+
+.wrapper {
+	display: block;
+	background: white;
+	width: 620px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	font-size: 1em;
+}
+
+.clear {
+	clear: both;
+}
+
+h1 {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: navy;
+}
+
+h2 {
+	font-size: 1em;
+	font-weight: normaal;
+	color: gray;
+}

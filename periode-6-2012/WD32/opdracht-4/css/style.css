@@ -1,0 +1,109 @@
+html {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+body {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	color: #222222;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 13px;
+}
+header {
+	margin: 0px;
+	padding: 0px;
+}
+section {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+main {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+footer {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+div {
+	margin: 0px;
+	padding: 0px;
+}
+p {
+	margin: 0px;
+	padding: 0px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+li {
+	margin: 0px;
+	padding: 0px;
+}
+a {
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+h1 {
+	margin: 0px;
+	padding: 0px;
+}
+h2 {
+	margin: 0px;
+	padding: 0px;
+}
+h3 {
+	margin: 0px;
+	padding: 0px;
+}
+/* wrapper */
+.wrapper {
+	float:left;
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+}
+.wrapper header{
+	float:left;
+	width:100%;
+	min-width:900px;
+	margin-bottom:30px;
+	padding-bottom:10px;
+	padding-top:10px;
+	border-bottom:1px solid #CCC;
+}
+.wrapper header h1{
+	float:left;
+	line-height:30px;
+	font-size:1.6em;
+	font-weight:normal;
+	padding-right:5px;
+	border-right:1px solid #CCC;
+}
+.wrapper section{
+	float:left;
+	width:100%;
+	min-width:900px;
+}
+.wrapper section h2{
+	margin:auto;
+	padding-top:10px;
+	padding-bottom:10px;
+	width:100%;
+	text-align:center;
+	border-bottom:1px solid #CCC;
+}
+.wrapper section div{
+	margin:auto;
+	background-color:#fff;
+}

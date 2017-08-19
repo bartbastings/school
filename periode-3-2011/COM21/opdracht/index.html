@@ -1,403 +1,416 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="description" content="beschrijving van de webpagina" />
-	<meta name="keywords" content="trefwoorden, gescheiden, door, komma's"/>
-	<title>Live</title>
-	<link rel="stylesheet" href="file.css">
+	<head>
+		<title>Live</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="description" content="beschrijving van de webpagina" />
+		<meta name="keywords" content="trefwoorden, gescheiden, door, komma's" />
+		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript" src="jquery-1.6.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".tab_content").hide();
+				$("ul.tabs li:first").addClass("active");
+				$(".tab_content:first").show();
+				$("ul.tabs li").click(function() {
+					$("ul.tabs li").removeClass("active");
+					$(this).addClass("active");
+					$(".tab_content").hide();
+					var activeTab = $(this).find("a").attr("href");
+					$(activeTab).fadeIn();
+					return false;
+				});
+				$("div.1").css({
+					display: 'none'
+				});
+				$("div.2").css({
+					display: 'none'
+				});
+				$("div.3").css({
+					display: 'none'
+				});
+				$("div.4").css({
+					display: 'none'
+				});
+				$("div.5").css({
+					display: 'none'
+				});
+				$("a.1").click(function() {
+					$("div.1").fadeIn("slow");
+					$("div.2").css({
+						display: 'none'
+					});
+					$("div.3").css({
+						display: 'none'
+					});
+					$("div.4").css({
+						display: 'none'
+					});
+					$("div.5").css({
+						display: 'none'
+					});
+					return false;
+				});
+				$("a.2").click(function() {
+					$("div.1").css({
+						display: 'none'
+					});
+					$("div.2").fadeIn("slow");
+					$("div.3").css({
+						display: 'none'
+					});
+					$("div.4").css({
+						display: 'none'
+					});
+					$("div.5").css({
+						display: 'none'
+					});
+					return false;
+				});
+				$("a.3").click(function() {
+					$("div.1").css({
+						display: 'none'
+					});
+					$("div.2").css({
+						display: 'none'
+					});
+					$("div.3").fadeIn("slow");
+					$("div.4").css({
+						display: 'none'
+					});
+					$("div.5").css({
+						display: 'none'
+					});
+					return false;
+				});
+				$("a.4").click(function() {
+					$("div.1").css({
+						display: 'none'
+					});
+					$("div.2").css({
+						display: 'none'
+					});
+					$("div.3").css({
+						display: 'none'
+					});
+					$("div.4").fadeIn("slow");
+					$("div.5").css({
+						display: 'none'
+					});
+					return false;
+				});
+				$("a.5").click(function() {
+					$("div.1").css({
+						display: 'none'
+					});
+					$("div.2").css({
+						display: 'none'
+					});
+					$("div.3").css({
+						display: 'none'
+					});
+					$("div.4").css({
+						display: 'none'
+					});
+					$("div.5").fadeIn("slow");
+					return false;
+				});
+			});
+		</script>
+	</head>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-	<script src="jquery-1.6.1.js"></script>
-	<script type="text/javascript">
-		
-	$(document).ready(function() 
-	{
+	<body>
+		<div class="container">
+			<div class="header">
+				<img src="img/banner.png" width="800" height="150" alt="banner">
+			</div>
+			<ul class="tabs">
+				<li>
+					<table>
+						<tr>
+							<td>
+								<a href="#tab1">
+									<img src="img/buttonhome.png" width="35" height="35" alt="home">
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#tab1" class="home">Wie ben ik</a>
+							</td>
+						</tr>
+					</table>
+				</li>
+				<li>
+					<table>
+						<tr>
+							<td>
+								<a href="#tab2">
+									<img src="img/buttonporto.png" width="35" height="35" alt="porto">
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#tab2" class="home">Portfolio</a>
+							</td>
+						</tr>
+					</table>
+				</li>
+				<li>
+					<table>
+						<tr>
+							<td>
+								<a href="#tab3">
+									<img src="img/buttonfoto.png" width="35" height="35" alt="foto">
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#tab3" class="home">Foto galerie</a>
+							</td>
+						</tr>
+					</table>
+				</li>
 
-		$(".tab_content").hide();
-		$("ul.tabs li:first").addClass("active"); 
-		$(".tab_content:first").show(); 
-		
-		$("ul.tabs li").click(function() 
-		{		
-			$("ul.tabs li").removeClass("active"); 
-			$(this).addClass("active"); 
-			$(".tab_content").hide(); 
-			var activeTab = $(this).find("a").attr("href");
-			$(activeTab).fadeIn(); 
-			return false;			
-		});
-		
-		$("div.1").css({display: 'none'});
-		$("div.2").css({display: 'none'});
-		$("div.3").css({display: 'none'});
-		$("div.4").css({display: 'none'});
-		$("div.5").css({display: 'none'}); 
-		
-	$("a.1").click(function(){   
-		$("div.1").fadeIn("slow");
-		$("div.2").css({display: 'none'});
-		$("div.3").css({display: 'none'});
-		$("div.4").css({display: 'none'});
-		$("div.5").css({display: 'none'});
-		return false;
-	});
-	$("a.2").click(function(){   
-		$("div.1").css({display: 'none'});
-		$("div.2").fadeIn("slow");
-		$("div.3").css({display: 'none'});
-		$("div.4").css({display: 'none'});
-		$("div.5").css({display: 'none'});
-		return false;
-	});
-	$("a.3").click(function(){   
-		$("div.1").css({display: 'none'});
-		$("div.2").css({display: 'none'});
-		$("div.3").fadeIn("slow");
-		$("div.4").css({display: 'none'});
-		$("div.5").css({display: 'none'});
-		return false;
-	});
-	$("a.4").click(function(){   
-		$("div.1").css({display: 'none'});
-		$("div.2").css({display: 'none'});
-		$("div.3").css({display: 'none'});
-		$("div.4").fadeIn("slow");
-		$("div.5").css({display: 'none'});
-		return false;
-	});
-	$("a.5").click(function(){   
-		$("div.1").css({display: 'none'});
-		$("div.2").css({display: 'none'});
-		$("div.3").css({display: 'none'});
-		$("div.4").css({display: 'none'});
-		$("div.5").fadeIn("slow");
-		return false;
-	
-	});
+				<li>
+					<table>
+						<tr>
+							<td>
+								<a href="#tab4">
+									<img src="img/buttonlinks.png" width="35" height="35" alt="foto">
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a href="#tab4" class="home">Links</a>
+							</td>
+						</tr>
+					</table>
+				</li>
+			</ul>
+			<div class="tab_container">
+				<div id="tab1" class="tab_content">
+					<div id="wie">
+						<table>
+							<tr>
+								<td rowspan="6"><img src="img/bart.png" width="140" height="178" alt="bart"></td>
+								<td><strong>Naam</strong></td>
+								<td>Bart Jacobus Hubertus Bastings</td>
+							</tr>
+							<tr>
+								<td><strong>Adres</strong></td>
+								<td>Mheerderweg 15a</td>
+							</tr>
+							<tr>
+								<td><strong>Postcode + woonplaats</strong></td>
+								<td>6262ND Banoholt</td>
+							</tr>
+							<tr>
+								<td><strong>Geboortedatum</strong></td>
+								<td>11-03-1988</td>
+							</tr>
+							<tr>
+								<td><strong>Geboorteplaats</strong></td>
+								<td>Maastricht</td>
+							</tr>
+							<tr>
+								<td><strong>Burgelijke staat</strong></td>
+								<td>Ongehuwd</td>
+							</tr>
+						</table>
+						<h2>2000-2004: Voorgezet onderwijs</h2>
+						<p>Ik begon mijn carrière in Grondsveld aan het Jeanne d'Arc College, ik koos toen de desbetreffende school met de reden dat er geen andere middelbare school was in een radius van vierteen kilometer. De eerste twee jaar van de opleiding volgde ik de gemengd theoretische leerweg. In het derde jaar moest je een keuze maken in welke sector je wilt gaan studeren. Doordat ik veel problemen had met de talen, dyslexie, moest ik de leerweg kader gaan volgen. Na twee maanden werd ik over geplaatst naar theoretische leerweg techniek, omdat ik een niveau te laag was ingedeeld. Na vier jaar studeren aan het Jeanne d'Arc College in Grondsveld haalde ik mijn diploma techniek theoretische leerweg.</p>
+						<h2>2004-2008: Middelbaar onderwijs</h2>
+						<p>Nadat ik mijn diploma had gehaald was mijn volgende stap van mijn carrière in Maastricht, namelijk de middenkaderopleiding bouwkunde niveau 4. Deze opleiding was niet mijn eerste keuze, maar door transport problemen en leeftijd koos ik voor deze opleiding. Na vier bewogen jaren, er waren veel problemen op deze school vooral veel docenten waren absent, kreeg ik mijn diploma.</p>
+						<h2>2008-2009: Flexprof</h2>
+						<p>De diploma op zak ging ik werk zoeken, mijn motivatie om verder door te studeren was er niet meer. Ik kwam in contact met Felxprof, een detacheringbureau voor de bouw. Ik kreeg een paar sollicitatie gesprekken, en werd uiteindelijk aangenomen bij Werf en Nass. Na een half jaar liep de contract af wat Flexprof heeft gemaakt met Werf en Nass.</p>
+						<h2>2009: Werf en Nass</h2>
+						<p>Ik kreeg een halfjaar contract om bij Werf en Nass in dienst te gaan. Het was mijn eerste vaste baan bij een bedrijf, maar het ging slechter in de bouw. Door de economische crisis in 2009 kreeg na een half jaar dienst maar een drie maanden contract. In die periode heb ik nog een cursus Allplan gevolgd, en het BIM concept. Toen de drie maanden om waren was er geen werk meer voor mij, en werd het contract niet verlengt.</p>
+						<h2>2010: Rond reis zuidoost Azië</h2>
+						<p>Omdat ik niet wist wat ik ging of moest doen, boekte ik een ticket naar Azië. Deze reis heeft mij op meerder punten sterker gemaakt, en ook dat mijn toekomst ligt in Azië. Wat ik heb geleerd is, dat communicatie belangrijk is voor de ontwikkeling van een land. Met de groeiende markt in Azië, zag ik vele mogelijkheden.</p>
+						<h2>2010-2014: Hoger onderwijs</h2>
+						<p>Terug van mijn reis had ik een visie, om mijn visie te verwezenlijken had ik eerst de onderbouwde kennis nodig. Dus ging ik de opleiding volgen ICT Media en Design, met communicatie als minor. De keuze voor deze opleiding had ik goed overwogen, omdat mijn visie ICT de toekomst is in onze moderne samenleving. Mijn afstudeer stage was in Japan, het land van de technologische ontwikkeling. De ervaring en kennis wat het me heeft opgeleverd is immens. In 2014 haalden ik mijn diploma met moeite, maar met de kennis wat ik nodig had voor mijn visie.</p>
+						<h2>2014: Rond reis zuidoost Azië</h2>
+						<p>Na mijn studie ging ik weer richting Azië, de ontwikkelingen en mogelijkheden bekijken van dat werelddeel. De reis van een halfjaar was zeer leerzaam, en kreeg een idee waar ik mijn eigen bedrijf wil starten, Hanio.</p>
+						<h2>2015-2019: Betawerk</h2>
+						<p>Terug van mijn reis vond ik werk bij Betawerk, een internationale communicatie bedrijf met een kantoor in Bangkok. Na een jaar in de dienst werd ik over geplaatst naar Bangkok. De volgende drie jaar werkte en leefde ik in Bangkok, ik werd bekend met de cultuur en taal. Na die drie jaar nam ik ontslag om mijn eigen bedrijf te starten in Hanio Vietnam.</p>
+						<h2>2019-2024: Percom</h2>
+						<p>Op twaalf maar in 2019 opende ik mijn bedrijf in Hanio, het begin van het kwartaal was er nauwelijks werk, maar na het derde kwartaal had ik genoeg werk om mijn eerst werknemer in dienst te nemen. Na vijf jaar begeleid ik met mijn elf werknemers nu grote bedrijven om beter te communiceren met de consument.</p>
+					</div>
+				</div>
+				<div id="tab2" class="tab_content">
+					<div id="alles">
+						<ul class="porto">
+							<li>
+								<a href="#een" class="1">Logo van de Weerdt </a>
+							</li>
+							<li>
+								<a href="#twee" class="2">Logo Web desgin</a>
+							</li>
+							<li>
+								<a href="#drie" class="3">Logo Arthur Adam</a>
+							</li>
+							<li>
+								<a href="#vier" class="4">Banner COM21</a>
+							</li>
+							<li>
+								<a href="#vijf" class="5">Banner DSN21</a>
+							</li>
+						</ul>
+						<table>
+							<tr>
+								<td>
+									<div class="1">
+										<img src="img/logo_vincent.png" width="251" height="177" alt="logo_vincent">
+									</div>
+								</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td>
+									<div class="2">
+										<img src="img/logo_webdesgin.png" width="254" height="56" alt="logo_webdesign">
+									</div>
+								</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td>
+									<div class="3">
+										<img src="img/logo_arthur.png" width="251" height="139" alt="logo_arthur">
+									</div>
+								</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td>
+									<div class="4">
+										<img src="img/banner.jpg" width="511" height="69" alt="banner_com">
+									</div>
+								</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td>
+									<div class="5">
+										<img src="img/header_gorillaz.png" width="497" height="95" alt="banner_dsn">
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="tab3" class="tab_content">
+					<div id="viewer">
+						<ul class="klein">
+							<li>
+								<a href="#een" class="1">
+									<img src="img/mens1.jpg" width="99" height="66" alt="foto">
+								</a>
+							</li>
+							<li>
+								<a href="#twee" class="2">
+									<img src="img/mens2.jpg" width="99" height="66" alt="foto">
+								</a>
+							</li>
+							<li>
+								<a href="#driee" class="3">
+									<img src="img/mens3.jpg" width="99" height="66" alt="foto">
+								</a>
+							</li>
+							<li>
+								<a href="#vier" class="4">
+									<img src="img/mens4.jpg" width="99" height="66" alt="foto">
+								</a>
+							</li>
+							<li>
+								<a href="#vijf" class="5">
+									<img src="img/mens5.jpg" width="99" height="66" alt="foto">
+								</a>
+							</li>
+						</ul>
+						<div class="1">
+							<img src="img/mens1.jpg" width="594" height="396" alt="mens1">
+						</div>
 
-});
-  
-  
-</script> 
-</head>
+						<div class="2">
+							<img src="img/mens2.jpg" width="594" height="396" alt="mens2">
+						</div>
 
-<body>
+						<div class="3">
+							<img src="img/mens3.jpg" width="594" height="396" alt="mens3">
+						</div>
 
-<div class="container">
+						<div class="4">
+							<img src="img/mens4.jpg" width="594" height="396" alt="mens4">
+						</div>
 
-<div class="header">
-
-<img src="banner_2.png" width="800" height="150" alt="banner">
-
-</div>
-
-<ul class="tabs">
-    <li>
-    	<table>
-        <tr>
-        <td>
-		<a href="#tab1"><img src="buttonhome.png" width="35" height="35" alt="home"></a>
-        </td>
-        </tr>
-        <tr>
-        <td>
-        <a href="#tab1" class="home">Wie ben ik</a>
-        </td>
-        </tr>
-        </table>
-	</li>
-    <li>
-    	<table>
-        <tr>
-        <td>
-    	<a href="#tab2"><img src="buttonporto.png" width="35" height="35" alt="porto"></a>
-        </td>
-        </tr>
-        <tr>
-        <td>
-        <a href="#tab2" class="home">Portfolio</a>
-        </td>
-        </tr>
-        </table>
-    </li>
-    <li>
-    	<table>
-        <tr>
-        <td>
-		<a href="#tab3"><img src="buttonfoto.png" width="35" height="35" alt="foto"></a>
-        </td>
-        </tr>
-        <tr>
-        <td>
-        <a href="#tab3" class="home">Foto galerie</a>
-        </td>
-        </tr>
-        </table>
-	</li>
-    
-    <li>
-    	<table>
-        <tr>
-        <td>
-		<a href="#tab4"><img src="buttonlinks.png" width="35" height="35" alt="foto"></a>
-        </td>
-        </tr>
-        <tr>
-        <td>
-        <a href="#tab4" class="home">Links</a>
-        </td>
-        </tr>
-        </table>
-	</li>
-</ul>
-
-<div class="tab_container">
-    <div id="tab1" class="tab_content">
-    
-    <div id="wie">
-    <table>
-    <tr>
-    <td rowspan="6"><img src="bart.png" width="140" height="178" alt="bart"></td>
-    <td><strong>Naam</strong></td>
-    <td>Bart Jacobus Hubertus Bastings</td>
-    </tr>
-    <tr>
-    <td><strong>Adres</strong></td>
-    <td>Mheerderweg 15a</td>
-    </tr>
-    <tr>
-    <td><strong>Postcode + woonplaats</strong></td>
-    <td>6262ND Banoholt</td>
-    </tr>
-    <tr>
-    <td><strong>Geboortedatum</strong></td>
-    <td>11-03-1988</td>
-    </tr>
-    <tr>
-    <td><strong>Geboorteplaats</strong></td>
-    <td>Maastricht</td>
-    </tr>
-    <tr>
-    <td><strong>Burgelijke staat</strong></td>
-    <td>Ongehuwd</td>
-    </tr>
-    </table>
-     
-    
-    <h2>2000-2004: Voorgezet onderwijs</h2>
-    <p>Ik begon mijn carrière in Grondsveld aan het Jeanne d'Arc College, ik koos toen de desbetreffende school met de reden dat er geen andere middelbare school was in een radius van vierteen kilometer. De eerste twee jaar van de opleiding volgde ik de gemengd theoretische leerweg. In het derde jaar moest je een keuze maken in welke sector je wilt gaan studeren. Doordat ik veel problemen had met de talen, dyslexie, moest ik de leerweg kader gaan volgen. Na twee maanden werd ik over geplaatst naar theoretische leerweg techniek, omdat ik een niveau te laag was ingedeeld. Na vier jaar studeren aan het Jeanne d'Arc College in Grondsveld haalde ik mijn diploma techniek theoretische leerweg.</p>
-    
-    <h2>2004-2008: Middelbaar onderwijs</h2>
-    <p>Nadat ik mijn diploma had gehaald was mijn volgende stap van mijn carrière in Maastricht, namelijk de middenkaderopleiding bouwkunde niveau 4. Deze opleiding was niet mijn eerste keuze, maar door transport problemen en leeftijd koos ik voor deze opleiding. Na vier bewogen jaren, er waren veel problemen op deze school vooral veel docenten waren absent, kreeg ik mijn diploma.</p>
-    
-    <h2>2008-2009: Flexprof</h2>
-    <p>De diploma op zak ging ik werk zoeken, mijn motivatie om verder door te studeren was er niet meer. Ik kwam in contact met Felxprof, een detacheringbureau voor de bouw. Ik kreeg een paar sollicitatie gesprekken, en werd uiteindelijk aangenomen bij Werf en Nass. Na een half jaar liep de contract af wat Flexprof heeft gemaakt met Werf en Nass.</p>
-    
-    <h2>2009: Werf en Nass</h2>
-    <p>Ik kreeg een halfjaar contract om bij Werf en Nass in dienst te gaan. Het was mijn eerste vaste baan bij een bedrijf, maar het ging slechter in de bouw. Door de economische crisis in 2009 kreeg na een half jaar dienst maar een drie maanden contract. In die periode heb ik nog een cursus Allplan gevolgd, en het BIM concept. Toen de drie maanden om waren was er geen werk meer voor mij, en werd het contract niet verlengt.</p>
-    <h2>2010: Rond reis zuidoost Azië</h2>
-    <p>Omdat ik niet wist wat ik ging of moest doen, boekte ik een ticket naar Azië. Deze reis heeft mij op meerder punten sterker gemaakt, en ook dat mijn toekomst ligt in Azië. Wat ik heb geleerd is, dat communicatie belangrijk is voor de ontwikkeling van een land. Met de groeiende markt in Azië, zag ik vele mogelijkheden.</p>
-    
-    <h2>2010-2014: Hoger onderwijs</h2>
-    <p>Terug van mijn reis had ik een visie, om mijn visie te verwezenlijken had ik eerst de onderbouwde kennis nodig. Dus ging ik de opleiding volgen ICT Media en Design, met communicatie als minor. De keuze voor deze opleiding had ik goed overwogen, omdat mijn visie ICT de toekomst is in onze moderne samenleving. Mijn afstudeer stage was in Japan, het land van de technologische ontwikkeling. De ervaring en kennis wat het me heeft opgeleverd is immens. In 2014 haalden ik mijn diploma met moeite, maar met de kennis wat ik nodig had voor mijn visie.</p>
-    
-    <h2>2014: Rond reis zuidoost Azië</h2>
-    <p>Na mijn studie ging ik weer richting Azië, de ontwikkelingen en mogelijkheden bekijken van dat werelddeel. De reis van een halfjaar was zeer leerzaam, en kreeg een idee waar ik mijn eigen bedrijf wil starten, Hanio.</p>
-    
-    <h2>2015-2019: Betawerk</h2>
-    <p>Terug van mijn reis vond ik werk bij Betawerk, een internationale communicatie bedrijf met een kantoor in Bangkok. Na een jaar in de dienst werd ik over geplaatst naar Bangkok. De volgende drie jaar werkte en leefde ik in Bangkok, ik werd bekend met de cultuur en taal. Na die drie jaar nam ik ontslag om mijn eigen bedrijf te starten in Hanio Vietnam.</p>
-    
-    <h2>2019-2024: Percom</h2>
-    <p>Op twaalf maar in 2019 opende ik mijn bedrijf in Hanio, het begin van het kwartaal was er nauwelijks werk, maar na het derde kwartaal had ik genoeg werk om mijn eerst werknemer in dienst te nemen.  Na vijf jaar begeleid ik met mijn elf werknemers nu grote bedrijven om beter te communiceren met de consument.</p>
-    
-    </div>
-    
-    </div>
-        
-    <div id="tab2" class="tab_content">
-  
-    <div id="alles">
-    
-    <ul class="porto">
-    <li>
-    	<a href="#een" class="1">Logo van de Weerdt </a>
-    </li>
-    <li>
-	<a href="#twee" class="2">Logo Web desgin</a>
-    </li>
-    <li>
-	<a href="#drie" class="3">Logo Arthur Adam</a>
-    </li>
-    <li>
-    <a href="#vier" class="4">Banner COM21</a>
-    </li>
-    <li>
-    <a href="#vijf" class="5">Banner DSN21</a>
-    </li>
-    </ul>
-    
-    <table>
-    <tr>
-    <td>
-	<div class="1">
-	<img src="logo_vincent.png" width="251" height="177" alt="logo_vincent">
-	</div>
-    </td>
-    </tr>
-    </table>
-
-	<table>
-    <tr>
-    <td>
-    <div class="2">
-	<img src="logo_webdesgin.png" width="254" height="56" alt="logo_webdesign">
-    </div>
-    </td>
-    </tr>
-    </table>
-    
-    <table>
-    <tr>
-    <td>
-	<div class="3">
-	<img src="logo_arthur.png" width="251" height="139" alt="logo_arthur">
-	</div>
-    </td>
-    </tr>
-    </table>
-    
-    <table>
-    <tr>
-    <td>
-    <div class="4">
-	<img src="Banner.jpg" width="511" height="69" alt="banner_com">
-	</div>
-    </td>
-    </tr>
-    </table>
-    
-    <table>
-    <tr>
-    <td>
-    <div class="5">
-    <img src="header_gorillaz.png" width="497" height="95" alt="banner_dsn">
-    </div>
-    </td>
-    </tr>
-    </table>
-    
-    </div>
-    
-</div>
-    
-	<div id="tab3" class="tab_content"> 
-    
-    <div id="viewer">
-    
-    <ul class="klein">
-    <li>
-    <a href="#een" class="1"><img src="mens1.JPG" width="99" height="66" alt="foto"></a>
-    </li>
-    <li>
-	<a href="#twee" class="2"><img src="mens2.JPG" width="99" height="66" alt="foto"></a>
-    </li>
-    <li>
-	<a href="#driee" class="3"><img src="mens3.JPG" width="99" height="66" alt="foto"></a>
-    </li>
-    <li>
-    <a href="#vier" class="4"><img src="mens4.JPG" width="99" height="66" alt="foto"></a>
-    </li>
-    <li>
-    <a href="#vijf" class="5"><img src="mens5.JPG" width="99" height="66" alt="foto"></a>
-    </li>
-    </ul>
-
-	<div class="1">
-	<img src="mens1.JPG" width="594" height="396" alt="mens1">
-	</div>
-
-	<div class="2">
-	<img src="mens2.JPG" width="594" height="396" alt="mens2">
-	</div>
-
-	<div class="3">
-	<img src="mens3.JPG" width="594" height="396" alt="mens3">
-	</div>
-    
-    <div class="4">
-	<img src="mens4.JPG" width="594" height="396" alt="mens4">
-	</div>
-    
-    <div class="5">
-	<img src="mens5.JPG" width="594" height="396" alt="mens5">
-	</div>
-    
-    </div>
-    
-	</div>
-  
-    
-    <div id="tab4" class="tab_content">
-    <div id="arthur">
-    	
-     <ul class="link">
-    	<li>
-        	<table>
-        	<tr>
-        	<td> 
-    		<a href="http://www.arthuradam.reneschreurs.nl/"><img src="PTM21.png" width="98" height="94" alt="PTM"></a>
-            </td>
-            </tr>
-            <tr>
-            <td>
-        	<a href="#http://www.arthuradam.reneschreurs.nl/" class="tekst">PTM21</a>
-            </td>
-            </tr>
-            </table>
-		</li>
-        <li>
-        	<table>
-        	<tr>
-        	<td>
-        <a href="http://www.arthuradam.nl/"><img src="arthur.png" width="98" height="94" alt="PTM"></a>
-        	</td>
-            </tr>
-            <tr>
-            <td>
-            <a href="#http://www.arthuradam.nl/" class="tekst">Arthur Adam</a>
-            </td>
-            </tr>
-            </table>
-        </li>
-         <li>
-        	<table>
-        	<tr>
-        	<td>
-        <a href="veranwording.doc"><img src="Wordicon.png" width="98" height="94" alt="PTM"></a>
-        	</td>
-            </tr>
-            <tr>
-            <td>
-            <a href="veranwording.doc" class="tekst">Verantwording</a>
-            </td>
-            </tr>
-            </table>
-        </li>
-    </ul>
-    
-    </div>
-    
-  </div>
-    
-</div>
-
-</div>
-
-
-<div id="footer">
-	
-</div>
-    
-</body>
+						<div class="5">
+							<img src="img/mens5.jpg" width="594" height="396" alt="mens5">
+						</div>
+					</div>
+				</div>
+				<div id="tab4" class="tab_content">
+					<div id="arthur">
+						<ul class="link">
+							<li>
+								<table>
+									<tr>
+										<td>
+											<a href="http://www.arthuradam.reneschreurs.nl/">
+												<img src="img/ptm21.png" width="98" height="94" alt="PTM">
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#http://www.arthuradam.reneschreurs.nl/" class="tekst">PTM21</a>
+										</td>
+									</tr>
+								</table>
+							</li>
+							<li>
+								<table>
+									<tr>
+										<td>
+											<a href="http://www.arthuradam.nl/">
+												<img src="img/arthur.png" width="98" height="94" alt="PTM">
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#http://www.arthuradam.nl/" class="tekst">Arthur Adam</a>
+										</td>
+									</tr>
+								</table>
+							</li>
+							<li>
+								<table>
+									<tr>
+										<td>
+											<a href="#"><img src="img/wordicon.png" width="98" height="94" alt="PTM"></a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#" class="tekst">Verantwording</a>
+										</td>
+									</tr>
+								</table>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer"></div>
+	</body>
 </html>

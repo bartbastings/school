@@ -1,0 +1,447 @@
+/* tablet: 960/768=0.825 */
+/* x0.825 */
+
+html{
+	background-image:none;
+	font-size:10px;
+}
+
+.wrapper {
+	height:calc(100% - 50px);
+	padding:50px 0 0 0;
+}
+
+.contentHeader{
+	height:50px;
+	-webkit-box-shadow: 0 4px 4px 0 #000000;
+	-moz-box-shadow: 0 4px 4px 0 #000000;
+	-ms-box-shadow: 0 4px 4px 0 #000000;
+	-o-box-shadow: 0 4px 4px 0 #000000;
+	box-shadow: 0 4px 4px 0 #000000;
+}
+
+.contentHeader h2{
+	width:100%;
+	line-height:50px;
+	text-align:center;
+	margin-left:0;
+}
+
+.button{
+	margin:0 10%;
+	width:80%;
+	line-height:40px;
+}
+
+.clearFix{
+	height:40px;
+}
+
+/* effecten */
+
+.boxshadow{
+	-webkit-box-shadow: 0 4px 4px 0 #000000;
+	-moz-box-shadow: 0 4px 4px 0 #000000;
+	-ms-box-shadow: 0 4px 4px 0 #000000;
+	-o-box-shadow: 0 4px 4px 0 #000000;
+	box-shadow: 0 4px 4px 0 #000000;
+}
+
+.emptyContent{
+	width:100%;
+	margin:12.5px 0 0 0;
+	padding:10px;
+	width: calc(100% - 20px);
+	width: -webkit-calc(100% - 20px);
+	width: -moz-calc(100% - 20px);
+	width: -ms-calc(100% - 20px);
+	width: -o-calc(100% - 20px);
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none ;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+
+/* page header */
+
+#mobHeader{
+	display:block;
+	background-color: #f8c811;
+	width:100%;
+}
+
+#mobHeaderLogo{
+	float:left;
+	width:80px;
+	margin:4.5px 0;
+	margin-left:calc(50% - 90px);
+}
+
+#menuButton {
+	float:left;
+	width:40px;
+	height:40px;
+	padding:5px;
+}
+
+#menuButton img{
+	height:40px;
+	width:40px;
+}
+
+#closeMenu{
+	display:block;
+}
+
+#closeMenu a{
+	background-color:#bfbfbf;
+}
+
+#closeMenu a:hover{
+	background-color:#f8c811;
+}
+
+#menu{
+	display:none;
+}
+
+#menu:target
+{
+	display:block;
+}
+
+.pageHeader{
+	width:100%;
+	height:50px;
+	-webkit-box-shadow: 0 2px 2px 0 #000000;
+	-moz-box-shadow: 0 2px 2px 0 #000000;
+	-ms-box-shadow: 0 2px 2px 0 #000000;
+	-o-box-shadow: 0 2px 2px 0 #000000;
+	box-shadow: 0 2px 2px 0 #000000;
+}
+
+.pageHeader ul li{
+	width:100%;
+}
+
+#navHomeMob{
+	display:block;
+}
+
+#navCenterLink{
+	display:none;
+}
+
+.pageHeader ul li{
+	border-bottom:1px solid #bfbfbf;
+}
+
+.pageHeader ul li a{
+	font-size:1.2em;
+}
+
+/* main */
+
+main{
+	width:100%;
+	margin:0;
+	min-height:200px;
+}
+
+/* index */
+
+#indexContent{
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none ;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+
+.imageViewer .imageViewerContainer img{
+	min-height:100px;
+}
+
+.slick-slider{
+	margin-bottom:10px;
+}
+
+.imageInfo{
+	height:40px;
+	padding:0 10px;
+}
+
+.imageInfo h3{
+	line-height:40px;
+}
+
+.indexInfoContainer{
+	width:90%;
+	margin:0 5%;
+}
+
+.indexInfoContainer article{
+	width:100%;
+	margin:0 0 12.5px 0;
+}
+
+.indexInfoContainer article:before{
+	content:'';
+	display: block;
+	padding-top:0;
+}
+
+#articleBox{
+	width:100%;
+}
+
+.articleContent{
+	position:relative;
+}
+
+#articleBox article{
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none ;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+
+#infoZuss{
+	border-bottom:1px solid #f8c811;
+}
+
+#infoZuss header{
+	margin-bottom:5px;
+}
+
+#infoZuss h1{
+	font-size:1.6em;
+}
+
+#infoZuss p{
+	font-size:1.2em;
+}
+
+#cadeauTip{
+	float:right;
+}
+
+#cadeauTip header{
+	margin-bottom:5px;
+}
+
+#cadeauTip h2{
+	font-size:1.6em;
+}
+
+#menukaartContainer{
+	display:none;
+}
+
+
+/* lunch */
+
+#lunchContent{
+	
+}
+
+/* lekkers */
+
+#lekkersContent{
+	margin-top:0;
+	border-top:none;
+}
+
+/* hightea */
+
+#highteaContent{
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none ;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+
+#highteaContent img{
+	display:none;
+}
+
+#highteaContainer{
+	width:100%;
+}
+
+#highteaContainer .leftContent{
+	width:100%;
+	border-bottom:1px solid #f8c811;
+}
+
+#highteaContainer .rightContent{
+	width:100%;
+	border-bottom:1px solid #f8c811;
+}
+
+/* meeneem */
+
+#meeneemContent{
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none ;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+
+#meeneemContent .leftContent{
+	display:none;
+}
+
+#meeneemContent .rightContent{
+	width:100%;
+}
+
+#meeneemLijstInfo p{
+	margin-bottom:30px;
+}
+
+/* groepen */
+
+/* vrijdagavond */
+
+/* vacature */
+
+#vacaturesContent{
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none ;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+
+#vacaturesContent .leftContent{
+	float:right;
+	width:100%;
+}
+
+#vacaturesContent .rightContent{
+	width:100%;
+}
+
+#vacaturesContact a{
+	margin:0 10%;
+	margin-bottom:14px;
+	width:80% !important;
+	line-height:40px;
+	text-align:center;
+	background-color:#bfbfbf;
+}
+
+#vacaturesContact a:hover{
+	color:#000000 !important;
+	background-color:#f8c811;
+}
+
+#vacaturesContact a:focus{
+	color:#000000 !important;
+	background-color:#f8c811;
+}
+
+#vacatureInfo img{
+	display:none;
+}
+
+/* contact */
+
+#contactContent{
+	height:auto;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none ;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+
+#contactContent .leftContent{
+	width:100%;
+}
+
+#contactContent .rightContent{
+	width:100%;
+}
+
+#map{
+	width:100%;
+	height:200px;
+}
+
+#contactContent .contentHeader h2{
+	margin:0;
+	width:100%;
+	text-align:center;
+}
+
+#contactTijden h3{
+	text-align:center;
+	font-size:1.2em;
+}
+
+#contactTijden li{
+	font-size:1em;
+	text-align:center;
+}
+
+#contactGegevens{
+	margin: 10px 25px 0 25px;
+	width: calc(100% - 50px);
+}
+
+#contactGegevens h2{
+	font-size:1.1em;
+}
+
+#contactGegevens p{
+	font-size:1em;
+	text-align:center;
+}
+
+#contactGegevens p a{
+	margin:0 10%;
+	margin-top:14px;
+	font-size:1em;
+	width:80% !important;
+	line-height:40px;
+	text-align:center;
+	background-color:#bfbfbf;
+}
+
+
+#contactGegevens p a:hover{
+	color:#000000 !important;
+	background-color:#f8c811;
+}
+
+#contactGegevens p a:focus{
+	color:#000000 !important;
+	background-color:#f8c811;
+}
+
+/* footer */
+
+footer a{
+	margin:0;
+	height:50px;
+}
+
+footer a:hover{
+	color:#000000;
+	background-color:#f8c811;
+}
+
+footer p{
+	margin:0 5px;
+	line-height:50px;
+}
+
+footer img{
+	margin:5px;
+}

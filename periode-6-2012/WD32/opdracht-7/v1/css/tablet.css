@@ -1,0 +1,129 @@
+/* blue */
+
+.pageHeader {
+	height:200px;
+}
+
+.pageHeader nav{
+	float:left;
+	width:100%;
+	height:100%;
+}
+.pageHeader nav ul{
+	float:left;
+	width:100%;
+	height:100%;
+	margin-left:100px;
+	width: -webkit-calc(100% - 200px);
+    width: -moz-calc(100% - 200px);
+    width: calc(100% - 200px);
+}
+.pageHeader nav ul li{
+	float:left;
+	height:50px;
+	width:25%;;
+	background-color:#000;
+	font-size:0.7em;
+}
+.pageHeader nav ul li a{
+	float:left;
+	width:100%;
+	text-align:center;
+	line-height:45px;
+	border-bottom-width:5px;
+	border-bottom-style:inset;
+	border-bottom-color:#231f20;
+	-webkit-transition:0.75s;
+}
+.pageHeader nav ul li .active{
+	color:#cc9966;
+	border-bottom-color:#cc9966;
+}
+.pageHeader nav ul li a:hover{
+	color:#cc9966;
+	border-bottom-color:#cc9966;
+}
+.pageHeader nav ul .logo{
+	position:absolute;
+	height:200px;
+	width:200px;
+	color:#000000;
+	left:0;
+	top:0;
+}
+.pageHeader nav ul .logo a{
+	height:100%;
+	width:100%;
+	z-index:9;
+	background-color:#fff;
+	background-image:url(../afb/Logo-Zuss.png);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:contain;
+	border-bottom:none;
+}
+
+.pageHeader nav ul .logo a:hover{
+	background-color:#cc9966;
+	border-bottom:none;
+}
+.pageHeader nav ul .logo .activeLogo{
+	background-color:#cc9966;
+}
+.pageHeader nav ul .logo .activeLogo:hover{
+	background-color:#cc9966;
+	border-bottom:none;
+}
+.pageHeader nav ul .logo a h1{
+	display:none;
+}
+
+main section{
+	width:70%;
+	margin-left:15%;
+	margin-right:15%;
+}
+
+.vacatureSection{
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+}
+
+.vacatureSection article section form .formLeft{
+	float:left;
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+}
+.vacatureSection article section form .formRight{
+	float:left;
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+}
+
+.vacatureSection form input{
+	float:left;
+	width:95%;
+}
+.vacatureSection form textarea{
+	float:left;
+	width:95%;
+}
+.vacatureSection form input[type=submit]{
+	float:left;
+	width:100%;
+}
+
+.meenemenSection{
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+}
+
+.highteaSection{
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+}

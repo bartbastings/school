@@ -1,0 +1,598 @@
+@font-face {
+	font-family: Opensans;
+	src: url(font/OpenSans-Regular.ttf);
+}
+html {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+body {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	color: #555555;
+	font-size: 13px;
+	font-family: Opensans, sans-serif;
+}
+header {
+	margin: 0px;
+	padding: 0px;
+}
+section {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+main {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+footer {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+div {
+	margin: 0px;
+	padding: 0px;
+}
+p {
+	margin: 0px;
+	padding: 0px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+li {
+	margin: 0px;
+	padding: 0px;
+}
+a {
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+h1 {
+	margin: 0px;
+	padding: 0px;
+}
+h2 {
+	margin: 0px;
+	padding: 0px;
+}
+h3 {
+	margin: 0px;
+	padding: 0px;
+}
+/* wrapper */
+.wrapper {
+	min-width: 320px;
+}
+/* header */
+.header-wrapper {
+	float: left;
+	width: 100%;
+}
+.header-wrapper header {
+	width: 100%;
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 19px;
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 104px;
+}
+.header-wrapper header #logo {
+	display: block;
+	float: left;
+}
+.header-wrapper header nav {
+	float: right;
+	height: 24px;
+	padding-top: 32px;
+	padding-bottom: 48px;
+	overflow: hidden;
+}
+.header-wrapper header nav ul{
+	float: left;
+}
+.header-wrapper header nav ul li{
+	float: left;
+	line-height: 24px;
+	margin-left: 35px;
+}
+.header-wrapper header nav ul li a{
+	display: block;
+	padding: 0;
+	color: #999999;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.header-wrapper header nav ul li a.active{
+	float: left;
+	color: #1b2690;
+}
+.header-wrapper header nav ul li a.nonactive{
+	float: left;
+	color: #999999;
+}
+.header-wrapper header nav ul li a.nonactive:hover{
+	color: #1b2690;
+}
+.header-meta-wrapper{
+	float: left;
+	width: 100%;
+	height: 40px;
+	background-color: #a8c01b;
+}
+.header-meta-wrapper section{
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #ffffff;
+}
+.header-meta-wrapper section .slogan{
+	float:left;
+	text-transform: uppercase;
+	line-height: 40px;
+	font-size: 16px;
+}
+/* search bar */
+.header-meta-wrapper section .search{
+	float: right;
+	display: block;
+	width: 191px;
+	height: 30px;
+	line-height: 24px;
+	background: #91a905;
+	padding: 5px 20px;
+}
+.header-meta-wrapper section .search form{
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+.header-meta-wrapper section .search form input{
+	float: left;
+	background: #ffffff;
+	vertical-align: middle;
+	border: 0;
+	margin: 0;
+}
+.header-meta-wrapper section .search form input[type=text]{
+	width: 145px;
+	height: 16px;
+	line-height: 16px;
+	padding: 4px 8px 6px;
+	color: #91a905;
+	font-size: 14px;
+	border-top: solid 1px #f4f4f4;
+	border-left: solid 1px #f4f4f4;
+	border-bottom: solid 1px #f4f4f4;
+	outline: none;
+}
+.header-meta-wrapper section .search form input::-webkit-input-placeholder {
+	color: #91a905;
+}
+.header-meta-wrapper section .search form input[type=submit]{
+	font-size: 0;
+	line-height: 0;
+	width: 27px;
+	height: 28px;
+	cursor: pointer;
+	background-color: #ffffff;
+	background-image: url(afb/search.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	border-top: solid 1px #f4f4f4;
+	border-right: solid 1px #f4f4f4;
+	border-bottom: solid 1px #f4f4f4;
+	border-left: none;
+}
+/* social bar */
+.header-meta-wrapper section .social{
+	float: right;
+	padding: 12px 20px;
+}
+.header-meta-wrapper section .social ul{
+	float: left;
+}
+.header-meta-wrapper section .social ul li{
+	float: left;
+	margin-left: 15px;
+	padding: 0;
+	background: none;
+}
+.header-meta-wrapper section .social ul li:first-child{
+	float:left;
+	margin-left: 0;
+}
+.header-meta-wrapper section .social ul li a{
+	float: left;
+	display: block;
+	width: 16px;
+	height: 16px;
+	background-image: url(afb/social-icons.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+.header-meta-wrapper section .social ul li a.facebook{
+	width: 6px;
+	background-position: 0 0;
+}
+.header-meta-wrapper section .social ul li a.facebook:hover{
+	background-position: 0 -50px;
+}
+.header-meta-wrapper section .social ul li a.twitter{
+	width: 10px;
+	background-position: -21px 0;
+}
+.header-meta-wrapper section .social ul li a.twitter:hover{
+	background-position: -21px -50px;
+}
+.header-meta-wrapper section .social ul li a.linkedin{
+	width: 14px;
+	background-position: -45px 0;
+}
+.header-meta-wrapper section .social ul li a.linkedin:hover{
+	background-position: -45px -50px;
+}
+.header-meta-wrapper section .social ul li a.youtube{
+	width: 11px;
+	background-position: -97px 0;
+}
+.header-meta-wrapper section .social ul li a.youtube:hover{
+	background-position: -97px -50px;
+}
+/* teaser */
+.teaser{
+	width: 100%;
+	height: auto;
+	max-height: 480px;
+	margin: 0 0 41px;
+	overflow: hidden;
+	position: relative;
+}
+.teaser .teaser-wrapper{
+	max-width: 1280px;
+	margin: 0 auto;
+	position: relative;
+}
+.teaser .teaser-wrapper ul{
+}
+.teaser .teaser-wrapper ul li{
+	float: left;
+	width: 100%;
+	position: relative;
+	display: block;
+	max-height: 480px;
+}
+.teaser .teaser-wrapper ul li .teasertext{
+	position: absolute;
+	bottom: 40px;
+	left: 55px;
+	font-size: 30px;
+	text-transform: uppercase;
+	line-height: 40px;
+	max-width: 95%;
+}
+.teaser .teaser-wrapper ul li .teasertext p{
+	display: block;
+	float: left;
+	clear: left;
+	padding: 5px 10px;
+	background-color:rgba(255,255,255,0.75);
+}
+.teaser .teaser-wrapper ul li .teasertext p a{
+	color: #91a905;
+	font-size: 100%;
+}
+.teaser .teaser-wrapper ul li .teasertext p a:hover{
+	color: #1b2690;
+}
+.teaser .teaser-wrapper ul li a{
+}
+.teaser .teaser-wrapper ul li a img{
+	width: 100%;
+}
+.arrows{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.arrows div{
+	position: absolute;
+	top: 40px;
+}
+.arrows .arrow-left{
+	left: 55px;
+}
+.arrows div a{
+	float: left;
+	height: 61px;
+	width: 61px;
+	background-color: #ffffff;
+	background-image: url(afb/slider-nav.png);
+	background-repeat: no-repeat;
+}
+.arrows .arrow-left a{
+	background-position: 0 top;
+}
+.arrows .arrow-left a:hover{
+	background-position: 0 -61px;
+}
+
+.arrows .arrow-right{
+	right: 55px;
+}
+.arrows .arrow-right a{
+	background-position: -61px 0;
+}
+.arrows .arrow-right a:hover{
+	background-position: -61px -61px;
+}
+
+/* main */
+main{
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px 226px;
+}
+main section{
+	float: left;
+	width: 100%;
+}
+main section .attention-box{
+	float: left;
+	width: 31.62%;
+	padding: 0;
+}
+main section .attention-box div{
+	float: left;
+	background: #1b2690;
+	color: #fff;
+	font-size: 13px;
+	line-height: 20px;
+	padding: 25px 28px 57px;
+	position: relative;
+	min-height: 320px;
+}
+main section .attention-box div h1{
+	color: #fff;
+	font-size: 30px;
+	line-height: 30px;
+	padding: 0 0 12px;
+	text-transform: uppercase;
+}
+main section .attention-box div p{
+	font-size: 13px;
+	padding: 0 0 20px;
+}
+main section .attention-box div a{
+	position: absolute;
+	left: 30px;
+	right: 30px;
+	bottom: 20px;
+	padding: 10px 0 6px;
+	border-top: solid 1px #fff;
+	color: #fff;
+	font-size: 14px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+}
+main section .info-box{
+	float: left;
+	position:relative;
+	margin-left: 2%;
+	margin-bottom: 30px;
+	width: 30%;
+	height: 180px;
+	border-top: solid 4px #2b2b2b;
+	border-bottom: solid 1px #2b2b2b;
+}
+main section .info-box .overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+main section .info-box:hover{
+	background: #f2f2f2;
+}
+
+main section .info-box div{
+	float: left;
+	position: relative;
+	padding: 22px 28px 25px;
+	overflow: hidden;
+}
+main section .info-box div h2{
+	padding-right: 25%;
+	padding-bottom: 12px;
+	color: #2b2b2b;
+	font-size: 17px;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 20px;
+}
+
+main section .info-box div p{
+	font-size: 12px;
+	padding: 0;
+}
+main section .info-box div p time{
+	font-size: 11px;
+	margin-right: 3px;
+}
+main section .info-box div p a{
+	color: #a8c01b;
+	font-size: 14px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	margin: 0 3px;
+}
+main section .info-box div .action-link{
+	position: absolute;
+	font-size: 13px;
+	right: 0;
+	top: 0;
+	color: #fff;
+	background: #1b2690;
+	padding: 2px 9px 5px 9px;
+}
+main section .info-box div .action-link:hover{
+	background: #2b2b2b
+}
+main section .info-box div .color-2{
+	background: #a8c01b; 
+}
+main section .info-box .info-box-img{
+	float: left;
+	margin: 0;
+	margin-right: 28px;
+	margin-left: -28px;
+	margin-top: -25px;
+	padding: 0px;
+}
+/* footer */
+footer{
+	float: left;
+	width: 100%;
+	height: 178px;
+	border-top: solid 18px #1b2690;
+	background: url(afb/footer-swoosh.png) no-repeat center 109px;
+}
+footer .footer-wrapper{
+	margin: 0 auto;
+	max-width: 1170px;
+	padding: 0 15px;
+	position: relative;
+	height: 178px;
+}
+footer .footer-wrapper p{
+	padding: 10px 0 0;
+	min-height: 71px;
+	border-bottom: solid 1px #afafaf;
+	float: left;
+	width: 48.8%;
+	font-size: 14px;
+	line-height: 20px;
+	color: #5c5c5c;
+	font-style: italic;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+footer .footer-wrapper nav{
+	float: right;
+	width: 51.2%;
+	padding: 0;
+}
+footer .footer-wrapper nav ul{
+	float:right;
+}
+footer .footer-wrapper nav ul li{
+	float: left;
+	min-height: 40px;
+	border-bottom: solid 1px #afafaf;
+	padding: 0;
+	background: none;
+	width: 28.3%;
+	margin-left: 30px;
+}
+footer .footer-wrapper nav ul li a{
+	display: block;
+	line-height: 39px;
+	padding: 0 0 1px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 14px;
+	color: #5c5c5c;
+}
+footer .footer-wrapper nav ul li a:hover{
+	color: #91a905; 
+}
+footer .footer-wrapper nav ul .social-bar{
+	padding:0;
+}
+footer .footer-wrapper nav ul .social-bar ul{
+	float:left;
+}
+footer .footer-wrapper nav ul .social-bar ul li{
+	float:left;
+	border: none;
+	width: auto;
+	margin-right: 20px;
+	margin-left: 0;
+	padding: 11px 0 10px;
+	min-height: 1px;
+}
+footer .footer-wrapper nav ul .social-bar ul li a{
+	display: block;
+	width: 18px;
+	height: 18px;
+	background-image:url(afb/social-icons.png);
+	background-repeat:no-repeat;
+	background-position:left top;
+}
+footer .footer-wrapper nav ul .social-bar ul li .facebook{
+	width: 8px;
+	background-position: 0 -150px;
+}
+footer .footer-wrapper nav ul .social-bar ul li .facebook:hover{
+	width: 8px;
+	background-position: 0 -200px;
+}
+footer .footer-wrapper nav ul .social-bar ul li .twitter{
+	width: 11px;
+	background-position: -28px -150px;
+}
+footer .footer-wrapper nav ul .social-bar ul li .twitter:hover{
+	width: 11px;
+	background-position: -28px -200px;
+}
+footer .footer-wrapper nav ul .social-bar ul li .linkedin{
+	width: 18px;
+	background-position: -59px -150px;	
+}
+footer .footer-wrapper nav ul .social-bar ul li .linkedin:hover{
+	width: 18px;
+	background-position: -59px -200px;	
+}
+footer .footer-wrapper nav ul .social-bar ul li .youtube{
+	width: 15px;
+	background-position: -128px -150px;
+}
+footer .footer-wrapper nav ul .social-bar ul li .youtube:hover{
+	width: 15px;
+	background-position: -128px -200px;
+}
+footer .footer-wrapper .footer-links{
+	position: absolute;
+	right: 16px;
+	bottom: 32px;
+	font-size: 12px;
+	line-height: 40px;
+	padding: 0;
+}
+footer .footer-wrapper .footer-links li{
+	float:left;
+	margin-left:18px;
+	padding: 0;
+	background: none;
+}
+footer .footer-wrapper .footer-links li a{
+	color: #8a8a8a;
+}
+footer .footer-wrapper .footer-links li a:hover{
+	color: #1B2690;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Vincent van de Weerdt</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="description" content="beschrijving van de webpagina" />
+		<meta name="keywords" content="trefwoorden, gescheiden, door, komma's" />
+		<link rel="stylesheet" href="style.css">
+		<link rel="shortcut icon" href="img/icon.ico" />
+		<script type="text/javascript" src="jquery-1.6.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".tab_content").hide();
+				$("ul.tabs li:first").addClass("active");
+				$(".tab_content:first").show();
+				$("ul.tabs li").click(function() {
+					$("ul.tabs li").removeClass("active");
+					$(this).addClass("active");
+					$(".tab_content").hide();
+					var activeTab = $(this).find("a").attr("href");
+					$(activeTab).fadeIn();
+					return false;
+				});
+				$("h4").append('<em></em>');
+				$("#largeImg, h4, h2").hide();
+				$(".foto a").click(function() {
+					$("#largeImg").show();
+					var largePath = $(this).attr("href");
+					var largeAlt = $(this).attr("title");
+					$("#largeImg").attr({
+						src: largePath,
+						alt: largeAlt
+					});
+					return false;
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header"></div>
+			<ul class="tabs">
+				<li>
+					<a href="#tab1">Home</a>
+				</li>
+				<li>
+					<a href="#tab2">Het bedrijf</a>
+				</li>
+				<li>
+					<a href="#tab3">Contact</a>
+				</li>
+			</ul>
+			<div class="tab_container">
+				<div id="tab1" class="tab_content">
+					<div id="home">
+						<h1>Van de Weert interieurbouw</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet sem odio, non luctus turpis. Nam non erat sed metus cursus dictum. In metus est, sollicitudin id sollicitudin nec, sollicitudin eget urna. Morbi lorem elit, semper non ultrices iaculis, convallis id mi. Donec ut ante vel sapien molestie vestibulum quis id diam. Suspendisse nisi turpis, imperdiet vel ullamcorper sit amet, tincidunt sed neque. Nam pretium, sem ac varius lobortis, dui sapien placerat magna, at accumsan ipsum sem in mi. Quisque sed tortor tellus, at pretium massa. Fusce eget felis vel magna auctor lobortis. Maecenas fringilla vulputate vulputate. Etiam ut ligula a est consectetur lobortis in eu nisl. Donec aliquam leo eu sapien iaculis eget tempor enim euismod. Cras ut mauris nisl. Nunc risus ipsum, ullamcorper vitae auctor vitae, pharetra non elit. Suspendisse tempus convallis libero et vehicula. Nullam a lacus purus, a ultricies ipsum.
+						</p>
+						<p>Proin euismod odio at turpis egestas id lobortis neque eleifend. Etiam aliquet cursus arcu, in bibendum diam eleifend eu. Quisque ut turpis eget lorem aliquam sollicitudin. In velit ante, tempor et bibendum vel, aliquam at quam. Aenean commodo congue purus, ac condimentum diam venenatis at. Aliquam in urna eget leo hendrerit tincidunt id nec lectus. Suspendisse ultricies nunc hendrerit felis feugiat placerat. Integer molestie gravida tincidunt. Maecenas a neque non magna condimentum rutrum. </p>
+					</div>
+				</div>
+				<div id="tab2" class="tab_content">
+					<div id="bedrijf">
+						<div class="fotoviewer">
+							<p>
+								<img id="largeImg" src="img/foto1.jpg" alt="Large image" />
+							</p>
+							<h3>Projecten</h3>
+							<p class="foto">
+								<a href="img/foto1.png" title="foto1">
+									<img src="img/foto1smal.png" alt="foto1" />
+								</a>
+								<a href="img/foto2.png" title="foto2">
+									<img src="img/foto2smal.png" alt="foto2" />
+								</a>
+								<a href="img/foto3.png" title="foto3">
+									<img src="img/foto3smal.png" alt="foto3" />
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div id="tab3" class="tab_content">
+					<div id="contact">
+						<table>
+							<tr>
+								<td><strong>Naam</strong></td>
+								<td>Van de Weert interieurbouw</td>
+							</tr>
+							<tr>
+								<td><strong>Adres</strong></td>
+								<td>Pastoor Pendersstraat 3 </td>
+							</tr>
+							<tr>
+								<td><strong>Postcode + woonplaats</strong></td>
+								<td>6262 Banholt</td>
+							</tr>
+							<tr>
+								<td><strong>Telefoonnummer</strong></td>
+								<td>+31611258855</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

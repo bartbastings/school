@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>g-player</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="g-player.css" />
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<img src="img/header.png" width="880" height="174" alt="header" />
+			</div>
+			<div id="menu">
+				<div id="framehome">
+					<ul id="navihome">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+					</ul>
+				</div>
+				<div id="frameplastic">
+					<ul id="naviplastic">
+						<li>
+							<a href="http://gorillaz.com/plasticbeach">Plastic-<br />Beach</a>
+						</li>
+					</ul>
+				</div>
+				<div id="framenews">
+					<ul id="navinews">
+						<li>
+							<a href="news.html">News</a>
+						</li>
+					</ul>
+				</div>
+				<div id="frameg-player">
+					<ul id="navig-player">
+						<li>
+							<a href="g-player.html">G-Player</a>
+						</li>
+					</ul>
+				</div>
+				<div id="framefan-club">
+					<ul id="navifan-club">
+						<li>
+							<a href="http://gorillaz.com/sub-division/Membership-Required">Fan-<br/>Club</a>
+						</li>
+					</ul>
+				</div>
+				<div id="frameshop">
+					<ul id="navishop">
+						<li>
+							<a href="http://gorillaz.com/Shop">Shop</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="context">
+				<div id="music">
+					<img src="img/music-icon.png" width="139" height="139" alt="music" id="musics" />
+					<ul id="navimusic">
+						<li>
+							<a href="#">music</a>
+						</li>
+					</ul>
+				</div>
+				<div id="videos">
+					<img src="img/video-icon.png" width="139" height="139" alt="video" id="video" />
+					<ul id="navivideo">
+						<li><a href="#">Video's</a></li>
+					</ul>
+				</div>
+				<div id="games">
+					<img src="img/game-icon.png" width="139" height="139" alt="game" id="game" />
+					<ul id="navigames">
+						<li>
+							<a href="#">Games</a>
+						</li>
+					</ul>
+				</div>
+				<div id="player">
+					<div id="tv">
+						<iframe title="YouTube video player" id="you" width="280" height="240" src="http://www.youtube.com/embed/mqCImoZyLVw?rel=0&amp;hd=1" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div id="tweet">
+					<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+					<script>
+						new TWTR.Widget({
+							version: 2,
+							type: 'profile',
+							rpp: 1,
+							interval: 6000,
+							width: 610,
+							height: 125,
+							theme: {
+								shell: {
+									background: '#000000',
+									color: '#ffffff'
+								},
+								tweets: {
+									background: '#a2a2ab',
+									color: '#000000',
+									links: '#9e0b10'
+								}
+							},
+							features: {
+								scrollbar: false,
+								loop: false,
+								live: false,
+								hashtags: true,
+								timestamp: true,
+								avatars: false,
+								behavior: 'all'
+							}
+						}).render().setUser('GorillazBand').start();
+					</script>
+				</div>
+			</div>
+			<div id="footer">
+				<div id="logo">
+					<img src="img/gorillaz.png" width="215" height="100" alt="logo" />
+				</div>
+				<div id="itunes">
+					<a href="http://c.itunes.apple.com/gb/profile/id-11732" title="itunes">
+						<img src="img/itunes.png" width="100" height="100" border="0" alt="itunes"/>
+					</a>
+				</div>
+				<div id="twitter">
+					<a href="http://twitter.com/GorillazBand" title="twitter">
+						<img src="img/twitter.png" width="100" height="100" border="0" alt="twitter"/>
+					</a>
+				</div>
+				<div id="myspace">
+					<a href="http://www.myspace.com/gorillaz" title="myspace">
+						<img src="img/myspace.png" width="100" height="100" border="0" alt="myspace"/>
+					</a>
+				</div>
+				<div id="facebook">
+					<a href="http://www.facebook.com/Gorillaz" title="facebook">
+						<img src="img/facebook.png" width="100" height="100" border="0" alt="facebook"/>
+					</a>
+				</div>
+				<div id="youtube">
+					<a href="http://www.youtube.com/user/gorillaz" title="youtube">
+						<img src="img/youtube.png" width="100" height="100" border="0" alt="youtube"/>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

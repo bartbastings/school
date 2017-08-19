@@ -1,0 +1,76 @@
+-- phpMyAdmin SQL Dump
+-- version 3.2.0.1
+-- http://www.phpmyadmin.net
+--
+-- Machine: localhost
+-- Genereertijd: 03 Nov 2011 om 22:13
+-- Serverversie: 5.1.36
+-- PHP-Versie: 6.0.0-dev
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `wijnwinkel`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `artikel`
+--
+
+CREATE TABLE IF NOT EXISTS `artikel` (
+  `artikelnummer` int(3) NOT NULL AUTO_INCREMENT,
+  `omschrijving` varchar(32) NOT NULL,
+  `land` varchar(32) NOT NULL DEFAULT 'Nederland',
+  `soort` varchar(32) NOT NULL,
+  `eenheid` int(3) NOT NULL,
+  `verpakking` varchar(32) NOT NULL,
+  `verkoopprijs` float NOT NULL,
+  `voorraad` int(4) NOT NULL,
+  `gereserveerd` int(4) NOT NULL,
+  `datumin` date NOT NULL,
+  `datumuit` date NOT NULL,
+  PRIMARY KEY (`artikelnummer`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+
+--
+-- Gegevens worden uitgevoerd voor tabel `artikel`
+--
+
+INSERT INTO `artikel` (`artikelnummer`, `omschrijving`, `land`, `soort`, `eenheid`, `verpakking`, `verkoopprijs`, `voorraad`, `gereserveerd`, `datumin`, `datumuit`) VALUES
+(1, 'Dona Eloda(2002)', 'Nederland', 'Rood', 6, 'Doos', 3.49, 100, 0, '2010-09-01', '2010-09-01'),
+(2, 'Principe Tinto (2003)', 'Spanje', 'Rood', 4, 'kist', 5.98, 100, 0, '2010-09-01', '2010-09-01');
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `klant`
+--
+
+CREATE TABLE IF NOT EXISTS `klant` (
+  `klantnummer` int(3) NOT NULL AUTO_INCREMENT,
+  `voorletters` varchar(10) NOT NULL,
+  `tussenvoegsel` varchar(10) NOT NULL,
+  `naam` varchar(30) NOT NULL,
+  `adres` varchar(30) NOT NULL,
+  `huisnummer` varchar(30) NOT NULL,
+  `postcode` varchar(10) NOT NULL,
+  `woonplaats` varchar(30) NOT NULL,
+  `geslacht` varchar(10) NOT NULL,
+  `telefoon` varchar(12) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `wachtwoord` varchar(15) NOT NULL,
+  `datumin` date NOT NULL,
+  `status` varchar(10) NOT NULL,
+  PRIMARY KEY (`klantnummer`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=174 ;
+
+--
+-- Gegevens worden uitgevoerd voor tabel `klant`
+--
+
+INSERT INTO `klant` (`klantnummer`, `voorletters`, `tussenvoegsel`, `naam`, `adres`, `huisnummer`, `postcode`, `woonplaats`, `geslacht`, `telefoon`, `email`, `wachtwoord`, `datumin`, `status`) VALUES
+(1, 'HTW', '', 'Janssen', 'Veldweg', '12', '1234 QW', 'Amsterdam', 'M', '0612345678', 'test@test.bn', 'jhv7bigs69', '2011-11-03', 'actief'),
+(2, 'FG', '', 'Klaassen', 'Tulpstraat', '23', '2345 GH', 'Den haag', 'V', '0623456789', 'test2@test.bn', 'geheim', '2011-11-03', 'actief'),
+(3, 'ZX', '', 'Peters', 'Vioolstraat', '26', '4567 GH', 'Didam', 'M', '0645678912', 'test3@test.bn', 'qwerty', '2011-11-03', 'actief');

@@ -1,0 +1,26 @@
+body {
+	font-family: "Helvetica Neue",Arial,sans;
+}
+
+h1 {
+	font-weight: normal;
+}
+
+#posts {
+	margin:0;
+	padding:0;
+}
+
+#posts li {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 1.5em;
+}
+
+#posts p {
+	margin:0;
+}
+
+#posts .name {
+	color:#999;
+}

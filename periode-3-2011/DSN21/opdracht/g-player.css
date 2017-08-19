@@ -1,0 +1,367 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+body {
+	background-color: #999;
+}
+
+#wrapper {
+	margin: auto;
+	width: 900px;
+	background-image: url(img/achtergrond.png);
+}
+
+#header {
+	width: 880px;
+	margin: 5px;
+	float: left;
+	background-color: #999;
+	border: 5px solid #900;
+}
+
+#menu {
+	float: left;
+	width: 190px;
+	height: 930px;
+	margin: 5px;
+	border: 5px solid #900;
+	background-image: url(img/achtergrond-colum.png);
+}
+
+#framehome {
+	background-image: url(img/frame-home.png);
+	height: 145px;
+	width: 190px;
+}
+
+#navihome {
+	float: left;
+	width: 100%;
+	list-style: none;
+	margin: auto;
+	padding-top: 40px;
+}
+
+#navihome a {
+	color: #000;
+	display: : block;
+	width: 90%;
+	text-decoration: none;
+	font-family: "Handwriting - Dakota";
+	font-size: 30pt;
+}
+
+#frameplastic {
+	background-image: url(img/frame-plasticbeach.png);
+	height: 168px;
+	width: 190px;
+}
+
+#naviplastic {
+	float: left;
+	width: 100%;
+	list-style: none;
+	margin: auto;
+	padding-top: 30px;
+	padding-left: 30px;
+}
+
+#naviplastic a {
+	color: #000;
+	display: : block;
+	width: 90%;
+	text-decoration: none;
+	font-family: "Handwriting - Dakota";
+	font-size: 24pt;
+}
+
+#framenews {
+	background-image: url(img/frame-news.png);
+	height: 163px;
+	width: 190px;
+}
+
+#navinews {
+	float: left;
+	width: 100%;
+	list-style: none;
+	margin: auto;
+	padding-top: 45px;
+}
+
+#navinews a {
+	color: #000;
+	display: : block;
+	width: 90%;
+	text-decoration: none;
+	font-family: "Handwriting - Dakota";
+	font-size: 30pt;
+}
+
+#frameg-player {
+	background-image: url(img/frame-g-player.png);
+	height: 140px;
+	width: 190px;
+}
+
+#navig-player {
+	float: left;
+	width: 100%;
+	list-style: none;
+	margin: auto;
+	padding-top: 40px;
+	padding-left: 25px;
+}
+
+#navig-player a {
+	color: #999;
+	display: : block;
+	width: 90%;
+	text-decoration: none;
+	font-family: "Handwriting - Dakota";
+	font-size: 25pt;
+	text-shadow: 0 0 30px #FFF;
+}
+
+#framefan-club {
+	background-image: url(img/frame-fanclub.png);
+	height: 165px;
+	width: 190px;
+}
+
+#navifan-club {
+	float: left;
+	width: 100%;
+	list-style: none;
+	margin: auto;
+	padding-top: 20px;
+}
+
+#navifan-club a {
+	color: #000;
+	display: : block;
+	width: 90%;
+	text-decoration: none;
+	font-family: "Handwriting - Dakota";
+	font-size: 30pt;
+}
+
+#frameshop {
+	background-image: url(img/frame-shop.png);
+	height: 120px;
+	width: 190px;
+}
+
+#navishop {
+	float: left;
+	width: 100%;
+	list-style: none;
+	margin: auto;
+	padding-top: 30px;
+}
+
+#navishop a {
+	color: #000;
+	display: : block;
+	width: 90%;
+	text-decoration: none;
+	font-family: "Handwriting - Dakota";
+	font-size: 30pt;
+}
+
+#context {
+	background-image: url(img/content.png);
+	float: left;
+	width: 670px;
+	height: 930px;
+	margin: 5px;
+	border: 5px solid #900;
+}
+
+#music {
+	float: left;
+	background-image: url(img/player.png);
+	width: 180px;
+	height: 240px;
+	border: 5px solid #900;
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+#musics {
+	margin-left: 25px;
+	padding-top: 20px;
+}
+
+#navimusic {
+	float: left;
+	width: 100%;
+	list-style: none;
+	margin: auto;
+	padding-top: 25px;
+}
+
+#navimusic a {
+	color: #000;
+	display: : block;
+	width: 90%;
+	text-decoration: none;
+	font-family: "DS-Digital";
+	font-size: 30pt;
+	text-shadow: 0 0 10px #FFC;
+}
+
+#videos {
+	float: left;
+	background-image: url(img/player.png);
+	width: 180px;
+	height: 240px;
+	border: 5px solid #900;
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+#video {
+	margin-left: 25px;
+	padding-top: 20px;
+}
+
+#navivideo {
+	float: left;
+	width: 100%;
+	list-style: none;
+	margin: auto;
+	padding-top: 25px;
+}
+
+#navivideo a {
+	color: #000;
+	display: : block;
+	width: 90%;
+	text-decoration: none;
+	font-family: "DS-Digital";
+	font-size: 30pt;
+	text-shadow: 0 0 10px #FFC;
+}
+
+#games {
+	float: left;
+	background-image: url(img/player.png);
+	width: 180px;
+	height: 240px;
+	border: 5px solid #900;
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 10px;
+}
+
+#game {
+	margin-left: 25px;
+	padding-top: 20px;
+}
+
+#navigames {
+	float: left;
+	width: 100%;
+	list-style: none;
+	margin: auto;
+	padding-top: 25px;
+}
+
+#navigames a {
+	color: #000;
+	display: : block;
+	width: 90%;
+	text-decoration: none;
+	font-family: "DS-Digital";
+	font-size: 30pt;
+	text-shadow: 0 0 10px #FFC;
+}
+
+#player {
+	float: left;
+	background-image: url(img/player.png);
+	width: 630px;
+	height: 440px;
+	border: 5px solid #900;
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 10px;
+}
+
+#tv {
+	background-image: url(img/tv.png);
+	width: 530px;
+	height: 370px;
+	margin: auto;
+	margin-top: 30px;
+}
+
+#you {
+	margin-left: 80px;
+	margin-top: 50px;
+}
+
+#tweet {
+	float: left;
+	width: 630px;
+	height: 150px;
+	border: 5px solid #900;
+	background-color: #000;
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 10px;
+}
+
+#footer {
+	clear: both;
+	height: 120px;
+	margin: 5px;
+	background-image: url(img/footer-actergrond.png);
+	background-color: #999;
+	border: 5px solid #900;
+}
+
+#logo {
+	float: left;
+	margin: 10px;
+	padding-right: 5px;
+}
+
+#youtube {
+	float: left;
+	padding-right: 5px;
+	margin: 10px;
+}
+
+#facebook {
+	float: left;
+	padding-right: 5px;
+	margin: 10px;
+}
+
+#myspace {
+	float: left;
+	padding-right: 5px;
+	margin: 10px;
+}
+
+#twitter {
+	float: left;
+	padding-right: 5px;
+	margin: 10px;
+}
+
+#itunes {
+	float: left;
+	padding-right: 5px;
+	margin: 10px;
+}

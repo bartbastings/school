@@ -1,0 +1,543 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'MyriadProRegular';
+    src: url('font/myriadpro-regular.eot');
+    src: url('font/myriadpro-regular.eot') format('embedded-opentype'),
+         url('font/myriadpro-regular.woff') format('woff'),
+         url('font/myriadpro-regular.ttf') format('truetype'),
+         url('font/myriadpro-regular.svg#MyriadProRegular') format('svg');
+}
+
+html{
+	float:left;
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:100%;
+}
+
+body{
+	float:left;
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:100%;
+	font-family:'MyriadProRegular',serif;
+	font-size:10pt;
+}
+
+p{
+	float:left;
+	margin:0px;
+	padding:0px;
+}
+
+a{
+	float:left;
+	margin:0px;
+	padding:0px;
+	text-decoration:none;
+}
+
+h1{
+	float:left;
+	margin:0px;
+	padding:0px;
+	font-size:1.5em;
+	font-weight:normal;
+}
+
+h2{
+	float:left;
+	margin:0px;
+	padding:0px;
+	font-size:1.25em;
+	font-weight:normal;
+}
+
+h3{
+	float:left;
+	margin:0px;
+	padding:0px;
+	width:100%;
+	font-size:1em;
+	font-weight:normal;
+}
+
+h4{
+	float:left;
+	margin:0px;
+	padding:0px;
+	width:100%;
+	font-size:1em;
+	font-weight:normal;
+}
+
+div{
+	float:left;
+	margin:0px;
+	padding:0px;
+}
+
+.wrapper{
+	float:left;
+	width:100%;
+}
+
+ul{
+}
+
+li{
+	list-style:none;
+}
+
+header{
+	float:left;
+	width:100%;
+	text-align:center;
+	border-bottom:thin solid #000;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.inlogHeader{
+	height:270px;
+	background-image:url(../images/ghibli_artwork_spirted_away.jpg);
+}
+
+.registerHeader{
+	height:270px;
+	background-image:url(../images/ghibli_artwork_howls_moving_castle.jpg);
+}
+
+header h2{
+	margin-top:20px;
+	width:100%;
+	text-shadow: 2px 2px black;
+	font-size:3em;
+	text-transform:uppercase;
+	color:white;
+}
+
+.studioGhibliLogo{
+	float:left;
+	width:60%;
+	height:270px;
+	background-image:url(../images/Studio_Ghibli_small.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.indexHeader{
+	border-bottom:none;
+}
+
+.indexHeaderTitle{
+	float:right;
+	width:40%;
+	height:100%;
+}
+
+.indexHeader h1{
+	float:left;
+	width:100%;
+	margin-top:20px;
+	color:#111;
+}
+.indexHeader p{
+	float:left;
+	width:100%;
+	color:#7a7a7a;
+}
+
+.indexHeader nav{
+	float:left;
+	width:100%;
+	background: -webkit-linear-gradient(#252525, #0a0a0a);
+	background: -o-linear-gradient(#252525, #0a0a0a);
+	background: -moz-linear-gradient(#252525, #0a0a0a);
+	background: linear-gradient(#252525, #0a0a0a);
+	height:30px;
+}
+
+div{
+	margin:0;
+	padding:0;
+}
+
+#fade{
+	float:left;
+	width:100%;
+	height:270px;
+	border-bottom:thin solid black;
+	border-top:thin solid black;
+}
+
+#fade div{
+	float:left;
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+#afb1{
+	background-image:url(../images/ghibli_artwork_grave_of_the_fireflies.jpg);
+}
+#afb2{
+	background-image:url(../images/ghibli_artwork_howls_moving_castle.jpg);
+}
+#afb3{
+	background-image:url(../images/ghibli_artwork_kikis_delivery_service.jpg);
+}
+#afb4{
+	background-image:url(../images/ghibli_artwork_my_neighbor_totoro.jpg);
+}
+#afb5{
+	background-image:url(../images/ghibli_artwork_nausicaa_of_the_walley_of_the_wind.jpg);
+}
+#afb6{
+	background-image:url(../images/ghibli_artwork_only_yesterday.jpg);
+}
+#afb7{
+	background-image:url(../images/ghibli_artwork_porco_rosso.jpg);
+}
+#afb8{
+	background-image:url(../images/ghibli_artwork_spirted_away.jpg);
+}
+#afb9{
+	background-image:url(../images/ghibli_artwork_the_secret_world_of_arriety.jpg);
+}
+#afb10{
+	background-image:url(../images/ghibli_artwork_whisper_of_the_heart.jpg);
+}
+
+.indexSection{
+	float:left;
+	width:100%;
+	margin-bottom:60px;
+}
+
+.inlogSection{
+	float:left;
+	width:70%;
+	height:100%;
+	margin-top:20px;
+	margin-left:15%;
+	margin-right:15%;
+}
+
+.registerSection{
+	float:left;
+	width:70%;
+	height:100%;
+	margin-top:20px;
+	margin-left:15%;
+	margin-right:15%;
+}
+
+form{
+	width:395px;
+	margin:auto;
+	padding:0px;
+
+}
+
+form label{
+	float:left;
+	margin:0;
+	margin-top:10px;
+	padding:0px;
+	width:120px;
+	font-size:1em;
+	line-height:25px;
+}
+
+form input{
+	float:left;
+	margin:0;
+	margin-top:10px;
+	padding:0px;
+	width:250px;
+}
+
+form input[type=text]{
+	float:left;
+	width:250px;
+	padding:5px;
+	font-size:1em;
+	border: 1px solid gray;
+	border-radius:0;
+	-webkit-border-radius:0;
+    -moz-border-radius:0;
+	background:white;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+}
+
+form input[type=password]{
+	float:left;
+	width:250px;
+	padding:5px;
+	font-size:1em;
+	border: 1px solid gray;
+	border-radius:0;
+	-webkit-border-radius:0;
+    -moz-border-radius:0;
+	background:white;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+}
+
+form input[type=email]{
+	float:left;
+	width:250px;
+	padding:5px;
+	font-size:1em;
+	border: 1px solid gray;
+	border-radius:0;
+	-webkit-border-radius:0;
+    -moz-border-radius:0;
+	background:white;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+}
+
+form input[type=submit]{
+	float:left;
+	width:100px;
+	height:25px;
+	font-size:1em;
+	border: 1px solid gray;
+	border-radius:0;
+	-webkit-border-radius:0;
+    -moz-border-radius:0;
+	background:lightgray;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+}
+
+.error{
+	float:left;
+	margin-left:24%;
+	margin-bottom:10px;
+	width:75%;
+	color:#F00;
+}
+
+.sumbitButton{
+	margin-left:120px;
+}
+
+.button{
+	margin-left:60px;
+	width:100px;
+	height:23px;
+	line-height:25px;
+	background-color:lightgray;
+	display:block;
+	text-align:center;
+	color:black;
+	border: 1px solid gray;
+	margin-top:10px;
+	-webkit-transition: background-color 0.5s ease;
+    -moz-transition: background-color 0.5s ease;
+    -o-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
+}
+
+.button:hover{
+	background-color: #00b1f5;
+	color:white;
+}
+
+.headerButton{
+	width:200px;
+}
+
+ul{
+	list-style:none;
+	float:left;
+	margin:0px;
+	padding:0px;
+	width:100%;
+}
+
+li{
+	float:left;
+	margin:0px;
+	padding:0px;
+	width:100%;
+}
+
+.leftColumn{
+	float:left;
+	width:40%;
+	margin-left:5%;
+	margin-right:5%;
+	margin-top:10px;
+}
+
+.text{
+	float:left;
+	width:100%;
+}
+
+.react{
+	float:left;
+	margin-top:10px;
+	width:100%;
+	border-top:1px solid gray;
+}
+
+.react h2{
+	width:100%;
+	margin-top:10px;
+}
+
+.react form{
+	float:left;
+	width:100%;
+}
+
+.react form input[type=text]{
+	float:left;
+	width:100%;
+}
+
+.react form input[type=submit]{
+	float:right;
+}
+
+.reactions{
+	float:left;
+	margin-top:10px;
+	width:100%;
+	border-top:1px solid gray;
+}
+
+.reactions h2{
+	width:100%;
+	margin-top:10px;
+}
+
+.reactions ul{
+}
+
+.reactions ul li{
+	line-height:25px;
+	font-size:1em;
+	margin-top:10px;
+	border-bottom:1px solid gray;
+}
+
+.reactions ul li h3{
+	width:100%;
+	color:#00b1f5;
+}
+
+.rightColumn{
+	float:right;
+	width:40%;
+	margin-left:5%;
+	margin-right:5%;
+	margin-top:10px;
+}
+.rssfeed{
+}
+
+.rssfeed ul{
+}
+
+.rssfeed ul li{
+	margin-top:10px;
+	margin-bottom:10px;
+	border-bottom:1px solid gray;
+}
+
+.rssfeed a{
+	color:#00b1f5;
+}
+.rssfeed a:hover{
+	color:#007aa9;
+}
+
+.movieRatings{
+	float:left;
+	width:100%;
+	margin-bottom:10px;
+}
+
+.movieRatings li{
+	height:50px;
+}
+
+.movieRatings h2{
+	width:100%;
+	margin-top:10px;
+}
+
+.movieRatings h4{
+	line-height:30px;
+}
+
+.outBar{
+	float:left;
+	width:100%;
+	height:20px;
+	border:thin solid gray;
+}
+
+.bar{
+	float:left;
+	height:100%;
+	background-color:#00b1f5;
+}
+
+.footer{
+	width:100%;
+	height:50px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	color:white;
+	background-color:#00b1f5;
+}
+
+#twitterLogo{
+	float:left;
+	width:40px;
+	height:40px;
+	margin:5px;
+	background-image:url(../images/twlogo.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.twitterFeed{
+	width: 100%;
+	width: -webkit-calc(100% - 50px);
+    width: -moz-calc(100% - 50px);
+    width: calc(100% - 50px);
+	height:100%;
+}
+.twitterFeed ul{
+	padding: 0;
+	height:100%;
+}
+.twitterFeed li{
+	list-style: none;
+	padding: 10px;
+	line-height:30px;
+}
+.twitterFeed li span{
+	font-size:1.2em;
+	margin-right:10px;
+	color:lightGray;
+}

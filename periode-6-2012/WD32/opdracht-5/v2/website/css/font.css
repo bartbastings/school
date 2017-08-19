@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('font/futurabold.eot');
+    src: url('font/futurabold.eot') format('embedded-opentype'),
+         url('font/futurabold.woff') format('woff'),
+         url('font/futurabold.ttf') format('truetype'),
+         url('font/futurabold.svg#FuturaBdCnBTBold') format('svg');
+}
+
+@font-face {
+    font-family: 'FuturaBoldItalic';
+    src: url('font/futurabolditalic.eot');
+    src: url('font/futurabolditalic.eot') format('embedded-opentype'),
+         url('font/futurabolditalic.woff') format('woff'),
+         url('font/futurabolditalic.ttf') format('truetype'),
+         url('font/futurabolditalic.svg#FuturaMdBTBoldItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'FuturaBook';
+    src: url('font/futurabook.eot');
+    src: url('font/futurabook.eot') format('embedded-opentype'),
+         url('font/futurabook.woff') format('woff'),
+         url('font/futurabook.ttf') format('truetype'),
+         url('font/futurabook.svg#FuturaBkBTBook') format('svg');
+}
+
+@font-face {
+    font-family: 'FuturaBookItalic';
+    src: url('font/futurabookitalic.eot');
+    src: url('font/futurabookitalic.eot') format('embedded-opentype'),
+         url('font/futurabookitalic.woff') format('woff'),
+         url('font/futurabookitalic.ttf') format('truetype'),
+         url('font/futurabookitalic.svg#FuturaBkBTBookItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'FuturaExtraBlack';
+    src: url('font/futuraextrablack.eot');
+    src: url('font/futuraextrablack.eot') format('embedded-opentype'),
+         url('font/futuraextrablack.woff') format('woff'),
+         url('font/futuraextrablack.ttf') format('truetype'),
+         url('font/futuraextrablack.svg#FuturaXBlkBTExtraBlack') format('svg');
+}
+
+@font-face {
+    font-family: 'FuturaExtraBlackItalic';
+    src: url('font/futuraextrablackitalic.eot');
+    src: url('font/futuraextrablackitalic.eot') format('embedded-opentype'),
+         url('font/futuraextrablackitalic.woff') format('woff'),
+         url('font/futuraextrablackitalic.ttf') format('truetype'),
+         url('font/futuraextrablackitalic.svg#FuturaXBlkCnItBTExtraBlackItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'FuturaHeavy';
+    src: url('font/futuraheavy.eot');
+    src: url('font/futuraheavy.eot') format('embedded-opentype'),
+         url('font/futuraheavy.woff') format('woff'),
+         url('font/futuraheavy.ttf') format('truetype'),
+         url('font/futuraheavy.svg#FuturaHvBTHeavy') format('svg');
+}
+
+@font-face {
+    font-family: 'FuturaHeavyItalic';
+    src: url('font/futuraheavyitalic.eot');
+    src: url('font/futuraheavyitalic.eot') format('embedded-opentype'),
+         url('font/futuraheavyitalic.woff') format('woff'),
+         url('font/futuraheavyitalic.ttf') format('truetype'),
+         url('font/futuraheavyitalic.svg#FuturaHvBTHeavyItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'FuturaLight';
+    src: url('font/futuralight.eot');
+    src: url('font/futuralight.eot') format('embedded-opentype'),
+         url('font/futuralight.woff') format('woff'),
+         url('font/futuralight.ttf') format('truetype'),
+         url('font/futuralight.svg#FuturaLtCnBTLight') format('svg');
+}
+
+@font-face {
+    font-family: 'FuturaLightItalic';
+    src: url('font/futuralightitalic.eot');
+    src: url('font/futuralightitalic.eot') format('embedded-opentype'),
+         url('font/futuralightitalic.woff') format('woff'),
+         url('font/futuralightitalic.ttf') format('truetype'),
+         url('font/futuralightitalic.svg#FuturaLtBTLightItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'FuturaMedium';
+    src: url('font/futuramedium.eot');
+    src: url('font/futuramedium.eot') format('embedded-opentype'),
+         url('font/futuramedium.woff') format('woff'),
+         url('font/futuramedium.ttf') format('truetype'),
+         url('font/futuramedium.svg#FuturaMdCnBTMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'FuturaMediumItalic';
+    src: url('font/futuramediumitalic.eot');
+    src: url('font/futuramediumitalic.eot') format('embedded-opentype'),
+         url('font/futuramediumitalic.woff') format('woff'),
+         url('font/futuramediumitalic.ttf') format('truetype'),
+         url('font/futuramediumitalic.svg#FuturaMdBTMediumItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'MyriadProRegular';
+    src: url('font/myriadpro-regular.eot');
+    src: url('font/myriadpro-regular.eot') format('embedded-opentype'),
+         url('font/myriadpro-regular.woff') format('woff'),
+         url('font/myriadpro-regular.ttf') format('truetype'),
+         url('font/myriadpro-regular.svg#MyriadProRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'StencilcaseRegular';
+    src: url('font/stencilc.eot');
+    src: url('font/stencilc.eot') format('embedded-opentype'),
+         url('font/stencilc.woff') format('woff'),
+         url('font/stencilc.ttf') format('truetype'),
+         url('font/stencilc.svg#StencilcaseRegular') format('svg');
+}
+
+font-face {
+    font-family: 'ZapfDingbatsRegular';
+    src: url('font/zapfdingbats.eot');
+    src: url('font/zapfdingbats.eot') format('embedded-opentype'),
+         url('font/zapfdingbats.woff') format('woff'),
+         url('font/zapfdingbats.ttf') format('truetype'),
+         url('font/zapfdingbats.svg#ZapfDingbatsRegular') format('svg');
+}

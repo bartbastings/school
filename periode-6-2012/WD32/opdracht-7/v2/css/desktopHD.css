@@ -1,0 +1,244 @@
+/* desktopHD: 1600/960=1.667 */
+/* x1.7  */
+
+html{
+	font-size:24px;
+}
+
+.wrapper {
+	height:calc(100% - 170px);
+	padding:170px 0 0 0;
+}
+
+.contentHeader{
+	height:110.5px;
+}
+
+.contentHeader h2{
+	margin-left:42.5px;
+	line-height:110.5px;
+}
+
+.button{
+	width:340px;
+	line-height:85px;
+}
+
+.boxshadow{
+	-webkit-box-shadow: 0 8.5px 8.5px 0 #000000;
+	-moz-box-shadow: 0 8.5px 8.5px 0 #000000;
+	-ms-box-shadow: 0 8.5px 8.5px 0 #000000;
+	-o-box-shadow: 0 8.5px 8.5px 0 #000000;
+	box-shadow: 0 8.5px 8.5px 0 #000000;
+}
+
+.pageHeader{
+	height:85px;
+}
+
+#navCenterLink{
+	height:127.5px;
+}
+
+.pageHeader ul li a{
+	line-height:85px;
+}
+
+#navCenterLink img{
+	max-width:170px;
+}
+
+/*  */
+
+.clearFix{
+	height:127.5px;
+}
+
+.emptyContent{
+	padding:21.25px;
+	width: calc(79.16666666666666% - 42.5px);
+	width: -webkit-calc(79.16666666666666% - 42.5px);
+	width: -moz-calc(79.16666666666666% - 42.5px);
+	width: -ms-calc(79.16666666666666% - 42.5px);
+	width: -o-calc(79.16666666666666% - 42.5px);
+}
+
+/* main */
+
+main{
+	min-height:340px;
+}
+
+/* index */
+
+.imageViewer .imageViewerContainer img{
+	min-height:340px;
+}
+
+.imageInfo{
+	height:85px;
+	padding:0 34px;
+}
+
+.imageInfo h3{
+	line-height:85px;
+}
+
+.indexInfoContainer article{
+	margin:0 0 21.25px 1.644736842105263%;
+}
+
+.articleContent{
+	padding:21.25px;
+}
+
+#infoZuss header{
+	margin-bottom:8.5px;
+}
+
+#cadeauTip header{
+	margin-bottom:8.5px;
+}
+
+#menukaartContainer{
+	margin:0 0 21.25px 1.644736842105263%;
+	padding:21.25px;
+	width: calc(14.473684210526317% - 42.5px);
+	width: -webkit-calc(14.473684210526317% - 42.5px);
+	width: -moz-calc(14.473684210526317% - 42.5px);
+	width: -ms-calc(14.473684210526317% - 42.5px);
+	width: -o-calc(14.473684210526317% - 42.5px);
+}
+
+/* lunch */
+
+/* lekkers */
+
+#menukaartPage{
+	padding:17px;
+	width:calc(100% - 34px);
+}
+
+.b-counter{
+	padding:0 !important;
+	height:42.5px !important;
+	width:42.5px !important;
+	line-height: 42.5px;
+}
+
+/* high tea */
+
+#highteaArticle{
+	width:calc(100% - 34px);
+	padding:17px;
+}
+
+#highteaPrijsLijst{
+	width:calc(100% - 34px);
+	padding:17px;
+}
+
+#highteaPrijsLijst li{
+	margin-top:23.8px;
+}
+
+#highteaPrijsLijst li p{
+	margin-top:23.8px;
+}
+
+/* meenemen */
+
+#meeneemLijstContainer{
+	width:calc(100% - 170px);
+	padding:85px;
+}
+
+#meeneemLijst{
+	width:calc(100% - 51px);
+	padding:25.5px;
+}
+
+#meeneemLijstInfo{
+	width:calc(100% - 42.5px);
+	padding:21.25px;
+	margin-top:17px;
+}
+
+#meeneemLijstInfo a{
+	margin-top:17px;
+}
+
+/* groepen */
+
+/* vrijdagavond */
+
+/* vacatures */
+
+#vacaturesContact{
+	margin: 0 42.5px 42.5px 42.5px;
+	padding-top: 42.5px;
+	width: calc(100% - 85px);
+}
+
+.vacature{
+	margin: 17px 42.5px 0 42.5px;
+}
+
+.vacature header{
+	width:calc(100% - 34px);
+	padding:0 17px;
+}
+
+.vacature h4{
+	width:calc(100% - 34px);
+	padding:0 17px;
+	line-height:51px;
+}
+
+.vacature ul{
+	width:calc(100% - 34px);
+	margin:17px 0;
+	padding:0 17px;
+}
+
+/* contact */
+
+#contactContent{
+	height:850px;
+}
+
+#contactTijden{
+	margin: 17px 42.5px 0 42.5px;
+	padding: 0 0 42.5px 0;
+	width: calc(100% - 85px);
+}
+
+#contactTijden li{
+	margin-top:20.4px;
+}
+
+#contactGegevens{
+	margin: 17px 42.5px 0 42.5px;
+	width: calc(100% - 85px);
+}
+
+/* footer */
+
+footer{
+	height:85px;
+}
+
+footer a{
+	margin:8.5px;
+	height:68px;
+}
+
+footer p{
+	margin-left:8.5px;
+	line-height:68px;
+}
+
+footer img{
+	width:68px;
+	height:68px;
+}

@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	margin:auto;
+    max-width: 1540px;
+    min-width: 850px;
+    overflow-x: hidden;
+	background-color: #272725;
+	color: #F9F9F6;
+	font-family: Georgia,"Times New Roman",Serif;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+
+a:link, a:visited {
+    color: #F9F9F6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper{
+	margin-left:70px;
+}
+
+header{
+	background-color: #272725;
+    height: 140px;
+    margin-left: auto;
+	width:100%;
+	float:left;
+}
+
+.logo{
+	content:url(file:///bartbastings/Documents/school/P6/WD32/week1/opdracht2/pierrickcalvez.png);
+	bottom: 0;
+    left: 70px;
+	border: medium none;
+	float:left;
+	vertical-align:middle;
+}
+
+
+ul{
+	list-style-type:none;
+}
+
+.links{
+	float:left;
+	padding: 17px 0 15px;
+	margin-left:35px;
+}
+
+.links a{
+	padding: 17px 0 15px;
+}
+
+.links a:hover{
+	opacity:1;
+}
+
+.links li{
+	margin-top:20px;
+	margin-right:10px;
+	float:left;	
+}
+
+.current a{
+	border-bottom: 1px solid #F5F5F2;
+    color: #F5F5F2;
+}
+
+.noncurrent a{
+	opacity: 0.4;
+}
+
+.tools a{
+	opacity:0.4;
+}
+
+.tools a:hover{
+	opacity:1;
+}
+
+.tools li a{
+	float: left;
+    height: 60px;
+    width: 26px;
+	margin-top:30px;
+}
+
+.tool1 a{
+	margin-left:100px;
+	background:url(l_twitter.gif) no-repeat scroll 5px 16px transparent;
+}
+
+.tool2 a{
+	background:url(l_mail.gif) no-repeat scroll 5px 16px transparent;
+}
+
+.tool3 a{
+	background:url(l_rss.gif) no-repeat scroll 5px 16px transparent;
+}
+
+.tool4 a{
+	background:url(l_client.gif) no-repeat scroll 5px 16px transparent;
+}
+
+.context{
+	float: left;
+    padding-bottom: 30px;
+	width:1124px;
+}
+
+.diary_post img {
+    background-color: #DBDBD2;
+    height: 210px;
+}
+
+.diary_post {
+    background-color: #F9F9F6;
+    color: #DBDBD2;
+    display: block;
+    float: left;
+    height: 280px;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    width: 280px;
+	opacity:1;
+}
+
+.pic :hover {
+	opacity:0.9;
+}
+
+.diary_post_title {
+    color: #363632;
+    display: block;
+    float: left;
+    font-size: 1.2em;
+    height: 48px;
+    margin-top: 22px;
+    padding-left: 30px;
+}
+
+a img {
+    border: medium none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.text {
+    background-color: #F9F9F6;
+    display: block;
+    float: left;
+    height: 280px;
+    width: 1124px;
+}
+
+.text_lacoste{
+	float:left;
+	margin: 30px;
+	color: #363632;
+}
+
+/*background-color:#F9F9F6; achtergrond kleur tekst */

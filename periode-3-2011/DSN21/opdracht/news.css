@@ -1,0 +1,317 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+body {
+	background-color: #999;
+}
+
+#wrapper {
+	margin: auto;
+	width: 900px;
+	background-image: url(img/achtergrond.png);
+}
+
+#header {
+	width: 880px;
+	margin: 5px;
+	float: left;
+	background-color: #999;
+	border: 5px solid #900;
+}
+
+#menu {
+	float: left;
+	width: 190px;
+	height: 930px;
+	margin: 5px;
+	border: 5px solid #900;
+	background-image: url(img/achtergrond-colum.png);
+}
+
+#framehome {
+	background-image: url(img/frame-home.png);
+	height: 145px;
+	width: 190px;
+}
+
+#navihome {
+	float: left;
+	width: 100%;
+	list-style: none;
+	margin: auto;
+	padding-top: 40px;
+}
+
+#navihome a {
+	color: #000;
+	display: : block;
+	width: 90%;
+	text-decoration: none;
+	font-family: "Handwriting - Dakota";
+	font-size: 30pt;
+}
+
+#frameplastic {
+	background-image: url(img/frame-plasticbeach.png);
+	height: 168px;
+	width: 190px;
+}
+
+#naviplastic {
+	float: left;
+	width: 100%;
+	list-style: none;
+	margin: auto;
+	padding-top: 30px;
+	padding-left: 30px;
+}
+
+#naviplastic a {
+	color: #000;
+	display: : block;
+	width: 90%;
+	text-decoration: none;
+	font-family: "Handwriting - Dakota";
+	font-size: 24pt;
+}
+
+#framenews {
+	background-image: url(img/frame-news.png);
+	height: 163px;
+	width: 190px;
+}
+
+#navinews {
+	float: left;
+	width: 100%;
+	list-style: none;
+	margin: auto;
+	padding-top: 45px;
+}
+
+#navinews a {
+	color: #999;
+	display: : block;
+	width: 90%;
+	text-decoration: none;
+	font-family: "Handwriting - Dakota";
+	font-size: 30pt;
+	text-shadow: 0 0 30px #FFF
+}
+
+#frameg-player {
+	background-image: url(img/frame-g-player.png);
+	height: 140px;
+	width: 190px;
+}
+
+#navig-player {
+	float: left;
+	width: 100%;
+	list-style: none;
+	margin: auto;
+	padding-top: 40px;
+	padding-left: 25px;
+}
+
+#navig-player a {
+	color: #000;
+	display: : block;
+	width: 90%;
+	text-decoration: none;
+	font-family: "Handwriting - Dakota";
+	font-size: 25pt;
+}
+
+#framefan-club {
+	background-image: url(img/frame-fanclub.png);
+	height: 165px;
+	width: 190px;
+}
+
+#navifan-club {
+	float: left;
+	width: 100%;
+	list-style: none;
+	margin: auto;
+	padding-top: 20px;
+}
+
+#navifan-club a {
+	color: #000;
+	display: : block;
+	width: 90%;
+	text-decoration: none;
+	font-family: "Handwriting - Dakota";
+	font-size: 30pt;
+}
+
+#frameshop {
+	background-image: url(img/frame-shop.png);
+	height: 120px;
+	width: 190px;
+}
+
+#navishop {
+	float: left;
+	width: 100%;
+	list-style: none;
+	margin: auto;
+	padding-top: 30px;
+}
+
+#navishop a {
+	color: #000;
+	display: : block;
+	width: 90%;
+	text-decoration: none;
+	font-family: "Handwriting - Dakota";
+	font-size: 30pt;
+}
+
+#context {
+	background-image: url(img/content.png);
+	float: left;
+	width: 670px;
+	height: 930px;
+	margin: 5px;
+	border: 5px solid #900;
+}
+
+#news {
+	float: left;
+	background-image: url(img/news.png);
+	width: 190px;
+	height: 900px;
+	border: 5px solid #900;
+	margin-top: 10px;
+	margin-left: 25px;
+	margin-bottom: 10px;
+}
+
+#navicontextnews {
+	float: left;
+	width: 100%;
+	list-style: none;
+	margin: auto;
+	padding-top: 10px;
+}
+
+#navicontextnews a {
+	color: #000;
+	width: 90%;
+	text-decoration: none;
+	font-family: "Handwriting - Dakota";
+	font-size: 34pt;
+	text-shadow: 0 0 10px #FFC;
+}
+
+#newstext {
+	float: left;
+	width: 75%;
+	list-style: none;
+	margin: auto;
+	padding-top: 10px;
+	list-style-image: url(img/laag-3.gif);
+}
+
+#newstext a {
+	color: #000;
+	width: 90%;
+	text-decoration: none;
+	font-family: "Handwriting - Dakota";
+	font-size: 13pt;
+	display: block;
+}
+
+ul#newstext a:hover {
+	background-color: #000;
+	opacity: 0.5;
+	color: #900;
+}
+
+#newscontext {
+	float: left;
+	background-image: url(img/player.png);
+	width: 385px;
+	height: 900px;
+	border: 5px solid #900;
+	margin-top: 10px;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-bottom: 10px;
+}
+
+#newscontext h3 {
+	margin: auto;
+	text-align: center;
+	color: #000;
+	text-decoration: none;
+	font-family: "Handwriting - Dakota";
+	font-size: 16pt;
+	text-shadow: 0 0 10px #FFC;
+}
+
+#slideshow {
+	margin: auto;
+	padding-top: 15px;
+}
+
+#newsp {
+	padding-top: 15px;
+}
+
+#newscontext p {
+	margin: auto;
+	text-align: left;
+	color: #000;
+	text-decoration: none;
+	font-family: "Handwriting - Dakota";
+	font-size: 11pt;
+}
+
+#footer {
+	clear: both;
+	height: 120px;
+	margin: 5px;
+	background-image: url(img/footer-actergrond.png);
+	background-color: #999;
+	border: 5px solid #900;
+}
+
+#logo {
+	float: left;
+	margin: 10px;
+	padding-right: 5px;
+}
+
+#youtube {
+	float: left;
+	padding-right: 5px;
+	margin: 10px;
+}
+
+#facebook {
+	float: left;
+	padding-right: 5px;
+	margin: 10px;
+}
+
+#myspace {
+	float: left;
+	padding-right: 5px;
+	margin: 10px;
+}
+
+#twitter {
+	float: left;
+	padding-right: 5px;
+	margin: 10px;
+}
+
+#itunes {
+	float: left;
+	padding-right: 5px;
+	margin: 10px;
+}

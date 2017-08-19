@@ -1,0 +1,620 @@
+/*
+colors
+Zwart: #000000; 
+Bruin: #cb9e65 
+Geel: #f8c811
+*/
+
+html, body, section, article, div, header, main, footer, nav, ul, li, p, a{
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+html, body{
+	width:100%;
+	height:100%;
+}
+
+html{
+	font-size:14px;
+	font-family: 'FuturaMedium';
+	background: url(../afb/zussBrasserieBackground.JPG) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+	float:left;
+	margin:0;
+	padding:0;
+	font-weight: normal;
+	font-family: 'FuturaBook';
+}
+
+ul{
+	list-style:none;
+}
+
+a{
+	color:#000000;
+	text-decoration:none;
+}
+
+.wrapper {
+	width:100%;
+	height:calc(100% - 100px);
+	padding:100px 0 0 0;
+}
+
+.leftContent{
+	width:50%;
+	height:100%;
+}
+
+.rightContent{
+	width:50%;
+	height:100%;
+}
+
+.contentHeader{
+	width:100%;
+	height:65px;
+	background-color:#f8c811;
+}
+
+.contentHeader h2{
+	font-family: 'StencilcaseRegular';
+	font-size:2.571em;
+	margin-left:25px;
+	line-height:65px;
+}
+
+.button{
+	width:200px;
+	line-height:50px;
+	text-align:center;
+	background-color:#bfbfbf;
+}
+
+.button:hover{
+	background-color:#f8c811;
+}
+
+/* effecten */
+
+.transition{
+	-webkit-transition: all 0.45s ease-in-out;
+	-moz-transition: all 0.45s ease-in-out;
+	-ms-transition: all 0.45s ease-in-out;
+	-o-transition: all 0.45s ease-in-out;
+	transition: all 0.45s ease-in-out;
+}
+
+.boxshadow{
+	-webkit-box-shadow: 0 5px 5px 0 #000000;
+	-moz-box-shadow: 0 5px 5px 0 #000000;
+	-ms-box-shadow: 0 5px 5px 0 #000000;
+	-o-box-shadow: 0 5px 5px 0 #000000;
+	box-shadow: 0 5px 5px 0 #000000;
+}
+
+.mirror{
+	display: inline-block;
+	-webkit-transform:rotateY(180deg);
+	-moz-transform:rotateY(180deg);
+	-ms-transform:rotateY(180deg);
+	-o-transform:rotateY(180deg);
+     transform:rotateY(180deg);
+}
+
+#active{
+	background-color:#f8c811;
+}
+
+.responsiveImage{
+	width:100%;
+	height:auto;
+}
+
+.upperCase{
+	text-transform:uppercase;  
+}
+
+/* page header */
+
+.pageHeader{
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:100;
+	font-family:'FuturaLight';
+	width:100%;
+	height:50px;
+	background-color:#ffffff;
+}
+
+.pageHeader nav, .pageHeader ul, .pageHeader li, .pageHeader a{
+	width:100%;
+	height:100%;
+}
+
+.pageHeader ul li{
+	width:10.416666666666668%;
+}
+
+#navCenterLink{
+	position:relative;
+	height:75px;
+	width:16.666666666666664%;
+}
+
+#navCenterLink img{
+	position:absolute;
+	top: 10%;
+	left: 18.75%;
+	width:62.5%;
+	max-width:100px;
+	height:auto;
+}
+
+#navCenterLink img:empty
+{
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.pageHeader ul li a{
+	font-size:1.143em;
+	background-color:#ffffff;
+	text-align:center;
+	line-height:50px;
+}
+
+.pageHeader ul li a:hover{
+	background-color:#f8c811;
+}
+
+.clearFix{
+	clear:both;
+	float:none;
+	height:75px;
+}
+
+/* main */
+
+main{
+	z-index:0;
+	width:79.16666666666666%;
+	min-height:200px;
+	margin:0 10.4166666667%;
+	background-color:#ffffff;
+}
+
+/* index */
+
+.imageViewer{
+	width:100%;
+}
+
+.imageViewer div{
+	position:relative;
+	width:100%;
+}
+
+.imageViewer .imageViewerContainer img{
+	min-height:200px;
+}
+
+.imageInfo{
+	position:absolute !important;
+	width:auto !important;
+	right:0;
+	bottom:0;
+	height:50px;
+	padding:0 20px;
+	background-color:rgba(255,203,8,0.75);
+}
+
+.imageInfo h3{
+	line-height:50px;
+	color:#ffffff;
+	font-size:1.714em;
+}
+
+.indexInfoContainer{
+	width:100%;
+}
+
+.indexInfoContainer article{
+	position: relative;
+	width:39.473684210526315%;
+	margin:0 0 12.5px 1.644736842105263%;
+}
+
+.indexInfoContainer article:before{
+	content:'';
+	display: block;
+	padding-top: 100%;
+}
+
+.articleContent{
+	padding:12.5px;
+	position:  absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+#infoZuss header{
+	margin-bottom:5px;
+}
+
+#infoZuss h1{
+	color:#f8c811;
+	font-size:1.714em;
+}
+
+#infoZuss p{
+	font-family: 'FuturaLight';
+	font-size:1em;
+}
+
+#cadeauTip header{
+	margin-bottom:5px;
+}
+
+#cadeauTip h2{
+	color:#f8c811;
+	font-size:1.714em;
+}
+
+#menukaartContainer{
+	margin:0 0 12.5px 1.644736842105263%;
+	padding:12.5px;
+	width: calc(14.473684210526317% - 25px);
+	width: -webkit-calc(14.473684210526317% - 25px);
+	width: -moz-calc(14.473684210526317% - 25px);
+	width: -ms-calc(14.473684210526317% - 25px);
+	width: -o-calc(14.473684210526317% - 25px);
+}
+
+#menukaartContainer a{
+	width:100%;
+}
+
+/* lunch */
+
+
+#lunchContent{
+	padding:12.5px;
+}
+
+#lunchContent h2{
+	color:#f8c811;
+	font-size:1.714em;
+}
+
+/* lekkers */
+
+#lekkersContent{
+}
+
+#menukaartPage{
+	padding:10px;
+	width:calc(100% - 20px);
+}
+
+.menukaartPage{
+	width:100%;
+}
+
+.menukaartPage img{
+	width:100%;
+	height:auto;
+}
+
+.booklet .b-wrap-left{
+	background-color:#ffffff;
+}
+
+.booklet .b-wrap-right{
+	background-color:#f7f7f7;
+}
+
+.b-counter{
+	background-color:#f8c811 !important;
+	font-size:1em !important;
+	font-family: 'FuturaBook' !important;
+}
+
+/* hightea */
+
+#highteaContent{
+}
+
+#whiteCharacter{
+	color:#ffffff;
+	margin-left: -5px;
+	margin-right:5px;
+}
+
+#highteaContent img{
+	float:left;
+	width:26.31578947368421%;
+	height:auto;
+}
+
+#highteaContainer{
+	width:73.68421052631579%;
+}
+
+#highteaArticle{
+	width:calc(100% - 20px);
+	padding:10px;
+}
+
+#highteaArticle p{
+	text-align:justify
+}
+
+#highteaPrijsLijst{
+	width:calc(100% - 20px);
+	padding:10px;
+}
+
+#highteaPrijsLijst ul{
+	width:100%;
+}
+
+#highteaPrijsLijst li{
+	margin-top:14px;
+	width:100%;
+}
+
+#highteaPrijsLijst li h4{
+	font-family: 'FuturaBook';
+	font-size:1em;
+	width:100%;
+}
+
+#highteaPrijsLijst li p{
+	margin-top:14px;
+	font-family: 'FuturaBook';
+	font-size:1em;
+	width:100%;
+}
+
+.rightAlign{
+	float:right;
+}
+
+/* meeneem */
+
+#meeneemLijstContainer{
+	width:calc(100% - 100px);
+	padding:50px;
+}
+
+#meeneemLijstContainer img{
+	width:100%;
+	height:auto;
+}
+
+#meeneemLijst{
+	width:calc(100% - 30px);
+	padding:15px;
+}
+
+#meeneemLijstInfo{
+	width:calc(100% - 25px);
+	padding:12.5px;
+	margin-top:10px;
+}
+
+#meeneemLijstInfo p{
+	font-size:1em;
+	font-family: 'FuturaBook';
+}
+
+#meeneemLijstInfo a{
+	margin-top:10px;
+	float:right;
+}
+
+/* groepen */
+#groepenContent{
+	padding:12.5px;
+}
+
+#groepenContent h2{
+	color:#f8c811;
+	font-size:1.714em;
+}
+
+/* vrijdagavond */
+#vrijdagavondContent{
+	padding:12.5px;
+}
+
+#vrijdagavondContent h2{
+	color:#f8c811;
+	font-size:1.714em;
+}
+
+/* vacature */
+
+#vacatureInfo{
+	width:100%;
+}
+
+#vacatureInfo img{
+	width:100%;
+	height:auto;
+}
+
+#vacaturesContact{
+	border-top:1px solid #f8c811;
+	margin: 0 25px 25px 25px;
+	padding-top: 25px;
+	width: calc(100% - 50px);
+}
+
+#vacaturesContact p{
+	width:100%;
+	font-family: 'FuturaLight';
+	font-size:1em;
+	text-align:center;
+}
+
+#vacaturesContact p a{
+	width:100%;
+	text-align:center;
+}
+
+#vacaturesContact p a:hover{
+	color:#f8c811;
+}
+
+.vacature{
+	margin: 10px 25px 0 25px;
+}
+
+.vacature header{
+	width:calc(100% - 20px);
+	padding:0 10px;
+}
+
+.vacature header h3{
+	font-family: 'FuturaBold';
+	width:100%;
+}
+
+.vacature h4{
+	width:calc(100% - 20px);
+	padding:0 10px;
+	line-height:30px;
+	background-color:#f8c811;
+}
+
+.vacature ul{
+	width:calc(100% - 20px);
+	padding:0 10px;
+}
+
+.vacature li{
+	width:100%;
+	font-size:0.857em;
+}
+
+/* contact */
+
+#contactContent{
+	height:500px;
+}
+
+#map{
+	width:100%;
+	height:100%;
+}
+
+#contactInfo{
+}
+
+#contactTijden{
+	margin: 10px 25px 0 25px;
+	padding: 0 0 25px 0;
+	width: calc(100% - 50px);
+	border-bottom:1px solid #f8c811;
+}
+
+#contactTijden h3{
+	width:100%;
+	font-size:1em;
+	font-family:'FuturaLight';
+}
+
+#contactTijden h4{
+	width:100%;
+	font-family:'FuturaLight';
+}
+
+#contactTijden p{
+	width:100%;
+	font-family:'FuturaLight';
+}
+
+#contactTijden li{
+	width:100%;
+	font-family:'FuturaLight';
+	font-size:0.857em;
+	margin-top:12px;
+}
+
+#contactGegevens{
+	margin: 10px 25px 0 25px;
+	width: calc(100% - 50px);
+}
+
+#contactGegevens h2{
+	font-size:1em;
+	text-align:center;
+	width:100%;
+	font-family: 'FuturaBook';
+}
+
+#contactGegevens p{
+	font-size:1em;
+	text-align:center;
+	width:100%;
+	font-family: 'FuturaBook';
+}
+
+#contactGegevens p a{
+	font-size:1em;
+	text-align:center;
+	width:100%;
+	font-family: 'FuturaBook';
+}
+
+
+#contactGegevens p a:hover{
+	color:#f8c811;
+}
+
+/* footer */
+footer{
+	z-index:50;
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:50px;
+	background-color:#bfbfbf;
+}
+
+footer a{
+	float:right;
+	font-family: 'FuturaBook';
+	margin:5px;
+	height:40px;
+}
+
+footer p{
+	float:right;
+	margin-left:5px;
+	line-height:40px;
+}
+
+footer img{
+	width:40px;
+	height:40px;
+}
