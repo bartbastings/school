@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Scherm Stratumseind Final</title>
+	<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.totemticker.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+	<script type="text/javascript" src="js/newtick.js"></script>
+    <script type="text/javascript" src="js/getEvent.js"></script>
+    <script type="text/javascript" src="js/getPeopleCount.js"></script>
+    <script type="text/javascript" src="js/mainScreenCycle.js"></script>
+    <script type="text/javascript" src="js/eventAgendaCycle.js"></script>
+    <script type="text/javascript" src="js/spotlightCycle.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="js/twitter.js"></script>
+    <script type="text/javascript" src="js/googleChart.js"></script>
+	</head>
+	<body>
+    <div class="first">
+        <div class="firstleft">
+			<div class="logo"><img src="images/logo_03.png" alt="logo"></div>
+        	<div class="header"><span id="time"></span><span id="peoplecount"></span></div>
+	        <div class="uitgelicht"><img src="images/spotlight1.jpg"></div>
+		</div>          
+		<div class="statestieken">
+			<div class="donutChart">
+				<div id="visitorsChartSpotlight1" class="chart"></div>
+				<div id="visitorsChartSpotlight2" class="chart"></div>
+				<div id="visitorsChartSpotlight3" class="chart"></div>
+				<div class="imgChart visitorsImgChart"></div>
+				<h3 id="bezoekers">verwachte bezoekers</h3>
+			</div>
+			<div class="donutChart">
+				<div id="genderChartSpotlight1" class="chart"></div>
+				<div id="genderChartSpotlight2" class="chart"></div>
+				<div id="genderChartSpotlight3" class="chart"></div>
+				<div class="imgChart genderImgChart"></div>
+				<h3 id="vrouw">vrouw</h3>
+				<h3 id="man">man</h3>
+			</div>
+			<div class="genre">	
+            	<img src="images/genre_dance.png" alt='genreImage'>
+            	<h3>Dance</h3>
+			</div>
+		</div>
+    </div>
+    <!-- uitgelicht end -->
+    
+    <div class="second">
+    	<div class="line"> <img src="images/aline.png"> </div>
+    	<div id="day1" class="vrijdag days">
+    		<p>VRIJDAG</p>
+        </div>
+        <div id="day2" class="zaterdag days">
+            <p>ZATERDAG</p>
+        </div>
+        <div id="day3" class="zondag days">
+            <p>ZONDAG</p>
+        </div>
+        <div id="day4"class="donderdag days">
+            <p>DONDERDAG</p>
+        </div>
+        
+        <ul class="vertical-ticker day1event">
+            <li><img src="images/event1.jpg"></li>
+            <li><img src="images/event2.jpg"></li>
+            <li><img src="images/event3.jpg"></li>
+            <li><img src="images/event4.jpg"></li>
+            <li><img src="images/event5.jpg"></li>
+        </ul>
+        <div class="daynumber day1event dateEvent">
+            <p>24</p>
+        </div>
+        <div class="monthname day1event dateEvent">
+            <p>januari</p>
+        </div>
+        <div class="dayname day1event dateEvent">
+            <p>VRIJDAG</p>
+        </div>
+        
+        <ul class="vertical-ticker day2event">
+            <li><img src="images/event6.jpg"></li>
+            <li><img src="images/event7.jpg"></li>
+            <li><img src="images/event8.jpg"></li>
+            <li><img src="images/event9.jpg"></li>
+            <li><img src="images/event10.jpg"></li>
+            <li><img src="images/event11.jpg"></li>
+        </ul>
+        <div class="daynumber day2event dateEvent">
+            <p>25</p>
+        </div>
+        <div class="monthname day2event dateEvent">
+            <p>januari</p>
+        </div>
+        <div class="dayname day2event dateEvent">
+            <p>ZATERDAG</p>
+        </div>
+        
+        <ul class="vertical-ticker day3event">
+            <li><img src="images/event12.jpg"></li>
+            <li><img src="images/event13.jpg"></li>
+            <li><img src="images/event14.jpg"></li>
+            <li><img src="images/event15.jpg"></li>
+            <li><img src="images/event1.jpg"></li>
+            <li><img src="images/event5.jpg"></li>
+        </ul>
+        <div class="daynumber day3event dateEvent">
+            <p>26</p>
+        </div>
+        <div class="monthname day3event dateEvent">
+            <p>januari</p>
+        </div>
+        <div class="dayname day3event dateEvent">
+            <p>ZONDAG</p>
+        </div>
+        
+        <ul class="vertical-ticker day4event">
+            <li><img src="images/event10.jpg"></li>
+            <li><img src="images/event9.jpg"></li>
+            <li><img src="images/event2.jpg"></li>
+            <li><img src="images/event11.jpg"></li>
+            <li><img src="images/event6.jpg"></li>
+            <li><img src="images/event12.jpg"></li>
+        </ul>
+        <div class="daynumber day4event dateEvent">
+            <p>30</p>
+        </div>
+        <div class="monthname day4event dateEvent">
+            <p>januari</p>
+        </div>
+        <div class="dayname day4event dateEvent">
+            <p>DONDERDAG</p>
+        </div>
+    </div>
+    <footer>
+    	<div id="twitterLogo"><img src="images/twlogo.png"></div>
+        <ul id="tweetNewsFeed">
+        	<li>#Stratum Wat een mooi feestje was het weer hier ...&nbsp;&nbsp;</li>
+            <li>#Stratum Pfoe een beetje te veel gedronken maar wel erg gezellig ...&nbsp;&nbsp;</li>
+            <li>#Stratum Net ruzie gehad met een politie agent (0_o) ...&nbsp;&nbsp;</li>
+		</ul>
+	</footer>
+</body>
+</html>
+
+</body>
+</html>

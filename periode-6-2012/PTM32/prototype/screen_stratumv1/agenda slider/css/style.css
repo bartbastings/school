@@ -1,0 +1,22 @@
+#wrapper{
+	width:300px;
+	margin:0 auto;
+}
+
+#vertical-ticker{
+	height:450px;
+	overflow:hidden;
+}
+
+#vertical-ticker li{
+	padding:5px;
+	display:block;
+	color:#333;
+	border-bottom:1px solid #1d2127;
+	text-align:center;
+}
+	
+#vertical-ticker li img{
+	width:260px;
+	height:95px;
+}

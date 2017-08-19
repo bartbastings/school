@@ -239,7 +239,67 @@ Link: [Opdracht 1](week-3/opdracht-8)
 - Link: [Oefening 9.3](week-3/oefening-9-3)
 - Link: [Oefening 9.4](week-3/oefening-9-4)
 
-## week 4
+## week 4 - Cookies, sessies en formulieren
+
+### Opdracht 1 - Cookies zetten
+- Schrijf een PHP script waarin met behulp van een Cookie wordt bijgehouden hoe vaak een bepaalde webpagina is bezocht. Bij elk bezoek aan de pagina moet de teller met één worden opgehoogd. Controleer de update van de Cookie met Firebug.
+- Laat op je pagina zien hoe vaak de pagina al is bezocht.
+
+Opdracht niet meer aanwezig.
+
+### Opdracht 2 - Een eenvoudige sessie
+- Voer opdracht 1 nog een keer uit, maar nu met een sessie variabele.
+- Maak een website die uit meerdere pagina's bestaat, en sla in de sessie variabele op hoeveel pagina's binnen die site zijn bekeken.
+- Hou ook bij op wanneer de laatste aanroep van een individuele pagina was (JJJJ-DD-MM). Toon deze informatie bij het bezoeken van een pagina.
+
+Opdracht niet meer aanwezig.
+
+### Opdracht 3 - Achtergrond kleur zetten
+Maak een pagina met daarop een formulier waarmee de gebruiker een eigen achtergrondkleur kan instellen. Wanneer de knop "Kleur instellen" wordt geklikt, wordt de pagina opnieuw geladen met de gekozen achtergrondkleur. Zorg ervoor dat ook eventuele andere pagina's binnen de site van die achtergrondkleur gebruik maken. Gebruik PHP voor het afvangen van het formulier, zet de achtergrondkleur met behulp van CSS.
+
+Opdracht niet meer aanwezig.
+
+### Opdracht 4 - Een comment form
+- Bouw een simpel comment form, submit nieuwe comments, de comments zullen verdwijnen als de pagina wordt ververst.
+- Sla de comments op in een sessie variabele waardoor de comments ook bij een refresh zichtbaar blijven.
+
+Opdracht niet meer aanwezig.
+
+### Opdracht 5 - Raden Maar!
+Bekijk de bestanden van de demo "Raden Maar!" De applicatie werkt, maar er zijn nog een aantal zaken niet op orde. Breid de demo uit en zorg dat de volgende zaken verbeterd worden:
+- Het is in de demo mogelijk om een getal hoger dan vijf in te voeren. Zorg ervoor dat dit niet kan. Beslis zelf of je dit in PHP of JavaScript/jQuery oplost en motiveer waarom.
+- Raden Maar! heeft geen index.php bestand. Maak een index.php voor de controller.
+- De applicatie gebruikt een sessie variabele om gegevens in op te slaan. Als er nog geen sessie is kun je vreemde effecten krijgen bij het direct oproepen van o.a. week4_view_result.php. Zorg voor een juiste afhandeling als er geen sessie is.
+
+Opdracht niet meer aanwezig.
+
+### Opdracht 6 - Login via formulier
+- Maak een web formulier waarmee je kunt inloggen op een website. Verzin zelf één of meerdere gebruikersnamen en wachtwoorden.
+_ Zorg ervoor dat iemand die ingelogd is naar meerdere pagina's kan navigeren zonder opnieuw in te loggen. Dit kun je doen door een sessie te starten.
+_ Voeg ook een logout button toe waarmee gebruikers uit kunnen loggen en de sessie beëindigen. Let op: gebruik hiervoor de functies unset/destroy, zie ook het boek hiervoor.
+
+Opdracht niet meer aanwezig.
+
+### Opdracht 7 - MVC applicatie
+Bouw je in- en uitlog applicatie om zodat je een duidelijk onderscheid hebt tussen je Model-View-Controller.
+
+Opdracht niet meer aanwezig.
+
+### Opdracht 8 - Ontwerp eindopdracht
+Maak een ontwerp voor je eindopdracht, denk hierbij zowel aan vormgeving als functionaliteit. Begin met eenvoudige schetsen op papier. Zorg ervoor dat je met je ontwerp de volgende vragen kunt beantwoorden:
+- Welke pagina's zijn er voor de eindgebruikers?
+- Hoe is de pagina flow?
+- Wat voor vormgeving gebruik je?
+- Definieer de verschillende lagen in je applicatie in MVC terminologie;
+Maak ook alvast een Flickr account aan en experimenteer met de mogelijkheden van Flickr. Probeer voor jezelf al na te gaan hoe je een koppeling met Flickr gaat leggen. De API documentatie kun je hier vinden: http://www.flickr.com/services/api/
+
+Opdracht niet meer aanwezig.
+
+### Opdracht 9 - Prototyping
+- Realiseer HTML/CSS bestanden voor je applicatie;
+- Realiseer het login gedeelte voor je applicatie (let op: namen mag je nu nog hard-coded opslaan). Zorg ervoor dat alle typen gebruikers uit de eindopdrachtbeschrijving kunnen inloggen en de juiste pagina's kunnen gebruiken.
+
+Opdracht niet meer aanwezig.
 
 ### overige
 - Link: [Oefening 10.1](week-4/oefening-10-1)
@@ -249,7 +309,88 @@ Link: [Opdracht 1](week-3/opdracht-8)
 - Link: [Oefening 11.1](week-4/oefening-11-1)
 - Link: [Oefening 11.2](week-4/oefening-11-2)
 
-## week 5
+## week 5 - MySQL
+Voor alle opdrachten geldt: gebruik je MAMP installatie voor het testen, de eerste experimenten e.d. Pas als je zeker weet dat alles lokaal werkt ga je bouwen op de Athena server. Maak gebruik van de informatie uit de sheets, de meegeleverde voorbeelden en de voorbeelden uit het boek.
+
+### Opdracht 1 - Database maken via pHpMyAdmin
+Voor deze opdracht kun je gebruik maken van de informatie uit oefening 12.1 (p. 205-216).
+- Maak een nieuwe gebruiker en een database met de naam "Studie" aan via de pHpAdmin webinterface.
+- Maak een tabel aan met de naam "NAW" en zorg ervoor dat je de
+onderstaande gegevens kunt opslaan. Bedenk zelf welke data typen je definieert en waarom:
+  - id
+  - voornaam
+  - achternaam d. adres
+  - huisnummer f. woonplaats
+- Voeg via de pHpMyAdmin interface minimaal 10 verschillende rijen toe aan deze tabel. Gebruik daarvoor direct SQL statements, zonder tussenkomst van PHP (zie de tab "SQL" in pHpMyAdmin). Lees de data ook weer uit. Benodigde SQL statements: SELECT en INSERT.
+
+Opdracht niet meer aanwezig.
+
+### Opdracht 2 - Database connectie vanuit PHP
+In deze opdracht ga je de database uit opdracht 1 via PHP benaderen.
+- Maak een database connectie waarmee je de tabel "NAW" kunt uitlezen.
+- Schrijf een PHP script waarmee je de complete tabel uitleest en weergeeft in je browser.
+- Sla de code die de database connectie verzorgd op in een apart PHP bestand.
+- Zorg ervoor dat de informatie uit je NAW tabel gesorteerd wordt op
+achternaam. Dit kun je op verschillende plekken in je applicatie doen, bijvoorbeeld via een SQL statement, via PHP en via JavaScript/jQuery. Probeer minimaal twee manieren uit en beredeneer wanneer je welke manier het beste kan gebruiken.
+
+Opdracht niet meer aanwezig.
+
+### Opdracht 3 - SQL Queries - SELECT
+Opdracht 3 t/m 5 hebben allen betrekking op een database "bookShop". Maak eerst een database aan met exact deze naam. De inhoud van deze database kun je zelf aanmaken m.b.v. de SQL statements uit gegevens_opdracht3-5.txt. Schrijf vervolgens SQL queries die de volgende informatie opleveren:
+- Alle boeken van Dick Bruna;
+- Alle literaire boeken, gesorteerd op titel.
+- Welke klanten wonen in Geldrop?
+- Welke auteurs hebben 'Ste' in hun naam?
+- Alle verkochte boeken uit 2010. Geef alleen de boek id's.
+- Het aantal verkochte boeken uit 2011.
+- Alle boeken die verkocht zijn in 2010, geef zowel de titel als de auteur en de verkoopdatum.
+- Geef per klant aan hoeveel boeken zij hebben gekocht
+- Geef een overzicht van alle titels die een klant heeft gekocht
+- Selecteer de klant die de minste bestellingen heeft geplaatst (maar wel minstens één).
+- Maak een lijst van alle boek titels en prijzen. Sorteer op aflopende prijs.
+- Welke klanten hebben boeken gekocht tussen juni en oktober 2011?
+- Welke klanten hebben ICT boeken besteld?
+- Welke boeken zijn nooit besteld of verkocht?
+- Wat is het meest goedkope boek?
+- Wat is het meest verkochte boek?
+
+Opdracht niet meer aanwezig.
+
+### Opdracht 4 - SQL Queries - INSERT - DELETE - UPDATE
+- Verander de naam van Gerard Kornelis van het Reve in "Gerard Reve".
+- Verwijder alle boeken die nooit zijn besteld of verkocht.
+- Verwijder alle klanten die geen bestelling hebben.
+
+Opdracht niet meer aanwezig.
+
+### Opdracht 5 - Data modelleren
+- De database "Studie" bestaat nu alleen uit een tabel met NAW gegevens. Het is de bedoeling dat deze database op een goede manier informatie over studenten, docenten, vakken en resultaten kan bevatten. Maak een datamodel van de database "Studie" en zorg ervoor dat de volgende regels daarin zijn afgedekt:
+  - Een vak kan gevolgd worden door meerdere studenten;
+  - Een student kan meerdere vakken volgen;
+  - Een docenten kan meerdere vakken geven;
+  - Per vak kan een student één resultaat behalen;
+  - De resultaten zijn altijd cijfers van 1 t/m 10, of ze zijn leeg. Gebruik hiervoor de modelleertechniek die je bij de cursus DBS12 hebt geleerd. Let op: zorg ervoor dat je geen redundante data opslaat!
+- Maak de benodigde tabellen aan volgens je datamodel.
+- Vul de database met relevante data. Zorg voor tenminste 10 studenten en hun studie resultaten, 3 docenten en 5 vakken.
+- Maak via PHP een rapport waarin je per student de studieresultaten per vak toont. Geef ook aan van welke docent de student les heeft gehad.
+
+Opdracht niet meer aanwezig.
+
+### Opdracht 6 - Data modelleren [eindopdracht]
+Maak een datamodel voor de eindopdracht. Maak een database aan volgens dit datamodel in MySQL.
+
+Opdracht niet meer aanwezig.
+
+### Opdracht 7 - Registratie formulier [eindopdracht]
+In de opdrachten van week 4 heb je de formulieren ontwikkeld voor het registreren en inloggen. Zorg ervoor dat de informatie die je daar hard-coded in PHP hebt gezet, nu in de database worden opgeslagen en uitgelezen.
+
+Opdracht niet meer aanwezig.
+
+### Opdracht 8 - Comments form [eindopdracht]
+- Bouw het comments form uit week 4 om, zodat alle comments in een database worden opgeslagen. Let op: zorg ervoor dat alleen geregistreerde gebruikers comments toe kunnen voegen.
+- Maak een extra formulier waarin comments kunnen worden aangepast en verwijderd.
+
+Opdracht niet meer aanwezig.
 
 ### overige
 - Link: [Oefening 12.2](week-4/oefening-12-1)

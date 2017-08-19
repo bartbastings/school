@@ -1,0 +1,281 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+	background-color:#000;
+	height:100%;
+	padding:0px;
+	margin:0px;
+	font-size:100%;
+}
+
+body{
+	background-color:#F00;
+	width:1920px;
+	height:1440px;
+}
+
+/* container links */
+.first{
+	float:left;
+	width:100%;
+	height:91%;
+}
+
+.logo{
+	float:left;
+	width:50%;
+	height:15%;
+	padding:2.5%;
+}
+
+.logo img{
+	width:70%;
+}
+
+.uitgelicht{
+	float:left;
+	width:45%;
+	height:70%;
+	margin:2.5%;
+}
+
+.uitgelicht img{
+	float:left;
+	height:100%;
+}
+
+.statestieken{
+	float:right;
+	width:45%;
+	height:100%;
+	margin-top:-15%;
+	margin-bottom:2.5%;
+}
+
+.donutChart{
+	float:left;
+	width:100%;
+	height:30%;
+	position:relative;
+	margin-top:5%;
+	padding-bottom:10%;
+}
+
+.donutChart h3{
+	float:left;
+	color:#FFF;
+	font-family:"helvetica Neue";
+	font-weight:normal;
+}
+
+.chart{
+	float:left;
+	width:100%;
+	height:100%;
+}
+
+.imgChart{
+	position:absolute;
+	width:40%;
+	height:68%;
+	margin-top:4.5%;
+	margin-left:30.3%;
+	margin-right:32.5%;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+
+.visitorsImgChart{
+	background-image:url(../images/visitors.png);
+}
+
+.genderImgChart{
+	background-image:url(../images/gender.png);
+}
+
+#vrouw{
+	float:left;
+	margin-left:15%;
+	margin-top:-5%;
+	font-size:1.5em;
+}
+
+#man{
+	float:right;
+	color:#00e046;
+	margin-right:15%;
+	margin-top:-5%;
+	font-size:1.5em;
+}
+
+#bezoekers{
+	margin-left:25%;
+}
+
+.genre{
+	float:left;
+	width:100%;
+	height:20%;
+}
+
+.genre img{
+	float:left;
+	height:90%;
+	margin-top:1.5%;
+	margin-left:15%;
+}
+
+.genre h3{
+	float:left;
+	margin-left:5%;
+	margin-top:10%;
+	color:#FFF;
+	font-size:2.5em;
+	font-family:"helvetica Neue";
+	font-weight:normal;
+}
+
+/* container rechts */
+.second{
+	width:45%;
+	height:90%;
+	float:left;
+}
+.line img{
+	width:95%;
+	margin-top:5%;
+}
+
+.vrijdag{
+	margin-top:-1.8%;
+	margin-left:0.5%;
+}
+
+.zaterdag{
+	margin-top:-1.8%;
+	margin-left:10%;
+}
+
+.zondag{
+	margin-top:-1.8%;
+	margin-left:22%;
+}
+
+.donderdag{
+	margin-top:-1.8%;
+	margin-left:31%;
+}
+
+.days{
+	position:absolute;	
+	font-family:"helvetica Neue";
+	color:#21262d;
+	font-size:1.3em;
+}
+
+.days:hover{
+	color:#00e046;
+}
+
+.daynumber{
+	position:absolute;
+	font-family:"helvetica Neue";
+	color:white;
+	font-size:3.5em;
+	margin-top:-1%;
+	margin-left:2.5%;
+}
+
+.month{
+	position:absolute;
+	font-family:"helvetica Neue";
+	color:#00e046;
+	font-size:1.5em;
+	margin-top:5.5%;
+	margin-left:1%;
+}
+
+.day{
+	position:absolute;	
+	font-family:"helvetica Neue";
+	color:#00e046;
+	margin-top:8.2%;
+	margin-left:2.5%;
+}
+
+.vertical-ticker{
+	width:70%;
+	height:78.6274059%;
+	overflow:hidden;
+	float:right;
+	margin-top:8.5%;
+	margin-right:5%;
+}
+
+.vertical-ticker li{
+	display:block;
+	border-bottom:3px solid #1d2127;
+	text-align:center;
+}
+	
+.vertical-ticker li img{
+	width:100%;
+	height:140px;
+	padding-bottom:5px;
+	padding-top:10px;
+}
+
+/* footer */
+footer {
+	width:100%;
+	height:9%;
+	float:left;
+	background-color:#1ab7ea;
+}
+
+#twitterLogo {
+	float:left;
+	width:4%;
+	margin-top:0.5%;
+	margin-left:0.5%;
+}
+
+#twitterLogo img{
+	width:100%;
+}
+
+/* liScroll styles */
+.tickercontainer { /* the outer div with the black border */
+	width: 96.5%;
+	margin-top:-4%;
+	float:right;
+}
+
+.tickercontainer .mask { /* that serves as a mask. so you get a sort of padding both left and right */
+	top: 0;;
+	width:100%; 
+	overflow: hidden;
+	float:right;
+}
+
+.newsticker { /* that's your list */
+	position: relative;
+	left: 92.29166666%;
+	font: 2em "helvetica Neue";
+	color: white;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.newstickerListItem {
+	float: left; /* important: display inline gives incorrect results when you check for elem's width */
+	width:170%;
+	margin: 0;
+	margin-left:0.5%;
+	margin-top:0.15%;
+	padding: 0;
+}
+
+.listItemUsername {
+	color:#999;
+}

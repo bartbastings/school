@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background-image:url(bgmm.gif);
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10pt;
+}
+
+.wrapper{
+	float:left;
+	background:white;
+	width:70%;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:15%;
+	margin-right:15%;
+	padding:10px;
+	font-size:1em;
+}
+
+header{
+	padding:10px;
+	border-bottom-color:navy;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+}
+
+h1{
+	font-size:1.5em;
+	font-weight:bold;
+	color:navy;
+}
+
+h2{
+	font-size:1.25em;
+	font-weight:bold;
+	color:navy;
+}
+
+h3{
+	font-size:1em;
+	font-weight:bold;
+	color:navy;
+}
+
+section{
+	padding:10px;
+}
+
+.ppm{
+	float:left;
+	width:45%;
+}
+
+.sound{
+	float:right;
+	width:45%;
+}
+
+a{
+	text-decoration:none;
+	text-align:center;
+	font-size:20px;
+	display:block;
+	padding:10px;
+	background-color:navy;
+	color:white;
+}
+
+table{
+	border-collapse:collapse;
+}
+
+table, th, td{
+	text-align:center;
+	padding:5px;
+	border: 1px solid black;
+}
+
+footer{
+	padding:10px;
+}

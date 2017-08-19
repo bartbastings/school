@@ -1,0 +1,295 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, html{
+	background-color:#000;
+	height:100%;
+	padding:0;
+	margin:0;
+	font-family:"helvetica Neue";
+	color:#FFF;
+}
+
+/* container links */
+.first{
+	float:left;
+	width:55%;
+	height:90%;
+}
+
+.firstleft{
+	float:left;
+	width:50%;
+	height:100%;
+}
+
+.logo{
+	float:left;
+	width:95%;
+	height:10%;
+	padding:2.5%;
+}
+
+.logo img{
+	width:70%;
+}
+
+.header{
+	float:left;
+	width:100%;
+	height:5%;
+}
+
+.header span{
+	float:left;
+	padding:2.5%;
+}
+
+.uitgelicht{
+	float:left;
+	width:100%;
+	height:85%;
+}
+
+.uitgelicht img{
+	margin-top:10%;
+	margin-left:10%;
+	width:80%;
+}
+
+.statestieken{
+	float:right;
+	width:50%;
+	height:95%;
+	margin-top:2.5%;
+	margin-bottom:2.5%;
+}
+
+.donutChart{
+	float:left;
+	width:100%;
+	height:30%;
+	position:relative;
+	margin-bottom:5%;
+	padding-bottom:10%;
+}
+
+.donutChart h3{
+	float:left;
+	color:#FFF;
+	font-family:"helvetica Neue";
+	font-weight:normal;
+}
+
+.chart{
+	position:static;
+	float:left;
+	width:90%;
+	margin-left:5%;
+	margin-right:5%;
+	height:100%;
+}
+
+.imgChart{
+	position:absolute;
+	width:50%;
+	height:75%;
+	margin-top:3%;
+	margin-left:27.5%;
+	margin-right:30%;
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+
+.visitorsImgChart{
+	background-image:url(../images/visitors.png);
+}
+
+.genderImgChart{
+	background-image:url(../images/gender.png);
+}
+
+#vrouw{
+	float:left;
+	margin-left:15%;
+	margin-top:-5%;
+}
+
+#man{
+	float:right;
+	color:#00e046;
+	margin-right:15%;
+	margin-top:-5%;
+}
+
+#bezoekers{
+	margin-left:25%;
+}
+
+.genre{
+	float:left;
+	width:100%;
+	height:25%;
+}
+
+.genre img{
+	float:left;
+	height:85%;
+	margin-top:-5%;
+	margin-left:25%;
+}
+
+.genre h3{
+	float:left;
+	margin-left:5%;
+	margin-top:10%;
+	color:#FFF;
+	font-size:1.5em;
+	font-family:"helvetica Neue";
+	font-weight:normal;
+}
+
+/* container rechts */
+.second{
+	width:45%;
+	height:90%;
+	float:right;
+}
+.line{
+	float:right;
+	width:95%;
+	height:5%;
+	margin-top:5%;
+	margin-right:2.5%;
+	margin-left:2.5%;
+}
+
+.line img{
+	float:right;
+	width:100%;
+}
+
+.vrijdag{
+	margin-left:5%;
+}
+
+.zaterdag{
+	margin-left:9%;
+}
+
+.zondag{
+	margin-left:8%;
+}
+
+.donderdag{
+	margin-left:6%;
+}
+
+.days{
+	float:left;
+	font-family:"helvetica Neue";
+	color:#21262d;
+	font-size:1.3em;
+}
+
+.days p{
+	margin:0;
+}
+
+.dateEvent{
+	width:25%;
+	float:left;
+	margin-left:-1%;
+	font-family:"helvetica Neue";
+	text-align:center;
+}
+
+.dateEvent p{
+	margin:0;
+}
+
+.daynumber{
+	margin-top:2.5%;
+	color:white;
+	font-size:3.5em;
+}
+
+.monthname{
+	color:#00e046;
+	font-size:1.7em;
+}
+
+.dayname{
+	color:#00e046;
+}
+
+.vertical-ticker{
+	float:right;
+	width:70%;
+	height:80%;
+	margin-top:2.5%;
+	margin-right:5%;
+	padding:0;
+	overflow:hidden;
+}
+
+.vertical-ticker li{
+	display:block;
+	border-bottom:3px solid #1d2127;
+	text-align:center;
+}
+	
+.vertical-ticker li img{
+	width:100%;
+	height:140px;
+	padding-bottom:5px;
+	padding-top:10px;
+}
+
+/* footer */
+footer {
+	width:100%;
+	height:9%;
+	float:left;
+	background-color:#1ab7ea;
+}
+
+#twitterLogo {
+	float:left;
+	width:4%;
+	margin-top:0.5%;
+	margin-left:0.5%;
+}
+
+#twitterLogo img{
+	width:100%;
+}
+
+/* liScroll styles */
+.tickercontainer { /* the outer div with the black border */
+	width: 96.5%;
+	margin-top:-4%;
+	float:right;
+}
+
+.tickercontainer .mask { /* that serves as a mask. so you get a sort of padding both left and right */
+	top: 0;;
+	width:100%; 
+	overflow: hidden;
+	float:right;
+}
+ul.newsticker { /* that's your list */
+	position: relative;
+	left: 92.29166666%;
+	font: 2em "helvetica Neue";
+	color: white;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+ul.newsticker li {
+	float: left; /* important: display inline gives incorrect results when you check for elem's width */
+	margin: 0;
+	padding: 0;
+	margin-top:0.15%;
+}

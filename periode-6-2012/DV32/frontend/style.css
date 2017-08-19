@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+body {
+	background-image: url(vloek.png);
+	font-family: "Courier New", Courier, monospace;
+}
+
+.wrapper {
+	background: white;
+	background-image: url(bond%20tegen%20vloeken.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 950px;
+	height: 600px;
+	margin: auto;
+	padding: 10px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	border: 1px solid black;
+}
+
+.clear {
+	clear: both;
+}
+
+h1 {
+	font-weight: bold;
+	color: navy;
+}
+
+.style {
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	width: 150px;
+}
+
+.style p {
+	cursor: help;
+}
+
+#hoer {
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 100px;
+	text-align: center;
+	left: 0;
+	right: 0;
+}
+
+#klootzak {
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 400px;
+	text-align: center;
+	left: 0;
+	right: 0;
+}
+
+#tering {
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 700px;
+	text-align: center;
+	left: 0;
+	right: 0;
+}
+
+#kanker {
+	position: absolute;
+	margin-top: 210px;
+	margin-left: 100px;
+	text-align: center;
+	left: 0;
+	right: 0;
+}
+
+#kut {
+	position: absolute;
+	margin-top: 410px;
+	margin-left: 100px;
+	text-align: center;
+	left: 0;
+	right: 0;
+}
+
+#bitch {
+	position: absolute;
+	margin-top: 410px;
+	margin-left: 400px;
+	text-align: center;
+	left: 0;
+	right: 0;
+}
+
+#mongool {
+	position: absolute;
+	margin-top: 410px;
+	margin-left: 700px;
+	text-align: center;
+	left: 0;
+	right: 0;
+}
+
+#gvd {
+	position: absolute;
+	margin-top: 210px;
+	margin-left: 700px;
+	text-align: center;
+	left: 0;
+	right: 0;
+}
+
+#button {
+	position: absolute;
+	padding: 10px;
+	margin-top: 180px;
+	margin-left: 400px;
+	text-align: center;
+	left: 0;
+	right: 0;
+	background-color: firebrick;
+	border: 1px solid black;
+}
+
+button {
+	cursor: pointer;
+}
+
+#info {
+	color: #FFFFFF;
+	cursor: default;
+}
+
+footer {
+	position: absolute;
+	margin-top: 580px;
+	margin-left: 710px;
+	text-align: center;
+	left: 0;
+	right: 0;
+}
